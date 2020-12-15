@@ -26,7 +26,8 @@
     },
     "scripts": {
         "install": "node bin/install.js",
-        "lint": "softvisio-cli lint"
+        "lint": "softvisio-cli lint",
+        "update": "node bin/maxmind-update.js"
     },
     "dependencies": {
         "maxmind": ">=4.3.1",
