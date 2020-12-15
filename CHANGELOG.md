@@ -1,3 +1,8 @@
+## 1.0.0 (2020-12-15)
+
+-   refactored
+-   init
+
 ## 0.4.0 (2020-12-12)
 
 -   post install script
