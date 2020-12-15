@@ -21,6 +21,9 @@
     "exports": {
         ".": "./lib/index.js"
     },
+    "bin": {
+        "maxmind-update": "bin/maxmind-update.js"
+    },
     "scripts": {
         "install": "node bin/install.js",
         "lint": "softvisio-cli lint"
