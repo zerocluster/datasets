@@ -1,0 +1,40 @@
+{
+    "name": "@softvisio/maxmind",
+    "version": "0.4.0",
+    "description": "Maxmind GeoLite2 databases",
+    "keywords": [
+        "softvisio",
+        "maxmind",
+        "geolite2"
+    ],
+    "homepage": "https://bitbucket.org/softvisio/softvisio-maxmind",
+    "bugs": {
+        "url": "https://bitbucket.org/softvisio/softvisio-maxmind/issues",
+        "email": "zdm@softvisio.net"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/softvisio/softvisio-maxmind.git"
+    },
+    "license": "ISC",
+    "author": "zdm <zdm@softvisio.net>",
+    "exports": {
+        ".": "./lib/index.js"
+    },
+    "scripts": {
+        "install": "node bin/install.js",
+        "lint": "softvisio-cli lint"
+    },
+    "dependencies": {
+        "maxmind": ">=4.3.1",
+        "node-fetch": ">=2.6.1"
+    },
+    "devDependencies": {
+        "tar": ">=6.0.5"
+    },
+    "lint": [
+        "*.*",
+        "bin/**",
+        "lib/**"
+    ]
+}
