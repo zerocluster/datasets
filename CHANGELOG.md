@@ -1,3 +1,7 @@
+## 1.1.0 (2020-12-15)
+
+-   maxmind-update script added
+
 ## 1.0.0 (2020-12-15)
 
 -   refactored
