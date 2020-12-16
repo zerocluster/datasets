@@ -5,5 +5,9 @@ const updater = require( "../lib/updater" );
 ( async () => {
     const ok = await updater.update();
 
-    if ( !ok ) process.exit( 3 );
+    if ( !ok ) {
+        console.log( `Maxmind update error.` );
+
+        process.exit( 3 );
+    }
 } )();
