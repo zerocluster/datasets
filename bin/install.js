@@ -2,4 +2,6 @@
 
 const updater = require( "../lib/updater" );
 
-updater.update().then( () => process.exit() );
+( async () => {
+    await updater.update();
+} )();
