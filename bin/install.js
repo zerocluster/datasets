@@ -3,5 +3,7 @@
 const updater = require( "../lib/updater" );
 
 ( async () => {
-    await updater.update();
+    const ok = await updater.update();
+
+    if ( !ok ) process.exit( 3 );
 } )();
