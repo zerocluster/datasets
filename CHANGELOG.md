@@ -1,3 +1,7 @@
+## 1.3.1 (2021-01-07)
+
+-   updater refactored
+
 ## 1.3.0 (2021-01-06)
 
 -   updater refactored
