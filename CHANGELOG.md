@@ -1,3 +1,8 @@
+## 1.3.2 (2021-01-08)
+
+-   updater updated
+-   deps updated
+
 ## 1.3.1 (2021-01-07)
 
 -   updater refactored
