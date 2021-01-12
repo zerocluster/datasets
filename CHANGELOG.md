@@ -1,3 +1,7 @@
+## 1.3.4 (2021-01-12)
+
+-   repeat on download error
+
 ## 1.3.3 (2021-01-11)
 
 -   typo
