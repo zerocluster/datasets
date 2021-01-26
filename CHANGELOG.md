@@ -1,3 +1,7 @@
+## 1.4.0 (2021-01-26)
+
+-   migrated to node v15
+
 ## 1.3.4 (2021-01-12)
 
 -   repeat on download error
