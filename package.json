@@ -27,12 +27,12 @@
     "scripts": {
         "install": "node bin/install.js",
         "lint": "softvisio-cli lint",
-        "update": "node bin/maxmind-update.js"
+        "update": "node bin/update-maxmind.js"
     },
     "dependencies": {
-        "maxmind": ">=4.3.1",
-        "node-fetch": ">=2.6.1",
-        "tar": ">=6.1.0"
+        "maxmind": "^4.3.1",
+        "node-fetch": "^2.6.1",
+        "tar": "^6.1.0"
     },
     "lint": [
         "*.*",
