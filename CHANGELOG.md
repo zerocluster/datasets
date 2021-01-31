@@ -1,3 +1,7 @@
+## 1.4.3 (2021-01-31)
+
+-   package-lock disabled
+
 ## 1.4.2 (2021-01-27)
 
 -   deps updated
