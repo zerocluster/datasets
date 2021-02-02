@@ -1,3 +1,9 @@
+## 1.4.4 (2021-02-02)
+
+### Raw commits log
+
+-   console log fixed;
+
 ## 1.4.3 (2021-01-31)
 
 -   package-lock disabled
