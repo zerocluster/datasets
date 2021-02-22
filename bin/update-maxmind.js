@@ -3,5 +3,5 @@
 const updater = require( "../lib/updater" );
 
 ( async () => {
-    await updater.updateLocal();
+    await updater.update();
 } )();
