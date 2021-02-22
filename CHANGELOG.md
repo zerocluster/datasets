@@ -1,3 +1,9 @@
+## 1.5.1 (2021-02-22)
+
+### Raw commits log
+
+-   update log imporoved;
+
 ## 1.5.0 (2021-02-22)
 
 ### Raw commits log
