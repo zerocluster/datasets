@@ -25,7 +25,7 @@
         "update-maxmind": "bin/update-maxmind.js"
     },
     "scripts": {
-        "install": "node bin/install.js",
+        "install": "node bin/update-maxmind.js",
         "lint": "softvisio-cli lint",
         "update": "node bin/update-maxmind.js"
     },

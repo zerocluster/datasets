@@ -3,5 +3,11 @@
 const updater = require( "../lib/updater" );
 
 ( async () => {
-    await updater.update();
+    const ok = await updater.update();
+
+    if ( !ok ) {
+        console.log( `Maxmind update error.` );
+
+        process.exit( 3 );
+    }
 } )();
