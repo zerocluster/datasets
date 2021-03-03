@@ -1,3 +1,9 @@
+## 1.6.0 (2021-03-03)
+
+### Raw commits log
+
+-   updater refactored;
+
 ## 1.5.1 (2021-02-22)
 
 ### Raw commits log
