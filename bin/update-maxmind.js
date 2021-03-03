@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const updater = require( "../lib/updater" );
+const maxmind = require( "../lib" );
 
 ( async () => {
-    const ok = await updater.update( true );
+    const ok = await maxmind.update( true );
 
     if ( !ok ) {
         console.log( `Maxmind update error.` );
