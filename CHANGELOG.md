@@ -1,3 +1,9 @@
+## 1.7.0 (2021-03-03)
+
+### Raw commits log
+
+-   share path updated;
+
 ## 1.6.0 (2021-03-03)
 
 ### Raw commits log
