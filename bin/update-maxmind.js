@@ -3,7 +3,7 @@
 const updater = require( "../lib/updater" );
 
 ( async () => {
-    const ok = await updater.update();
+    const ok = await updater.update( true );
 
     if ( !ok ) {
         console.log( `Maxmind update error.` );
