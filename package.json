@@ -30,7 +30,8 @@
         "update": "node bin/update-maxmind.js"
     },
     "dependencies": {
-        "maxmind": "^4.3.1",
+        "lru-cache": "^6.0.0",
+        "mmdb-lib": "^1.2.0",
         "node-fetch": "^2.6.1",
         "tar": "^6.1.0"
     },
