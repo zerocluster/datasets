@@ -1,0 +1,29 @@
+version: "3.9"
+
+# NOTE deploy
+# docker stack deploy --compose-file docker-compose.yaml maxmind
+
+x-build:
+  default_tag: latest
+  # auto_tags: [main, devel, latest]
+  # tags_mapping: { main: latest }
+
+volumes:
+  maxmind:
+
+services:
+  maxmind:
+    image: softvisio/maxmind
+    hostname: maxmind
+
+    deploy:
+      mode: global
+
+    volumes:
+      - { type: volume, source: maxmind, target: /var/lib/maxmind }
+
+    init: true
+    stop_grace_period: 5m
+    shm_size: 1g
+
+    build: "true"
