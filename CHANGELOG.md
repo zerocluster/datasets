@@ -1,3 +1,9 @@
+## 1.8.4 (2021-03-08)
+
+### Raw commits log
+
+-   install script removed;
+
 ## 1.8.3 (2021-03-08)
 
 ### Raw commits log
