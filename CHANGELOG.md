@@ -1,3 +1,10 @@
+## 1.8.0 (2021-03-08)
+
+### Raw commits log
+
+-   docker swarm;
+-   maxmind skip download env added;
+
 ## 1.7.0 (2021-03-03)
 
 ### Raw commits log
