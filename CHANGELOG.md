@@ -1,3 +1,10 @@
+## 1.8.2 (2021-03-08)
+
+### Raw commits log
+
+-   volume name fixed;
+-   cleanup;
+
 ## 1.8.1 (2021-03-08)
 
 ### Raw commits log
