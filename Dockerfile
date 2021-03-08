@@ -1,7 +1,5 @@
 FROM softvisio/core
 
-ENV MAXMIND_UPDATER=true
-
 RUN \
     # setup node build environment
     curl -fsSL https://bitbucket.org/softvisio/scripts/raw/master/env-build-node.sh | /bin/bash -s -- setup \
