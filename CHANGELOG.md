@@ -1,3 +1,9 @@
+## 1.8.1 (2021-03-08)
+
+### Raw commits log
+
+-   docker swarm;
+
 ## 1.8.0 (2021-03-08)
 
 ### Raw commits log

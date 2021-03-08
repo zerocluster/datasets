@@ -1,6 +1,6 @@
 {
     "name": "@softvisio/maxmind",
-    "version": "1.8.0",
+    "version": "1.8.1",
     "description": "Maxmind GeoLite2 databases",
     "keywords": [
         "softvisio",
