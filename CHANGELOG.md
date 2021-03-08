@@ -1,3 +1,10 @@
+## 1.8.3 (2021-03-08)
+
+### Raw commits log
+
+-   private network added;
+-   docker-compose.yaml shebang added;
+
 ## 1.8.2 (2021-03-08)
 
 ### Raw commits log
