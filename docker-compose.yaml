@@ -10,6 +10,9 @@ x-build:
   # auto_tags: [main, devel, latest]
   # tags_mapping: { main: latest }
 
+networks:
+  private: { external: true }
+
 volumes:
   maxmind: { name: "maxmind" }
 
@@ -20,6 +23,8 @@ services:
 
     deploy:
       mode: global
+
+    networks: [private]
 
     volumes:
       - { type: volume, source: maxmind, target: /var/lib/maxmind }
