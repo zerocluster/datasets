@@ -9,7 +9,7 @@ x-build:
   # tags_mapping: { main: latest }
 
 volumes:
-  maxmind:
+  maxmind: { name: "maxmind" }
 
 services:
   maxmind:
