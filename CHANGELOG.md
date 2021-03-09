@@ -1,3 +1,10 @@
+## 1.9.0 (2021-03-09)
+
+### Raw commits log
+
+-   merged with @softvisio/core;
+-   unlinkSync replaced with rmSync;
+
 ## 1.8.7 (2021-03-08)
 
 ### Raw commits log
