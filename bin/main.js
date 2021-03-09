@@ -1,14 +1,9 @@
 #!/usr/bin/env node
 
-const maxmind = require( "../lib" );
-
-const CONST = require( "../lib" );
+const maxmind = require( "@softvisio/core/maxmind" );
 
 ( async () => {
-
-    // start updater
-
-    setInterval( () => maxmind.update(), CONST.updateInterval );
+    setInterval( () => maxmind.update(), 1000 * 60 * 60 * 4 );
 
     maxmind.update();
 } )();

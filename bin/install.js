@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const maxmind = require( "../lib" );
+const maxmind = require( "@softvisio/core/maxmind" );
 
 ( async () => {
     const ok = await maxmind.update( true );
