@@ -1,9 +1,9 @@
-#!/usr/bin/env -S docker stack deploy maxmind --compose-file
+#!/usr/bin/env -S docker stack deploy maxmind -c
 
 version: "3.9"
 
 # NOTE deploy
-# docker stack deploy --compose-file docker-compose.yaml maxmind
+# docker stack deploy -c docker-stack.yaml maxmind
 
 x-build:
   default_tag: latest
