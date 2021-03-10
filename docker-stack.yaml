@@ -1,9 +1,9 @@
-#!/usr/bin/env -S docker stack deploy maxmind -c
+#!/usr/bin/env -S docker stack deploy --with-registry-auth maxmind -c
 
 version: "3.9"
 
 # NOTE deploy
-# docker stack deploy -c docker-stack.yaml maxmind
+# docker stack deploy --with-registry-auth -c docker-stack.yaml maxmind
 
 x-build:
   default_tag: latest
