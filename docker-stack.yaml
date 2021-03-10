@@ -33,4 +33,5 @@ services:
     stop_grace_period: 5m
     shm_size: 1g
 
-    build: "true"
+    build:
+      context: .
