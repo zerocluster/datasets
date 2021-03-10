@@ -1,3 +1,9 @@
+## 1.9.2 (2021-03-10)
+
+### Raw commits log
+
+-   docker stack updated;
+
 ## 1.9.1 (2021-03-10)
 
 ### Raw commits log
