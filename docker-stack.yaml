@@ -24,6 +24,9 @@ services:
     deploy:
       mode: global
 
+    environment:
+      MAXMIND_LICENSE_KEY:
+
     networks: [private]
 
     volumes:
