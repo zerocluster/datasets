@@ -1,3 +1,10 @@
+## 1.9.4 (2021-03-11)
+
+### Raw commits log
+
+-   support for MAXMIND_LICENSE_KEY;
+-   logo;
+
 ## 1.9.3 (2021-03-10)
 
 ### Raw commits log
