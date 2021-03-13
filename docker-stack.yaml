@@ -5,17 +5,6 @@ version: "3.9"
 # NOTE deploy
 # docker stack deploy --with-registry-auth -c docker-stack.yaml maxmind
 
-x-build:
-  default_tag: latest
-  # auto_tags: [main, devel, latest]
-  # tags_mapping: { main: latest }
-
-networks:
-  private: { external: true }
-
-volumes:
-  maxmind: { name: "maxmind" }
-
 services:
   maxmind:
     image: softvisio/maxmind
@@ -38,3 +27,14 @@ services:
 
     build:
       context: .
+
+networks:
+  private: { external: true }
+
+volumes:
+  maxmind: { name: "maxmind" }
+
+x-build:
+  default_tag: latest
+  # auto_tags: [main, devel, latest]
+  # tags_mapping: { main: latest }
