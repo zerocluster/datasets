@@ -1,3 +1,10 @@
+## 1.9.5 (2021-03-13)
+
+### Raw commits log
+
+-   package renamed;
+-   docker stack updated;
+
 ## 1.9.4 (2021-03-11)
 
 ### Raw commits log
