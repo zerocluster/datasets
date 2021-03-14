@@ -1,6 +1,6 @@
 {
     "name": "maxmind",
-    "version": "1.9.5",
+    "version": "1.10.0",
     "private": true,
     "description": "Maxmind GeoLite2 databases",
     "keywords": [

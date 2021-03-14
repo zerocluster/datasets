@@ -1,3 +1,10 @@
+## 1.10.0 (2021-03-14)
+
+### Raw commits log
+
+-   env updated;
+-   docker stack hostname removed;
+
 ## 1.9.5 (2021-03-13)
 
 ### Raw commits log
