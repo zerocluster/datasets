@@ -8,7 +8,6 @@ version: "3.9"
 services:
   maxmind:
     image: softvisio/maxmind
-    hostname: maxmind
 
     deploy:
       mode: global
