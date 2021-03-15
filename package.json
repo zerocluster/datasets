@@ -1,5 +1,5 @@
 {
-    "name": "maxmind",
+    "name": "@applications/maxmind",
     "version": "1.11.2",
     "private": true,
     "description": "Maxmind GeoLite2 databases",
