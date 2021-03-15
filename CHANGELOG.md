@@ -1,3 +1,9 @@
+## 1.11.2 (2021-03-15)
+
+### Raw commits log
+
+-   master -> main;
+
 ## 1.11.1 (2021-03-15)
 
 ### Raw commits log
