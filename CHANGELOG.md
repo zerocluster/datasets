@@ -1,3 +1,9 @@
+## 1.10.1 (2021-03-15)
+
+### Raw commits log
+
+-   shared memory fix;
+
 ## 1.10.0 (2021-03-14)
 
 ### Raw commits log
