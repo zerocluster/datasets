@@ -20,7 +20,7 @@ services:
     networks: [private]
 
     volumes:
-      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1024000000 } }
+      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
       - { type: volume, source: maxmind, target: /var/lib/maxmind }
 
     build:
