@@ -34,5 +34,4 @@ volumes:
 
 x-build:
   default_tag: latest
-  # auto_tags: [main, devel, latest]
-  # tags_mapping: { main: latest }
+  # autobuild_tags: [main, devel, latest]
