@@ -1,3 +1,9 @@
+## 1.11.0 (2021-03-15)
+
+### Raw commits log
+
+-   config files renamed;
+
 ## 1.10.1 (2021-03-15)
 
 ### Raw commits log
