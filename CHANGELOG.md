@@ -1,3 +1,9 @@
+## 1.11.1 (2021-03-15)
+
+### Raw commits log
+
+-   docker tags updated;
+
 ## 1.11.0 (2021-03-15)
 
 ### Raw commits log
