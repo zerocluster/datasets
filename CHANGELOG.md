@@ -1,3 +1,9 @@
+## 1.12.1 (2021-04-01)
+
+### Raw commits log
+
+-   dockerfile fixed;
+
 ## 1.12.0 (2021-04-01)
 
 ### Raw commits log
