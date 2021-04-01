@@ -1,3 +1,9 @@
+## 1.12.0 (2021-04-01)
+
+### Raw commits log
+
+-   project renamed;
+
 ## 1.11.4 (2021-03-29)
 
 ### Raw commits log
