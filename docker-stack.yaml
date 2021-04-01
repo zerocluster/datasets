@@ -1,13 +1,13 @@
-#!/usr/bin/env -S docker stack deploy --with-registry-auth maxmind -c
+#!/usr/bin/env -S docker stack deploy --with-registry-auth databases -c
 
 version: "3.9"
 
 # NOTE deploy
-# docker stack deploy --with-registry-auth -c docker-stack.yaml maxmind
+# docker stack deploy --with-registry-auth -c docker-stack.yaml databases
 
 services:
-  maxmind:
-    image: softvisio/maxmind
+  databases:
+    image: softvisio/databases
     init: true
     stop_grace_period: 5m
 
@@ -21,7 +21,7 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: maxmind, target: /var/lib/maxmind }
+      - { type: volume, source: databases, target: /var/lib/databases }
 
     build:
       context: .
@@ -30,7 +30,7 @@ networks:
   private: { external: true }
 
 volumes:
-  maxmind: { name: "maxmind" }
+  databases: { name: databases }
 
 x-build:
   default_tag: latest

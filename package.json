@@ -1,21 +1,20 @@
 {
-    "name": "@applications/maxmind",
+    "name": "@applications/databases",
     "version": "1.11.4",
     "private": true,
-    "description": "Maxmind GeoLite2 databases",
+    "description": "Various static databases",
     "keywords": [
         "softvisio",
-        "maxmind",
-        "geolite2"
+        "databases"
     ],
-    "homepage": "https://bitbucket.org/softvisio/maxmind",
+    "homepage": "https://bitbucket.org/softvisio/databases",
     "bugs": {
-        "url": "https://bitbucket.org/softvisio/maxmind/issues",
+        "url": "https://bitbucket.org/softvisio/databases/issues",
         "email": "zdm@softvisio.net"
     },
     "repository": {
         "type": "git",
-        "url": "https://bitbucket.org/softvisio/maxmind.git"
+        "url": "https://bitbucket.org/softvisio/databases.git"
     },
     "license": "ISC",
     "author": "zdm <zdm@softvisio.net>",
