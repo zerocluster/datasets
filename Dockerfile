@@ -4,7 +4,7 @@ HEALTHCHECK NONE
 
 RUN \
     # setup node build environment
-    \ curl -fsSL https://bitbucket.org/softvisio/scripts/raw/main/env-build-node.sh | /bin/bash -s -- setup \
+    # curl -fsSL https://bitbucket.org/softvisio/scripts/raw/main/env-build-node.sh | /bin/bash -s -- setup \
     \
     # install deps
     npm i --no-fund --omit=dev \
