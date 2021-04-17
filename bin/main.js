@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
-const maxmind = require( "@softvisio/core/maxmind" );
+import maxmind from "@softvisio/core/maxmind";
 
-( async () => {
-    setInterval( () => maxmind.update(), 1000 * 60 * 60 * 4 );
+setInterval( () => maxmind.update(), 1000 * 60 * 60 * 4 );
 
-    maxmind.update();
-} )();
+maxmind.update();

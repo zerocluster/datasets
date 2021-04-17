@@ -1,13 +1,11 @@
 #!/usr/bin/env node
 
-const maxmind = require( "@softvisio/core/maxmind" );
+import maxmind from "@softvisio/core/maxmind";
 
-( async () => {
-    const ok = await maxmind.update( true );
+const ok = await maxmind.update( { "force": true } );
 
-    if ( !ok ) {
-        console.log( `Maxmind update error.` );
+if ( !ok ) {
+    console.log( `Maxmind update error.` );
 
-        process.exit( 3 );
-    }
-} )();
+    process.exit( 3 );
+}
