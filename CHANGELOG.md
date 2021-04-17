@@ -1,3 +1,10 @@
+## 1.12.2 (2021-04-17)
+
+### Raw commits log
+
+-   ported to modules;
+-   npmrc fund false;
+
 ## 1.12.1 (2021-04-01)
 
 ### Raw commits log
