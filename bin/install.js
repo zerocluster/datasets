@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import maxmind from "@softvisio/core/maxmind";
+import maxmind from "#core/maxmind";
 
 const ok = await maxmind.update( { "force": true } );
 
