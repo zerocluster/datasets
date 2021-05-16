@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 
-import maxmind from "#core/maxmind";
+import App from "#lib/app";
 
-setInterval( () => maxmind.update(), 1000 * 60 * 60 * 4 );
+App.CLI.parse( App );
 
-maxmind.update();
+const app = new App();
+
+const res = await app.run();
+
+if ( !res.ok ) process.exit( 1 );
