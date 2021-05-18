@@ -21,14 +21,18 @@
     "type": "module",
     "imports": {
         "#core/*": "@softvisio/core/*",
-        "#lib/*": "./lib/*.js"
+        "#lib/*": "./lib/*.js",
+        "#resources/*": "./resources/*"
     },
     "scripts": {
         "install": "node bin/install.js",
         "lint": "softvisio-cli lint"
     },
     "dependencies": {
-        "@softvisio/core": "^3.0.0"
+        "@softvisio/core": "^3.0.0",
+        "@softvisio/sqlite": "^1.3.0",
+        "geo-tz": "^6.0.1",
+        "which-country": "^1.0.0"
     },
     "lint": [
         "**"
