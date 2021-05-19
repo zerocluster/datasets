@@ -24,8 +24,7 @@
         "#lib/*": "./lib/*.js"
     },
     "scripts": {
-        "install": "node bin/install.js",
-        "lint": "softvisio-cli lint"
+        "install": "node bin/install.js"
     },
     "dependencies": {
         "@softvisio/core": "^3.0.0",
