@@ -1,6 +1,6 @@
 {
     "name": "@softvisio/databases",
-    "version": "1.12.4",
+    "version": "2.0.0",
     "description": "Various static databases",
     "keywords": [
         "softvisio",

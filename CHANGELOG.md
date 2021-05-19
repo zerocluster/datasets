@@ -1,3 +1,18 @@
+## 2.0.0 (2021-05-19)
+
+### Raw commits log
+
+-   maxmind module added;
+-   flagUnicode -> flag_unicode;
+-   lint script removed;
+-   rpc cache added;
+-   rpc cche added;
+-   schema added;
+-   geotarget api added;
+-   rpc apis added;
+-   sqlite data added;
+-   service api added;
+
 ## 1.12.4 (2021-05-13)
 
 ### Raw commits log
