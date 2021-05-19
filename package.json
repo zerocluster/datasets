@@ -34,6 +34,9 @@
         "geo-tz": "^6.0.1",
         "which-country": "^1.0.0"
     },
+    "devDependencies": {
+        "fast-csv": "^4.3.6"
+    },
     "lint": [
         "**"
     ]
