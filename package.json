@@ -1,20 +1,19 @@
 {
     "name": "@softvisio/databases",
     "version": "1.12.4",
-    "private": true,
     "description": "Various static databases",
     "keywords": [
         "softvisio",
         "databases"
     ],
-    "homepage": "https://bitbucket.org/softvisio/databases",
+    "homepage": "https://bitbucket.org/softvisio/softvisio-databases",
     "bugs": {
-        "url": "https://bitbucket.org/softvisio/databases/issues",
+        "url": "https://bitbucket.org/softvisio/softvisio-databases/issues",
         "email": "zdm@softvisio.net"
     },
     "repository": {
         "type": "git",
-        "url": "https://bitbucket.org/softvisio/databases.git"
+        "url": "https://bitbucket.org/softvisio/softvisio-databases.git"
     },
     "license": "ISC",
     "author": "zdm <zdm@softvisio.net>",
