@@ -1,0 +1,27 @@
+summary: Maxmind GeoIP lookup.
+permissions: ["*"]
+
+methods:
+  asn:
+    summary: Search in ASN database.
+    params:
+      - name: addr
+        required: true
+        schema:
+          type: string
+
+  country:
+    summary: Search in Country database.
+    params:
+      - name: addr
+        required: true
+        schema:
+          type: string
+
+  city:
+    summary: Search in City database.
+    params:
+      - name: addr
+        required: true
+        schema:
+          type: string

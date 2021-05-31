@@ -1,0 +1,27 @@
+summary: Timezone lookup.
+permissions: ["*"]
+
+methods:
+  get:
+    summary: Get timezone by abbreviation or name.
+    params:
+      - name: id
+        required: true
+        schema:
+          type: string
+
+  get-all:
+    summary: Get all timezones.
+
+  get-by-coordinates:
+    summary: Search for the timezone by the geo coordinates.
+    params:
+      - name: coordinates
+        required: true
+        schema:
+          type: object
+          properties:
+            latitude: { type: number }
+            longitude: { type: number }
+          required: [latitude, longitude]
+          additionalProperties: false

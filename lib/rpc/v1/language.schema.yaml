@@ -1,0 +1,14 @@
+summary: Language lookup.
+permissions: ["*"]
+
+methods:
+  get:
+    summary: Get language by iso2, iso3 or name.
+    params:
+      - name: id
+        required: true
+        schema:
+          type: string
+
+  get-all:
+    summary: Get all languages.

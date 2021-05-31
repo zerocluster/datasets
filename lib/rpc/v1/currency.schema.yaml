@@ -1,0 +1,14 @@
+summary: Currency lookup.
+permissions: ["*"]
+
+methods:
+  get:
+    summary: Get currency by iso3, symbol or name.
+    params:
+      - name: id
+        required: true
+        schema:
+          type: string
+
+  get-all:
+    summary: Get all currencies.

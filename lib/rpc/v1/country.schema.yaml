@@ -1,0 +1,27 @@
+summary: Country lookup.
+permissions: ["*"]
+
+methods:
+  get:
+    summary: Get country by iso2, iso3 or name.
+    params:
+      - name: id
+        required: true
+        schema:
+          type: string
+
+  get-all:
+    summary: Get all countries.
+
+  get-by-coordinates:
+    summary: Get country by coordinates.
+    params:
+      - name: coordinates
+        required: true
+        schema:
+          type: object
+          properties:
+            latitude: { type: number }
+            longitude: { type: number }
+          required: [latitude, longitude]
+          additionalProperties: false
