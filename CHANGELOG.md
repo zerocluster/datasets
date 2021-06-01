@@ -1,3 +1,16 @@
+## 2.0.1 (2021-06-01)
+
+### Raw commits log
+
+-   docs added;
+-   lint config removed;
+-   api proto refactored;
+-   api schema moved to the external files;
+-   rpc permissions added;
+-   location under linux moved to docker volumes;
+-   auth -> ctx;
+-   app rpc pass auth as first param on call;
+
 ## 2.0.0 (2021-05-19)
 
 ### Raw commits log
