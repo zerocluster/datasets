@@ -1,3 +1,9 @@
+## 2.0.2 (2021-06-01)
+
+### Raw commits log
+
+-   softvisio config merged with the package.json;
+
 ## 2.0.1 (2021-06-01)
 
 ### Raw commits log
