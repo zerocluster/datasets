@@ -43,12 +43,5 @@
     },
     "peerDependencies": {
         "@softvisio/core": "^3.7.0"
-    },
-    "softvisio": {
-        "docs": {
-            "api": {
-                "lib/rpc": "rpc"
-            }
-        }
     }
 }
