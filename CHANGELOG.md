@@ -1,12 +1,12 @@
 ## 2.0.2 (2021-06-01)
 
-### Raw commits log
+**Raw commits log**
 
 -   softvisio config merged with the package.json;
 
 ## 2.0.1 (2021-06-01)
 
-### Raw commits log
+**Raw commits log**
 
 -   docs added;
 -   lint config removed;
@@ -19,7 +19,7 @@
 
 ## 2.0.0 (2021-05-19)
 
-### Raw commits log
+**Raw commits log**
 
 -   maxmind module added;
 -   flagUnicode -> flag_unicode;
@@ -34,196 +34,196 @@
 
 ## 1.12.4 (2021-05-13)
 
-### Raw commits log
+**Raw commits log**
 
 -   imports updated;
 
 ## 1.12.3 (2021-05-02)
 
-### Raw commits log
+**Raw commits log**
 
 -   deps updated;
 
 ## 1.12.2 (2021-04-17)
 
-### Raw commits log
+**Raw commits log**
 
 -   ported to modules;
 -   npmrc fund false;
 
 ## 1.12.1 (2021-04-01)
 
-### Raw commits log
+**Raw commits log**
 
 -   dockerfile fixed;
 
 ## 1.12.0 (2021-04-01)
 
-### Raw commits log
+**Raw commits log**
 
 -   project renamed;
 
 ## 1.11.4 (2021-03-29)
 
-### Raw commits log
+**Raw commits log**
 
 -   lint pattern updated;
 
 ## 1.11.3 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   package renamed;
 
 ## 1.11.2 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   master -> main;
 
 ## 1.11.1 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker tags updated;
 
 ## 1.11.0 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   config files renamed;
 
 ## 1.10.1 (2021-03-15)
 
-### Raw commits log
+**Raw commits log**
 
 -   shared memory fix;
 
 ## 1.10.0 (2021-03-14)
 
-### Raw commits log
+**Raw commits log**
 
 -   env updated;
 -   docker stack hostname removed;
 
 ## 1.9.5 (2021-03-13)
 
-### Raw commits log
+**Raw commits log**
 
 -   package renamed;
 -   docker stack updated;
 
 ## 1.9.4 (2021-03-11)
 
-### Raw commits log
+**Raw commits log**
 
 -   support for MAXMIND_LICENSE_KEY;
 -   logo;
 
 ## 1.9.3 (2021-03-10)
 
-### Raw commits log
+**Raw commits log**
 
 -   disable healthcheck;
 -   docker stack updated;
 
 ## 1.9.2 (2021-03-10)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker stack updated;
 
 ## 1.9.1 (2021-03-10)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker-compose.yaml renamed to docker-stack.yaml;
 
 ## 1.9.0 (2021-03-09)
 
-### Raw commits log
+**Raw commits log**
 
 -   merged with @softvisio/core;
 -   unlinkSync replaced with rmSync;
 
 ## 1.8.7 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   maxmind install script removed;
 
 ## 1.8.6 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   maxmind install script removed;
 
 ## 1.8.5 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   maxmind install script removed;
 
 ## 1.8.4 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   install script removed;
 
 ## 1.8.3 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   private network added;
 -   docker-compose.yaml shebang added;
 
 ## 1.8.2 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   volume name fixed;
 -   cleanup;
 
 ## 1.8.1 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker swarm;
 
 ## 1.8.0 (2021-03-08)
 
-### Raw commits log
+**Raw commits log**
 
 -   docker swarm;
 -   maxmind skip download env added;
 
 ## 1.7.0 (2021-03-03)
 
-### Raw commits log
+**Raw commits log**
 
 -   share path updated;
 
 ## 1.6.0 (2021-03-03)
 
-### Raw commits log
+**Raw commits log**
 
 -   updater refactored;
 
 ## 1.5.1 (2021-02-22)
 
-### Raw commits log
+**Raw commits log**
 
 -   update log imporoved;
 
 ## 1.5.0 (2021-02-22)
 
-### Raw commits log
+**Raw commits log**
 
 -   update refactored;
 
 ## 1.4.4 (2021-02-02)
 
-### Raw commits log
+**Raw commits log**
 
 -   console log fixed;
 
