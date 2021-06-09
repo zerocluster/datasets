@@ -20,7 +20,7 @@ Methods:
 const res = await api.call( "/v1/continent/get", id );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -60,7 +60,7 @@ curl \
 const res = await api.call( "/v1/continent/get-all" );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -103,7 +103,7 @@ Methods:
 const res = await api.call( "/v1/country/get", id );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -143,7 +143,7 @@ curl \
 const res = await api.call( "/v1/country/get-all" );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -178,7 +178,7 @@ Method require no parameters.
 const res = await api.call( "/v1/country/get-by-coordinates", coordinates );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -234,7 +234,7 @@ Methods:
 const res = await api.call( "/v1/currency/get", id );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -274,7 +274,7 @@ curl \
 const res = await api.call( "/v1/currency/get-all" );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -317,7 +317,7 @@ Methods:
 const res = await api.call( "/v1/geoip/asn", addr );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -357,7 +357,7 @@ curl \
 const res = await api.call( "/v1/geoip/country", addr );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -397,7 +397,7 @@ curl \
 const res = await api.call( "/v1/geoip/city", addr );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -444,7 +444,7 @@ Methods:
 const res = await api.call( "/v1/geotarget/get", id );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -486,7 +486,7 @@ curl \
 const res = await api.call( "/v1/geotarget/get-geojson", id );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -535,7 +535,7 @@ Methods:
 const res = await api.call( "/v1/language/get", id );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -575,7 +575,7 @@ curl \
 const res = await api.call( "/v1/language/get-all" );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -618,7 +618,7 @@ Methods:
 const res = await api.call( "/v1/timezone/get", id );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -658,7 +658,7 @@ curl \
 const res = await api.call( "/v1/timezone/get-all" );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
@@ -693,7 +693,7 @@ Method require no parameters.
 const res = await api.call( "/v1/timezone/get-by-coordinates", coordinates );
 ```
 
-#### **cURL**
+#### **Shell**
 
 <!-- prettier-ignore -->
 ```shell
