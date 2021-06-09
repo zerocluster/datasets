@@ -1,6 +1,6 @@
 # Introduction
 
-<!-- Tell about the project -->
+Shared databases for use as microservice.
 
 ## Install
 
