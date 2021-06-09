@@ -1,9 +1,9 @@
-summary: Timezone lookup.
+summary: Timezone lookup
 permissions: ["*"]
 
 methods:
   get:
-    summary: Get timezone by abbreviation or name.
+    summary: Get timezone by abbreviation or name
     params:
       - name: id
         required: true
@@ -11,10 +11,10 @@ methods:
           type: string
 
   get-all:
-    summary: Get all timezones.
+    summary: Get all timezones
 
   get-by-coordinates:
-    summary: Search for the timezone by the geo coordinates.
+    summary: Search for the timezone by the geo coordinates
     params:
       - name: coordinates
         required: true

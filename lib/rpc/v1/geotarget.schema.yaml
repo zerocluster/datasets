@@ -1,9 +1,9 @@
-summary: Google GEOTarget lookup.
+summary: Google GEOTarget lookup
 permissions: ["*"]
 
 methods:
   get:
-    summary: Get GEOTarget by id or canonical name.
+    summary: Get GEOTarget by id or canonical name
     params:
       - name: id
         required: true
@@ -11,7 +11,7 @@ methods:
           type: [number, string]
 
   get-geojson:
-    summary: Get GEOTarget geojson by id or canonical name.
+    summary: Get GEOTarget geojson by id or canonical name
     params:
       - name: id
         required: true

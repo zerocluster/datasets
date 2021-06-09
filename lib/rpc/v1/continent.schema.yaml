@@ -1,9 +1,9 @@
-summary: Continent lookup.
+summary: Continent lookup
 permissions: ["*"]
 
 methods:
   get:
-    summary: Get continent by iso2 or name.
+    summary: Get continent by iso2 or name
     params:
       - name: id
         required: true
@@ -11,4 +11,4 @@ methods:
           type: string
 
   get-all:
-    summary: Get all continents.
+    summary: Get all continents

@@ -1,9 +1,9 @@
-summary: Currency lookup.
+summary: Currency lookup
 permissions: ["*"]
 
 methods:
   get:
-    summary: Get currency by iso3, symbol or name.
+    summary: Get currency by iso3, symbol or name
     params:
       - name: id
         required: true
@@ -11,4 +11,4 @@ methods:
           type: string
 
   get-all:
-    summary: Get all currencies.
+    summary: Get all currencies
