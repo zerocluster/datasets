@@ -1,9 +1,9 @@
-summary: Language lookup
+title: Language lookup
 permissions: ["*"]
 
 methods:
   get:
-    summary: Get language by iso2, iso3 or name
+    title: Get language by iso2, iso3 or name
     params:
       - name: id
         required: true
@@ -11,4 +11,4 @@ methods:
           type: string
 
   get-all:
-    summary: Get all languages
+    title: Get all languages

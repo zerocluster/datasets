@@ -1,9 +1,9 @@
-summary: Country lookup
+title: Country lookup
 permissions: ["*"]
 
 methods:
   get:
-    summary: Get country by iso2, iso3 or name
+    title: Get country by iso2, iso3 or name
     params:
       - name: id
         required: true
@@ -11,10 +11,10 @@ methods:
           type: string
 
   get-all:
-    summary: Get all countries
+    title: Get all countries
 
   get-by-coordinates:
-    summary: Get country by coordinates
+    title: Get country by coordinates
     params:
       - name: coordinates
         required: true

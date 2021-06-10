@@ -1,9 +1,9 @@
-summary: Maxmind GeoIP lookup
+title: Maxmind GeoIP lookup
 permissions: ["*"]
 
 methods:
   asn:
-    summary: Search in ASN database
+    title: Search in ASN database
     params:
       - name: addr
         required: true
@@ -11,7 +11,7 @@ methods:
           type: string
 
   country:
-    summary: Search in Country database
+    title: Search in Country database
     params:
       - name: addr
         required: true
@@ -19,7 +19,7 @@ methods:
           type: string
 
   city:
-    summary: Search in City database
+    title: Search in City database
     params:
       - name: addr
         required: true
