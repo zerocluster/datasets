@@ -26,7 +26,7 @@ const res = await api.call( "/v1/continent/get", id );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/continent/get"
@@ -34,13 +34,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **id** `[required]`
+-   **`id`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -66,7 +64,7 @@ const res = await api.call( "/v1/continent/get-all" );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/continent/get-all"
@@ -74,11 +72,9 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
-
-**Parameters**
+**Parameters:**
 
 Method require no parameters.
 
@@ -109,7 +105,7 @@ const res = await api.call( "/v1/country/get", id );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/country/get"
@@ -117,13 +113,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **id** `[required]`
+-   **`id`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -149,7 +143,7 @@ const res = await api.call( "/v1/country/get-all" );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/country/get-all"
@@ -157,11 +151,9 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
-
-**Parameters**
+**Parameters:**
 
 Method require no parameters.
 
@@ -184,7 +176,7 @@ const res = await api.call( "/v1/country/get-by-coordinates", coordinates );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/country/get-by-coordinates"
@@ -192,13 +184,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **coordinates** `[required]`
+-   **`coordinates`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -240,7 +230,7 @@ const res = await api.call( "/v1/currency/get", id );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/currency/get"
@@ -248,13 +238,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **id** `[required]`
+-   **`id`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -280,7 +268,7 @@ const res = await api.call( "/v1/currency/get-all" );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/currency/get-all"
@@ -288,11 +276,9 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
-
-**Parameters**
+**Parameters:**
 
 Method require no parameters.
 
@@ -323,7 +309,7 @@ const res = await api.call( "/v1/geoip/asn", addr );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/geoip/asn"
@@ -331,13 +317,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **addr** `[required]`
+-   **`addr`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -363,7 +347,7 @@ const res = await api.call( "/v1/geoip/country", addr );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/geoip/country"
@@ -371,13 +355,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **addr** `[required]`
+-   **`addr`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -403,7 +385,7 @@ const res = await api.call( "/v1/geoip/city", addr );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/geoip/city"
@@ -411,13 +393,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **addr** `[required]`
+-   **`addr`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -450,7 +430,7 @@ const res = await api.call( "/v1/geotarget/get", id );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/geotarget/get"
@@ -458,13 +438,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **id** `[required]`
+-   **`id`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -492,7 +470,7 @@ const res = await api.call( "/v1/geotarget/get-geojson", id );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/geotarget/get-geojson"
@@ -500,13 +478,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **id** `[required]`
+-   **`id`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -541,7 +517,7 @@ const res = await api.call( "/v1/language/get", id );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/language/get"
@@ -549,13 +525,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **id** `[required]`
+-   **`id`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -581,7 +555,7 @@ const res = await api.call( "/v1/language/get-all" );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/language/get-all"
@@ -589,11 +563,9 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
-
-**Parameters**
+**Parameters:**
 
 Method require no parameters.
 
@@ -624,7 +596,7 @@ const res = await api.call( "/v1/timezone/get", id );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/timezone/get"
@@ -632,13 +604,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **id** `[required]`
+-   **`id`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -664,7 +634,7 @@ const res = await api.call( "/v1/timezone/get-all" );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/timezone/get-all"
@@ -672,11 +642,9 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
-
-**Parameters**
+**Parameters:**
 
 Method require no parameters.
 
@@ -699,7 +667,7 @@ const res = await api.call( "/v1/timezone/get-by-coordinates", coordinates );
 ```shell
 curl \
     -X POST \
-    -H "Authorization: Basic <YOUR-API-TOKEN>" \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
     "https://api.domain.com/v1/timezone/get-by-coordinates"
@@ -707,13 +675,11 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions**
+**Permissions:** `*`
 
--   "\*" - any connected user;
+**Parameters:**
 
-**Parameters**
-
--   **coordinates** `[required]`
+-   **`coordinates`** <sup>[required]</sup>
 
     <!-- prettier-ignore -->
     ```yaml
