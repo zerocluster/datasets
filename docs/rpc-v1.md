@@ -32,8 +32,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 -   **`id`** \<string\>
@@ -67,8 +65,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Permissions:** `*`
 
 **Parameters:**
 
@@ -107,8 +103,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 -   **`id`** \<string\>
@@ -143,8 +137,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 Method require no parameters.
@@ -173,8 +165,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Permissions:** `*`
 
 **Parameters:**
 
@@ -226,8 +216,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 -   **`id`** \<string\>
@@ -261,8 +249,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Permissions:** `*`
 
 **Parameters:**
 
@@ -301,8 +287,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 -   **`addr`** \<string\>
@@ -337,8 +321,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 -   **`addr`** \<string\>
@@ -372,8 +354,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Permissions:** `*`
 
 **Parameters:**
 
@@ -416,8 +396,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 -   **`id`** \<number,string\>
@@ -453,8 +431,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Permissions:** `*`
 
 **Parameters:**
 
@@ -499,8 +475,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 -   **`id`** \<string\>
@@ -534,8 +508,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Permissions:** `*`
 
 **Parameters:**
 
@@ -574,8 +546,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 -   **`id`** \<string\>
@@ -610,8 +580,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Permissions:** `*`
-
 **Parameters:**
 
 Method require no parameters.
@@ -640,8 +608,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Permissions:** `*`
 
 **Parameters:**
 
