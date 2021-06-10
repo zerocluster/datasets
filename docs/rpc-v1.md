@@ -66,10 +66,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Parameters:**
-
-Method require no parameters.
-
 ## Country lookup
 
 Methods:
@@ -136,10 +132,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Parameters:**
-
-Method require no parameters.
 
 ### Get country by coordinates
 
@@ -249,10 +241,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Parameters:**
-
-Method require no parameters.
 
 ## Maxmind GeoIP lookup
 
@@ -509,10 +497,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Parameters:**
-
-Method require no parameters.
-
 ## Timezone lookup
 
 Methods:
@@ -579,10 +563,6 @@ curl \
 ```
 
 <!-- tabs:end -->
-
-**Parameters:**
-
-Method require no parameters.
 
 ### Search for the timezone by the geo coordinates
 
