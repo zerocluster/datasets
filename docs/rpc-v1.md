@@ -4,10 +4,8 @@
 
 Methods:
 
--   [Get continent by iso2 or name](#continent-get)
--   [Get all continents](#continent-get-all)
-
-<a id="continent-get"></a>
+-   [Get continent by iso2 or name](#get-continent-by-iso2-or-name)
+-   [Get all continents](#get-all-continents)
 
 ### Get continent by iso2 or name
 
@@ -38,14 +36,12 @@ curl \
 
 **Parameters:**
 
--   **`id`** <sup>[required]</sup>
+-   **`id`** \<string\>
 
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
-
-<a id="continent-get-all"></a>
 
 ### Get all continents
 
@@ -82,11 +78,9 @@ Method require no parameters.
 
 Methods:
 
--   [Get country by iso2, iso3 or name](#country-get)
--   [Get all countries](#country-get-all)
--   [Get country by coordinates](#country-get-by-coordinates)
-
-<a id="country-get"></a>
+-   [Get country by iso2, iso3 or name](#get-country-by-iso2-iso3-or-name)
+-   [Get all countries](#get-all-countries)
+-   [Get country by coordinates](#get-country-by-coordinates)
 
 ### Get country by iso2, iso3 or name
 
@@ -117,14 +111,12 @@ curl \
 
 **Parameters:**
 
--   **`id`** <sup>[required]</sup>
+-   **`id`** \<string\>
 
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
-
-<a id="country-get-all"></a>
 
 ### Get all countries
 
@@ -157,8 +149,6 @@ curl \
 
 Method require no parameters.
 
-<a id="country-get-by-coordinates"></a>
-
 ### Get country by coordinates
 
 <!-- tabs:start -->
@@ -188,7 +178,7 @@ curl \
 
 **Parameters:**
 
--   **`coordinates`** <sup>[required]</sup>
+-   **`coordinates`** \<object\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -208,10 +198,8 @@ curl \
 
 Methods:
 
--   [Get currency by iso3, symbol or name](#currency-get)
--   [Get all currencies](#currency-get-all)
-
-<a id="currency-get"></a>
+-   [Get currency by iso3, symbol or name](#get-currency-by-iso3-symbol-or-name)
+-   [Get all currencies](#get-all-currencies)
 
 ### Get currency by iso3, symbol or name
 
@@ -242,14 +230,12 @@ curl \
 
 **Parameters:**
 
--   **`id`** <sup>[required]</sup>
+-   **`id`** \<string\>
 
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
-
-<a id="currency-get-all"></a>
 
 ### Get all currencies
 
@@ -286,11 +272,9 @@ Method require no parameters.
 
 Methods:
 
--   [Search in ASN database](#geoip-asn)
--   [Search in Country database](#geoip-country)
--   [Search in City database](#geoip-city)
-
-<a id="geoip-asn"></a>
+-   [Search in ASN database](#search-in-asn-database)
+-   [Search in Country database](#search-in-country-database)
+-   [Search in City database](#search-in-city-database)
 
 ### Search in ASN database
 
@@ -321,14 +305,12 @@ curl \
 
 **Parameters:**
 
--   **`addr`** <sup>[required]</sup>
+-   **`addr`** \<string\>
 
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
-
-<a id="geoip-country"></a>
 
 ### Search in Country database
 
@@ -359,14 +341,12 @@ curl \
 
 **Parameters:**
 
--   **`addr`** <sup>[required]</sup>
+-   **`addr`** \<string\>
 
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
-
-<a id="geoip-city"></a>
 
 ### Search in City database
 
@@ -397,7 +377,7 @@ curl \
 
 **Parameters:**
 
--   **`addr`** <sup>[required]</sup>
+-   **`addr`** \<string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -408,10 +388,8 @@ curl \
 
 Methods:
 
--   [Get GEOTarget by id or canonical name](#geotarget-get)
--   [Get GEOTarget geojson by id or canonical name](#geotarget-get-geojson)
-
-<a id="geotarget-get"></a>
+-   [Get GEOTarget by id or canonical name](#get-geotarget-by-id-or-canonical-name)
+-   [Get GEOTarget geojson by id or canonical name](#get-geotarget-geojson-by-id-or-canonical-name)
 
 ### Get GEOTarget by id or canonical name
 
@@ -442,7 +420,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** <sup>[required]</sup>
+-   **`id`** \<number,string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -450,8 +428,6 @@ curl \
         - number
         - string
     ```
-
-<a id="geotarget-get-geojson"></a>
 
 ### Get GEOTarget geojson by id or canonical name
 
@@ -482,7 +458,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** <sup>[required]</sup>
+-   **`id`** \<number,string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -495,10 +471,8 @@ curl \
 
 Methods:
 
--   [Get language by iso2, iso3 or name](#language-get)
--   [Get all languages](#language-get-all)
-
-<a id="language-get"></a>
+-   [Get language by iso2, iso3 or name](#get-language-by-iso2-iso3-or-name)
+-   [Get all languages](#get-all-languages)
 
 ### Get language by iso2, iso3 or name
 
@@ -529,14 +503,12 @@ curl \
 
 **Parameters:**
 
--   **`id`** <sup>[required]</sup>
+-   **`id`** \<string\>
 
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
-
-<a id="language-get-all"></a>
 
 ### Get all languages
 
@@ -573,11 +545,9 @@ Method require no parameters.
 
 Methods:
 
--   [Get timezone by abbreviation or name](#timezone-get)
--   [Get all timezones](#timezone-get-all)
--   [Search for the timezone by the geo coordinates](#timezone-get-by-coordinates)
-
-<a id="timezone-get"></a>
+-   [Get timezone by abbreviation or name](#get-timezone-by-abbreviation-or-name)
+-   [Get all timezones](#get-all-timezones)
+-   [Search for the timezone by the geo coordinates](#search-for-the-timezone-by-the-geo-coordinates)
 
 ### Get timezone by abbreviation or name
 
@@ -608,14 +578,12 @@ curl \
 
 **Parameters:**
 
--   **`id`** <sup>[required]</sup>
+-   **`id`** \<string\>
 
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
-
-<a id="timezone-get-all"></a>
 
 ### Get all timezones
 
@@ -648,8 +616,6 @@ curl \
 
 Method require no parameters.
 
-<a id="timezone-get-by-coordinates"></a>
-
 ### Search for the timezone by the geo coordinates
 
 <!-- tabs:start -->
@@ -679,7 +645,7 @@ curl \
 
 **Parameters:**
 
--   **`coordinates`** <sup>[required]</sup>
+-   **`coordinates`** \<object\>
 
     <!-- prettier-ignore -->
     ```yaml
