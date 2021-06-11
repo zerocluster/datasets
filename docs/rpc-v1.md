@@ -14,7 +14,7 @@ Methods:
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/continent/get", id );
 ```
 
@@ -48,7 +48,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/continent/get-all" );
 ```
 
@@ -81,7 +81,7 @@ Methods:
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/country/get", id );
 ```
 
@@ -115,7 +115,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/country/get-all" );
 ```
 
@@ -140,7 +140,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/country/get-by-coordinates", coordinates );
 ```
 
@@ -190,7 +190,7 @@ Methods:
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/currency/get", id );
 ```
 
@@ -224,7 +224,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/currency/get-all" );
 ```
 
@@ -257,7 +257,7 @@ Methods:
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/geoip/asn", addr );
 ```
 
@@ -291,7 +291,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/geoip/country", addr );
 ```
 
@@ -325,7 +325,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/geoip/city", addr );
 ```
 
@@ -366,7 +366,7 @@ Methods:
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/geotarget/get", id );
 ```
 
@@ -402,7 +402,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/geotarget/get-geojson", id );
 ```
 
@@ -445,7 +445,7 @@ Methods:
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/language/get", id );
 ```
 
@@ -479,7 +479,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/language/get-all" );
 ```
 
@@ -512,7 +512,7 @@ Methods:
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/timezone/get", id );
 ```
 
@@ -546,7 +546,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/timezone/get-all" );
 ```
 
@@ -571,7 +571,7 @@ curl \
 #### **JavaScript**
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = await api.call( "/v1/timezone/get-by-coordinates", coordinates );
 ```
 
