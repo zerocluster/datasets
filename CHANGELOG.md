@@ -1,5 +1,16 @@
 # Changelog
 
+### 2.1.0 (2021-06-24)
+
+Changed:
+
+-   deps updated;
+-   docs updated;
+-   @softvisio/core v4;
+-   maxmind user credentials changed;
+-   github user credentials changed;
+-   moved to github;
+
 ### 2.0.2 (2021-06-01)
 
 Changed:
