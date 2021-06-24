@@ -5,6 +5,6 @@
 -   [Introduction](/api.md)
 -   [RPC v1](/rpc-v1.md)
 
-**LINKS**
+**Links**
 
 -   [Changelog](/changelog)
