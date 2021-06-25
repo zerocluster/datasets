@@ -386,7 +386,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** <number,string\>
+-   **`id`** <number\> | <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -422,7 +422,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** <number,string\>
+-   **`id`** <number\> | <string\>
 
     <!-- prettier-ignore -->
     ```yaml
