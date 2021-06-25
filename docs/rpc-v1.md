@@ -34,7 +34,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** \<string\>
+-   **`id`** <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -101,7 +101,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** \<string\>
+-   **`id`** <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -160,7 +160,7 @@ curl \
 
 **Parameters:**
 
--   **`coordinates`** \<object\>
+-   **`coordinates`** <Object\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -210,7 +210,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** \<string\>
+-   **`id`** <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -277,7 +277,7 @@ curl \
 
 **Parameters:**
 
--   **`addr`** \<string\>
+-   **`addr`** <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -311,7 +311,7 @@ curl \
 
 **Parameters:**
 
--   **`addr`** \<string\>
+-   **`addr`** <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -345,7 +345,7 @@ curl \
 
 **Parameters:**
 
--   **`addr`** \<string\>
+-   **`addr`** <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -386,7 +386,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** \<number,string\>
+-   **`id`** <number,string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -422,7 +422,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** \<number,string\>
+-   **`id`** <number,string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -465,7 +465,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** \<string\>
+-   **`id`** <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -532,7 +532,7 @@ curl \
 
 **Parameters:**
 
--   **`id`** \<string\>
+-   **`id`** <string\>
 
     <!-- prettier-ignore -->
     ```yaml
@@ -591,7 +591,7 @@ curl \
 
 **Parameters:**
 
--   **`coordinates`** \<object\>
+-   **`coordinates`** <Object\>
 
     <!-- prettier-ignore -->
     ```yaml
