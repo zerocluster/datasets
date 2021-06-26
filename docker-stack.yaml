@@ -12,7 +12,7 @@ services:
     stop_grace_period: 5m
 
     deploy:
-      mode: global
+      replicas: 1
 
     environment:
       MAXMIND_LICENSE_KEY:
