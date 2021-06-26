@@ -27,6 +27,6 @@ const t = {
 // console.log( await t.country() );
 // console.log( await t.continent() );
 
-bench( "databases", t, 10000 );
+bench( "databases", t, 10000, 50 );
 
 // process.exit();
