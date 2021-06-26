@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.1.2 (2021-06-26)
+
+Fixed:
+
+-   docker stack mode changed to replicated
+
 ### 2.1.1 (2021-06-26)
 
 Fixed:
