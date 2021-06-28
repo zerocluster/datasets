@@ -2,11 +2,6 @@
 
 ## Continent lookup
 
-Methods:
-
--   [Get continent by iso2 or name](#get-continent-by-iso2-or-name)
--   [Get all continents](#get-all-continents)
-
 ### Get continent by iso2 or name
 
 <!-- tabs:start -->
@@ -67,12 +62,6 @@ curl \
 <!-- tabs:end -->
 
 ## Country lookup
-
-Methods:
-
--   [Get country by iso2, iso3 or name](#get-country-by-iso2-iso3-or-name)
--   [Get all countries](#get-all-countries)
--   [Get country by coordinates](#get-country-by-coordinates)
 
 ### Get country by iso2, iso3 or name
 
@@ -178,11 +167,6 @@ curl \
 
 ## Currency lookup
 
-Methods:
-
--   [Get currency by iso3, symbol or name](#get-currency-by-iso3-symbol-or-name)
--   [Get all currencies](#get-all-currencies)
-
 ### Get currency by iso3, symbol or name
 
 <!-- tabs:start -->
@@ -243,12 +227,6 @@ curl \
 <!-- tabs:end -->
 
 ## Maxmind GeoIP lookup
-
-Methods:
-
--   [Search in ASN database](#search-in-asn-database)
--   [Search in Country database](#search-in-country-database)
--   [Search in City database](#search-in-city-database)
 
 ### Search in ASN database
 
@@ -354,11 +332,6 @@ curl \
 
 ## Google GEOTarget lookup
 
-Methods:
-
--   [Get GEOTarget by id or canonical name](#get-geotarget-by-id-or-canonical-name)
--   [Get GEOTarget geojson by id or canonical name](#get-geotarget-geojson-by-id-or-canonical-name)
-
 ### Get GEOTarget by id or canonical name
 
 <!-- tabs:start -->
@@ -433,11 +406,6 @@ curl \
 
 ## Language lookup
 
-Methods:
-
--   [Get language by iso2, iso3 or name](#get-language-by-iso2-iso3-or-name)
--   [Get all languages](#get-all-languages)
-
 ### Get language by iso2, iso3 or name
 
 <!-- tabs:start -->
@@ -498,12 +466,6 @@ curl \
 <!-- tabs:end -->
 
 ## Timezone lookup
-
-Methods:
-
--   [Get timezone by abbreviation or name](#get-timezone-by-abbreviation-or-name)
--   [Get all timezones](#get-all-timezones)
--   [Search for the timezone by the geo coordinates](#search-for-the-timezone-by-the-geo-coordinates)
 
 ### Get timezone by abbreviation or name
 
