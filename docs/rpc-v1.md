@@ -31,10 +31,15 @@ curl \
 
 -   **`id`** <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
+
+    </details>
 
 ### Get all continents
 
@@ -92,10 +97,15 @@ curl \
 
 -   **`id`** <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
+
+    </details>
 
 ### Get all countries
 
@@ -151,6 +161,9 @@ curl \
 
 -   **`coordinates`** <Object\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: object
@@ -164,6 +177,8 @@ curl \
         - longitude
     additionalProperties: false
     ```
+
+    </details>
 
 ## Currency lookup
 
@@ -196,10 +211,15 @@ curl \
 
 -   **`id`** <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
+
+    </details>
 
 ### Get all currencies
 
@@ -257,10 +277,15 @@ curl \
 
 -   **`addr`** <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
+
+    </details>
 
 ### Search in Country database
 
@@ -291,10 +316,15 @@ curl \
 
 -   **`addr`** <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
+
+    </details>
 
 ### Search in City database
 
@@ -325,10 +355,15 @@ curl \
 
 -   **`addr`** <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
+
+    </details>
 
 ## Google GEOTarget lookup
 
@@ -361,12 +396,17 @@ curl \
 
 -   **`id`** <number\> | <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type:
         - number
         - string
     ```
+
+    </details>
 
 ### Get GEOTarget geojson by id or canonical name
 
@@ -397,12 +437,17 @@ curl \
 
 -   **`id`** <number\> | <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type:
         - number
         - string
     ```
+
+    </details>
 
 ## Language lookup
 
@@ -435,10 +480,15 @@ curl \
 
 -   **`id`** <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
+
+    </details>
 
 ### Get all languages
 
@@ -496,10 +546,15 @@ curl \
 
 -   **`id`** <string\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: string
     ```
+
+    </details>
 
 ### Get all timezones
 
@@ -555,6 +610,9 @@ curl \
 
 -   **`coordinates`** <Object\>
 
+    <details>
+        <summary>JSON schema</summary>
+
     <!-- prettier-ignore -->
     ```yaml
     type: object
@@ -568,3 +626,5 @@ curl \
         - longitude
     additionalProperties: false
     ```
+
+    </details>
