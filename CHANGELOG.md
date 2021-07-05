@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.1.5 (2021-07-05)
+
+Fixed:
+
+-   docker mount path fixed
+-   docs updated
+-   docker config updated
+
 ### 2.1.4 (2021-06-28)
 
 Fixed:
