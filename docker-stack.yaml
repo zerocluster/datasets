@@ -23,7 +23,7 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: databases, target: /var/lib/databases }
+      - { type: volume, source: databases, target: /var/lib/docker/volumes/databases/_data }
 
     build:
       context: .
