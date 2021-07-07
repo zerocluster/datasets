@@ -1,19 +1,19 @@
 {
-    "name": "@softvisio/databases",
+    "name": "@softvisio/datasets",
     "version": "2.2.0",
-    "description": "Various static databases",
+    "description": "Various static datasets",
     "keywords": [
         "softvisio",
-        "databases"
+        "datasets"
     ],
-    "homepage": "https://github.com/softvisio/databases",
+    "homepage": "https://github.com/softvisio/datasets",
     "bugs": {
-        "url": "https://github.com/softvisio/databases/issues",
+        "url": "https://github.com/softvisio/datasets/issues",
         "email": "zdm@softvisio.net"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/softvisio/databases.git"
+        "url": "https://github.com/softvisio/datasets.git"
     },
     "license": "ISC",
     "author": "zdm <zdm@softvisio.net>",
@@ -24,7 +24,7 @@
         "#lib/*": "./lib/*.js"
     },
     "bin": {
-        "update-databases": "bin/update-databases.js"
+        "update-datasets": "bin/update-datasets.js"
     },
     "scripts": {
         "install": "node bin/install.js"

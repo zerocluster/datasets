@@ -1,13 +1,13 @@
-#!/usr/bin/env -S docker stack deploy --with-registry-auth databases -c
+#!/usr/bin/env -S docker stack deploy --with-registry-auth datasets -c
 
 version: "3.9"
 
 # NOTE deploy
-# docker stack deploy --with-registry-auth -c docker-stack.yaml databases
+# docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 
 services:
-  databases:
-    image: softvisio/databases
+  datasets:
+    image: softvisio/datasets
     init: true
     stop_grace_period: 5m
 
@@ -23,7 +23,7 @@ services:
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: databases, target: /var/lib/docker/volumes/databases/_data }
+      - { type: volume, source: datasets, target: /var/lib/docker/volumes/datasets/_data }
 
     build:
       context: .
@@ -32,7 +32,7 @@ networks:
   private: { external: true }
 
 volumes:
-  databases: { name: databases }
+  datasets: { name: datasets }
 
 x-build:
   default_tag: latest

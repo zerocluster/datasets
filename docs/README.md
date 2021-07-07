@@ -1,11 +1,11 @@
 # Introduction
 
-Shared databases for use as microservice.
+Shared datasets for use as service.
 
 ## Install
 
 ```shell
-npm i @softvisio/databases
+npm i @softvisio/datasets
 ```
 
 ## Usage
