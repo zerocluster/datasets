@@ -10,7 +10,7 @@
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/continent/get", id );
+const res = await api.call( "/v1/continents/get", id );
 ```
 
 #### **Shell**
@@ -22,7 +22,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/continent/get"
+    "https://api.domain.com/v1/continents/get"
 ```
 
 <!-- tabs:end -->
@@ -49,7 +49,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/continent/get-all" );
+const res = await api.call( "/v1/continents/get-all" );
 ```
 
 #### **Shell**
@@ -61,7 +61,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/continent/get-all"
+    "https://api.domain.com/v1/continents/get-all"
 ```
 
 <!-- tabs:end -->
@@ -76,7 +76,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/country/get", id );
+const res = await api.call( "/v1/countries/get", id );
 ```
 
 #### **Shell**
@@ -88,7 +88,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/country/get"
+    "https://api.domain.com/v1/countries/get"
 ```
 
 <!-- tabs:end -->
@@ -115,7 +115,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/country/get-all" );
+const res = await api.call( "/v1/countries/get-all" );
 ```
 
 #### **Shell**
@@ -127,7 +127,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/country/get-all"
+    "https://api.domain.com/v1/countries/get-all"
 ```
 
 <!-- tabs:end -->
@@ -140,7 +140,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/country/get-by-coordinates", coordinates );
+const res = await api.call( "/v1/countries/get-by-coordinates", coordinates );
 ```
 
 #### **Shell**
@@ -152,7 +152,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/country/get-by-coordinates"
+    "https://api.domain.com/v1/countries/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
@@ -190,7 +190,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/currency/get", id );
+const res = await api.call( "/v1/currencies/get", id );
 ```
 
 #### **Shell**
@@ -202,7 +202,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/currency/get"
+    "https://api.domain.com/v1/currencies/get"
 ```
 
 <!-- tabs:end -->
@@ -229,7 +229,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/currency/get-all" );
+const res = await api.call( "/v1/currencies/get-all" );
 ```
 
 #### **Shell**
@@ -241,7 +241,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/currency/get-all"
+    "https://api.domain.com/v1/currencies/get-all"
 ```
 
 <!-- tabs:end -->
@@ -375,7 +375,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/geotarget/get", id );
+const res = await api.call( "/v1/geotargets/get", id );
 ```
 
 #### **Shell**
@@ -387,7 +387,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/geotarget/get"
+    "https://api.domain.com/v1/geotargets/get"
 ```
 
 <!-- tabs:end -->
@@ -416,7 +416,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/geotarget/get-geojson", id );
+const res = await api.call( "/v1/geotargets/get-geojson", id );
 ```
 
 #### **Shell**
@@ -428,7 +428,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/geotarget/get-geojson"
+    "https://api.domain.com/v1/geotargets/get-geojson"
 ```
 
 <!-- tabs:end -->
@@ -459,7 +459,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/language/get", id );
+const res = await api.call( "/v1/languages/get", id );
 ```
 
 #### **Shell**
@@ -471,7 +471,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/language/get"
+    "https://api.domain.com/v1/languages/get"
 ```
 
 <!-- tabs:end -->
@@ -498,7 +498,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/language/get-all" );
+const res = await api.call( "/v1/languages/get-all" );
 ```
 
 #### **Shell**
@@ -510,7 +510,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/language/get-all"
+    "https://api.domain.com/v1/languages/get-all"
 ```
 
 <!-- tabs:end -->
@@ -525,7 +525,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezone/get", id );
+const res = await api.call( "/v1/timezones/get", id, [options] );
 ```
 
 #### **Shell**
@@ -537,7 +537,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/timezone/get"
+    "https://api.domain.com/v1/timezones/get"
 ```
 
 <!-- tabs:end -->
@@ -556,6 +556,21 @@ curl \
 
     </details>
 
+-   **`options?`** <Object\>
+
+    <details>
+        <summary>JSON schema</summary>
+
+    <!-- prettier-ignore -->
+    ```yaml
+    type: object
+    properties:
+        offsets: true
+    additionalProperties: false
+    ```
+
+    </details>
+
 ### Get all timezones
 
 <!-- tabs:start -->
@@ -564,7 +579,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezone/get-all" );
+const res = await api.call( "/v1/timezones/get-all", [options] );
 ```
 
 #### **Shell**
@@ -576,10 +591,27 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/timezone/get-all"
+    "https://api.domain.com/v1/timezones/get-all"
 ```
 
 <!-- tabs:end -->
+
+**Parameters:**
+
+-   **`options?`** <Object\>
+
+    <details>
+        <summary>JSON schema</summary>
+
+    <!-- prettier-ignore -->
+    ```yaml
+    type: object
+    properties:
+        offsets: true
+    additionalProperties: false
+    ```
+
+    </details>
 
 ### Search for the timezone by the geo coordinates
 
@@ -589,7 +621,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezone/get-by-coordinates", coordinates );
+const res = await api.call( "/v1/timezones/get-by-coordinates", coordinates, [options] );
 ```
 
 #### **Shell**
@@ -601,7 +633,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/timezone/get-by-coordinates"
+    "https://api.domain.com/v1/timezones/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
@@ -624,6 +656,21 @@ curl \
     required:
         - latitude
         - longitude
+    additionalProperties: false
+    ```
+
+    </details>
+
+-   **`options?`** <Object\>
+
+    <details>
+        <summary>JSON schema</summary>
+
+    <!-- prettier-ignore -->
+    ```yaml
+    type: object
+    properties:
+        offsets: true
     additionalProperties: false
     ```
 
