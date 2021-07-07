@@ -9,9 +9,22 @@ methods:
         required: true
         schema:
           type: string
+      - name: options
+        schema:
+          type: object
+          properties:
+            offsets: true
+          additionalProperties: false
 
   get-all:
     title: Get all timezones
+    params:
+      - name: options
+        schema:
+          type: object
+          properties:
+            offsets: true
+          additionalProperties: false
 
   get-by-coordinates:
     title: Search for the timezone by the geo coordinates
@@ -24,4 +37,10 @@ methods:
             latitude: { type: number }
             longitude: { type: number }
           required: [latitude, longitude]
+          additionalProperties: false
+      - name: options
+        schema:
+          type: object
+          properties:
+            offsets: true
           additionalProperties: false
