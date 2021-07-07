@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.2.0 (2021-07-07)
+
+Changed:
+
+-   timezones refactored
+
 ### 2.1.5 (2021-07-05)
 
 Fixed:
