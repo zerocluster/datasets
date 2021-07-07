@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.3.0 (2021-07-07)
+
+Changed:
+
+-   databases renamed to datasets
+
 ### 2.2.0 (2021-07-07)
 
 Changed:
