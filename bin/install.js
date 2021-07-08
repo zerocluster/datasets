@@ -4,10 +4,12 @@ import "#core";
 
 import updater from "#lib/updater";
 
-const res = await updater.update( { "force": true } );
+if ( process.env.DATASETS_DOWNLOAD !== "false" ) {
+    const res = await updater.update( { "force": true } );
 
-if ( !res.ok ) {
-    console.log( `Datasets update error: ` + res );
+    if ( !res.ok ) {
+        console.log( `Datasets update error: ` + res );
 
-    process.exit( 3 );
+        process.exit( 3 );
+    }
 }
