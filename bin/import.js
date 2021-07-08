@@ -66,33 +66,32 @@ if ( !config.github.token ) {
 }
 
 const github = new GitHub( config.github.token );
+const remoteIndex = await utils.getRemoteIndex();
 
 tar.c( {
     "cwd": location,
     "gzip": true,
     "sync": true,
     "portable": true,
-    "file": location + "datasets.tar.gz",
+    "file": location + "/datasets.tar.gz",
 },
 [CONST.index.datasets.name] );
 
-const remoteIndex = await utils.getRemoteIndex();
-
 process.stdout.write( `Uploading: datasets.tar.gz ... ` );
-res = await utils.uploadAsset( github, location + "datasets.tar.gz" );
+res = await utils.uploadAsset( github, location + "/datasets.tar.gz" );
 console.log( res + "" );
 if ( !res.ok ) process.exit( 2 );
 
 remoteIndex.datasets.lastModified = new Date();
-fs.config.write( location + "index.json", remoteIndex, { "readable": true } );
+fs.config.write( location + "/index.json", remoteIndex, { "readable": true } );
 
 process.stdout.write( `Uploading: index.json ... ` );
-res = await utils.uploadAsset( github, location + "index.json" );
+res = await utils.uploadAsset( github, location + "/index.json" );
 console.log( res + "" );
 if ( !res.ok ) process.exit( 2 );
 
 async function _import ( name, table ) {
-    const data = fs.config.read( location + name + ".json" );
+    const data = fs.config.read( location + "/" + name + ".json" );
 
     await dbh.do( dbh.queryToString( sql`INSERT INTO "__name__"`.VALUES( data ) ).replace( "__name__", table ) );
 }
