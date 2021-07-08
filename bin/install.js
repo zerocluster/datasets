@@ -4,7 +4,7 @@ import "#core";
 
 import updater from "#lib/updater";
 
-const res = await updater.update( { "force": true, "sync": true } );
+const res = await updater.update();
 
 if ( !res.ok ) {
     console.log( `Datasets update error: ` + res );
