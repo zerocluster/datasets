@@ -7,7 +7,7 @@ RUN \
     # curl -fsSL https://raw.githubusercontent.com/softvisio/scripts/main/env-build-node.sh | /bin/bash -s -- setup \
     \
     # install deps
-    DATASETS_DOWNLOAD=false \
+    export DATASETS_DOWNLOAD=false \
     && npm i --omit=dev \
     \
     # cleanup node build environment
