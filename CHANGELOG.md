@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.5.2 (2021-07-08)
+
+Fixed:
+
+-   do not update datasets on docker build fixed
+
 ### 2.5.1 (2021-07-08)
 
 Fixed:
