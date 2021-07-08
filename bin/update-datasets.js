@@ -2,12 +2,12 @@
 
 import "#core";
 
-import maxmind from "#lib/maxmind";
+import updater from "#lib/updater";
 
-const ok = await maxmind.update( { "force": true } );
+const res = await updater.update( { "force": true } );
 
-if ( !ok ) {
-    console.log( `Maxmind update error.` );
+if ( !res.ok ) {
+    console.log( `Datasets update error.` );
 
     process.exit( 3 );
 }
