@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-// NOTE download latest database from here: https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1
-
 import sql from "#core/sql";
 import fs from "#core/fs";
 import url from "url";
@@ -11,9 +9,20 @@ import env from "#core/env";
 import GitHub from "#core/api/github";
 import tar from "tar";
 import utils from "#lib/utils";
+import CLI from "#core/cli";
 
 import CONST from "#lib/const";
-const GEOTARGETS = "geotargets-2021-07-01.csv";
+
+await CLI.parse( {
+    "title": "Datasets updater",
+    "arguments": {
+        "geotargets": {
+            "description": `GeoTargets .csv file name. Download latest database from here: "https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1" and copy it to the "data" directory.`,
+            "required": true,
+            "schema": { "type": "string" },
+        },
+    },
+} );
 
 const location = url.fileURLToPath( new URL( "../data", import.meta.url ) );
 
@@ -36,7 +45,7 @@ await _import( "timezones", "timezone" );
 const geotargets = [];
 
 await new Promise( resolve => {
-    csv.parseFile( location + "/" + GEOTARGETS, { "headers": headers => ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } )
+    csv.parseFile( process.cli.arguments.geotargets, { "headers": headers => ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } )
         .on( "error", error => console.error( error ) )
         .on( "data", row => {
             row.type = row.type.toLowerCase();
