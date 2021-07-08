@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.5.0 (2021-07-08)
+
+Added:
+
+-   timezones cache
+
 ### 2.4.0 (2021-07-08)
 
 Changed:

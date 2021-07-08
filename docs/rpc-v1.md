@@ -525,7 +525,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezones/get", id, [options] );
+const res = await api.call( "/v1/timezones/get", id );
 ```
 
 #### **Shell**
@@ -556,21 +556,6 @@ curl \
 
     </details>
 
--   **`options?`** <Object\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: object
-    properties:
-        offsets: true
-    additionalProperties: false
-    ```
-
-    </details>
-
 ### Get all timezones
 
 <!-- tabs:start -->
@@ -579,7 +564,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezones/get-all", [options] );
+const res = await api.call( "/v1/timezones/get-all" );
 ```
 
 #### **Shell**
@@ -596,23 +581,6 @@ curl \
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`options?`** <Object\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: object
-    properties:
-        offsets: true
-    additionalProperties: false
-    ```
-
-    </details>
-
 ### Search for the timezone by the geo coordinates
 
 <!-- tabs:start -->
@@ -621,7 +589,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezones/get-by-coordinates", coordinates, [options] );
+const res = await api.call( "/v1/timezones/get-by-coordinates", coordinates );
 ```
 
 #### **Shell**
@@ -656,21 +624,6 @@ curl \
     required:
         - latitude
         - longitude
-    additionalProperties: false
-    ```
-
-    </details>
-
--   **`options?`** <Object\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: object
-    properties:
-        offsets: true
     additionalProperties: false
     ```
 
