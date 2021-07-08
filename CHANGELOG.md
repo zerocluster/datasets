@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.6.0 (2021-07-08)
+
+Added:
+
+-   export script added
+-   import script added
+
 ### 2.5.2 (2021-07-08)
 
 Fixed:
