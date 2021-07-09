@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.1 (2021-07-09)
+
+-   updated autoupdate fixed
+-   timezones expires fixed
+-   use xdg location under windows
+
 ### 2.6.0 (2021-07-08)
 
 Added:
