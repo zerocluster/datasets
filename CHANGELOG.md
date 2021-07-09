@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.2 (2021-07-09)
+
+Fixed:
+
+-   updated timeout fixed
+
 ### 2.6.1 (2021-07-09)
 
 -   updated autoupdate fixed
