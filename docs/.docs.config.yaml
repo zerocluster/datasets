@@ -3,4 +3,6 @@ logo: false
 aliases:
   /api: https://raw.githubusercontent.com/softvisio/core/main/docs/api.md
 
-rpc: [lib/rpc]
+rpc:
+  location: lib/rpc
+  url: ws://datasets:8080/

@@ -1,5 +1,28 @@
 # RPC v1
 
+### API connect URLs
+
+-   API HTTP URL: `http://datasets:8080/`
+-   API WebSockets URL: `ws://datasets:8080/`
+
+<!-- tabs:start -->
+
+#### **WebSockets**
+
+<!-- prettier-ignore -->
+```javascript
+const api = API.new( "ws://datasets:8080/" )
+```
+
+#### **HTTP**
+
+<!-- prettier-ignore -->
+```javascript
+const api = API.new( "http://datasets:8080/" )
+```
+
+<!-- tabs:end -->
+
 ## Continent lookup
 
 ### Get continent by iso2 or name
@@ -22,24 +45,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/continents/get"
+    "http://datasets:8080/v1/continents/get"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`id`** <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: string
-    ```
-
-    </details>
+-   `id` <string\>
 
 ### Get all continents
 
@@ -61,7 +72,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/continents/get-all"
+    "http://datasets:8080/v1/continents/get-all"
 ```
 
 <!-- tabs:end -->
@@ -88,24 +99,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/countries/get"
+    "http://datasets:8080/v1/countries/get"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`id`** <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: string
-    ```
-
-    </details>
+-   `id` <string\>
 
 ### Get all countries
 
@@ -127,7 +126,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/countries/get-all"
+    "http://datasets:8080/v1/countries/get-all"
 ```
 
 <!-- tabs:end -->
@@ -152,33 +151,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/countries/get-by-coordinates"
+    "http://datasets:8080/v1/countries/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`coordinates`** <Object\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: object
-    properties:
-        latitude:
-            type: number
-        longitude:
-            type: number
-    required:
-        - latitude
-        - longitude
-    additionalProperties: false
-    ```
-
-    </details>
+-   `coordinates` <Object\>
 
 ## Currency lookup
 
@@ -202,24 +180,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/currencies/get"
+    "http://datasets:8080/v1/currencies/get"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`id`** <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: string
-    ```
-
-    </details>
+-   `id` <string\>
 
 ### Get all currencies
 
@@ -241,7 +207,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/currencies/get-all"
+    "http://datasets:8080/v1/currencies/get-all"
 ```
 
 <!-- tabs:end -->
@@ -268,24 +234,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/geoip/asn"
+    "http://datasets:8080/v1/geoip/asn"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`addr`** <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: string
-    ```
-
-    </details>
+-   `addr` <string\>
 
 ### Search in Country database
 
@@ -307,24 +261,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/geoip/country"
+    "http://datasets:8080/v1/geoip/country"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`addr`** <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: string
-    ```
-
-    </details>
+-   `addr` <string\>
 
 ### Search in City database
 
@@ -346,24 +288,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/geoip/city"
+    "http://datasets:8080/v1/geoip/city"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`addr`** <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: string
-    ```
-
-    </details>
+-   `addr` <string\>
 
 ## Google GEOTarget lookup
 
@@ -387,26 +317,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/geotargets/get"
+    "http://datasets:8080/v1/geotargets/get"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`id`** <number\> | <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type:
-        - number
-        - string
-    ```
-
-    </details>
+-   `id` <number\> | <string\>
 
 ### Get GEOTarget geojson by id or canonical name
 
@@ -428,26 +344,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/geotargets/get-geojson"
+    "http://datasets:8080/v1/geotargets/get-geojson"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`id`** <number\> | <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type:
-        - number
-        - string
-    ```
-
-    </details>
+-   `id` <number\> | <string\>
 
 ## Language lookup
 
@@ -471,24 +373,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/languages/get"
+    "http://datasets:8080/v1/languages/get"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`id`** <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: string
-    ```
-
-    </details>
+-   `id` <string\>
 
 ### Get all languages
 
@@ -510,7 +400,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/languages/get-all"
+    "http://datasets:8080/v1/languages/get-all"
 ```
 
 <!-- tabs:end -->
@@ -537,24 +427,12 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/timezones/get"
+    "http://datasets:8080/v1/timezones/get"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`id`** <string\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: string
-    ```
-
-    </details>
+-   `id` <string\>
 
 ### Get all timezones
 
@@ -576,7 +454,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/timezones/get-all"
+    "http://datasets:8080/v1/timezones/get-all"
 ```
 
 <!-- tabs:end -->
@@ -601,30 +479,11 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[...PARAMETERS]' \
-    "https://api.domain.com/v1/timezones/get-by-coordinates"
+    "http://datasets:8080/v1/timezones/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
 
-**Parameters:**
-
--   **`coordinates`** <Object\>
-
-    <details>
-        <summary>JSON schema</summary>
-
-    <!-- prettier-ignore -->
-    ```yaml
-    type: object
-    properties:
-        latitude:
-            type: number
-        longitude:
-            type: number
-    required:
-        - latitude
-        - longitude
-    additionalProperties: false
-    ```
-
-    </details>
+-   `coordinates` <Object\> Coordinates object:
+    -   `latitude` <number\> Latitude.
+    -   `longitude` <number\> Longitude.

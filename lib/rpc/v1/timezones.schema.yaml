@@ -17,6 +17,10 @@ methods:
     title: Search for the timezone by the geo coordinates
     params:
       - name: coordinates
+        description: |-
+          Coordinates object:
+          -   `latitude` <number\> Latitude.
+          -   `longitude` <number\> Longitude.
         required: true
         schema:
           type: object
