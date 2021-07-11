@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.6.3 (2021-07-11)
+
+Fixed:
+
+-   timezones refactored
+-   docs updated
+
 ### 2.6.2 (2021-07-09)
 
 Fixed:
