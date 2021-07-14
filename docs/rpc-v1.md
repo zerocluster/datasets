@@ -44,7 +44,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[id]' \
     "http://datasets:8080/v1/continents/get"
 ```
 
@@ -68,10 +68,7 @@ const res = await api.call( "/v1/continents/get-all" );
 <!-- prettier-ignore -->
 ```shell
 curl \
-    -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
     "http://datasets:8080/v1/continents/get-all"
 ```
 
@@ -98,7 +95,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[id]' \
     "http://datasets:8080/v1/countries/get"
 ```
 
@@ -122,10 +119,7 @@ const res = await api.call( "/v1/countries/get-all" );
 <!-- prettier-ignore -->
 ```shell
 curl \
-    -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
     "http://datasets:8080/v1/countries/get-all"
 ```
 
@@ -150,7 +144,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[coordinates]' \
     "http://datasets:8080/v1/countries/get-by-coordinates"
 ```
 
@@ -179,7 +173,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[id]' \
     "http://datasets:8080/v1/currencies/get"
 ```
 
@@ -203,10 +197,7 @@ const res = await api.call( "/v1/currencies/get-all" );
 <!-- prettier-ignore -->
 ```shell
 curl \
-    -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
     "http://datasets:8080/v1/currencies/get-all"
 ```
 
@@ -233,7 +224,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[addr]' \
     "http://datasets:8080/v1/geoip/asn"
 ```
 
@@ -260,7 +251,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[addr]' \
     "http://datasets:8080/v1/geoip/country"
 ```
 
@@ -287,7 +278,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[addr]' \
     "http://datasets:8080/v1/geoip/city"
 ```
 
@@ -316,7 +307,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[id]' \
     "http://datasets:8080/v1/geotargets/get"
 ```
 
@@ -343,7 +334,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[id]' \
     "http://datasets:8080/v1/geotargets/get-geojson"
 ```
 
@@ -372,7 +363,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[id]' \
     "http://datasets:8080/v1/languages/get"
 ```
 
@@ -396,10 +387,7 @@ const res = await api.call( "/v1/languages/get-all" );
 <!-- prettier-ignore -->
 ```shell
 curl \
-    -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
     "http://datasets:8080/v1/languages/get-all"
 ```
 
@@ -426,7 +414,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[id]' \
     "http://datasets:8080/v1/timezones/get"
 ```
 
@@ -450,10 +438,7 @@ const res = await api.call( "/v1/timezones/get-all" );
 <!-- prettier-ignore -->
 ```shell
 curl \
-    -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
     "http://datasets:8080/v1/timezones/get-all"
 ```
 
@@ -478,7 +463,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[...PARAMETERS]' \
+    -d '[coordinates]' \
     "http://datasets:8080/v1/timezones/get-by-coordinates"
 ```
 
