@@ -25,7 +25,7 @@ const api = API.new( "http://datasets:8080/" )
 
 ## Continent lookup
 
-### Get continent by iso2 or name
+### Get continent by ISO2 or name
 
 <!-- tabs:start -->
 
@@ -50,7 +50,7 @@ curl \
 
 <!-- tabs:end -->
 
--   `id` <string\>
+-   `id` <string\> Continent ISO2 alpha-2 code or name.
 
 ### Get all continents
 
@@ -76,7 +76,7 @@ curl \
 
 ## Country lookup
 
-### Get country by iso2, iso3 or name
+### Get country by ISO2, ISO3 or name
 
 <!-- tabs:start -->
 
@@ -101,7 +101,7 @@ curl \
 
 <!-- tabs:end -->
 
--   `id` <string\>
+-   `id` <string\> Continent ISO alpha-2 code, ISO alpha-3 or name.
 
 ### Get all countries
 
@@ -150,7 +150,9 @@ curl \
 
 <!-- tabs:end -->
 
--   `coordinates` <Object\>
+-   `coordinates` <Object\> Coordinates object:
+    -   `latitude` <number> Latitude.
+    -   `longitude` <number> Longitude.
 
 ## Currency lookup
 

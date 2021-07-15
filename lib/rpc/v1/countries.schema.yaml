@@ -3,9 +3,10 @@ permissions: ["*"]
 
 methods:
   get:
-    title: Get country by iso2, iso3 or name
+    title: Get country by ISO2, ISO3 or name
     params:
       - name: id
+        description: Continent ISO alpha-2 code, ISO alpha-3 or name.
         required: true
         schema:
           type: string
@@ -17,6 +18,10 @@ methods:
     title: Get country by coordinates
     params:
       - name: coordinates
+        description: |-
+          Coordinates object:
+          -   `latitude` <number> Latitude.
+          -   `longitude` <number> Longitude.
         required: true
         schema:
           type: object
