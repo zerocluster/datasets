@@ -6,6 +6,7 @@ methods:
     title: Get timezone by abbreviation or name
     params:
       - name: id
+        description: Timezone id, abbreviatoin or name.
         required: true
         schema:
           type: string

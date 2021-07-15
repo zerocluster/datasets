@@ -3,9 +3,10 @@ permissions: ["*"]
 
 methods:
   get:
-    title: Get language by iso2, iso3 or name
+    title: Get language by ISO code or name
     params:
       - name: id
+        description: Language ISO alpha-2, ISO alpha-3 code or name.
         required: true
         schema:
           type: string

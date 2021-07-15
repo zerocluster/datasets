@@ -3,7 +3,7 @@ permissions: ["*"]
 
 methods:
   get:
-    title: Get country by ISO2, ISO3 or name
+    title: Get country by ISO code or name
     params:
       - name: id
         description: Country ISO alpha-2 code, ISO alpha-3 or name.
