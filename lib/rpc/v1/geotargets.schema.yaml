@@ -6,6 +6,10 @@ methods:
     title: Get GEOTarget by id or canonical name
     params:
       - name: id
+        description: |-
+          Search criteria:
+          -   <number\> Numeric identifier.
+          -   <string\> Canonical name.
         required: true
         schema:
           type: [number, string]
@@ -14,6 +18,10 @@ methods:
     title: Get GEOTarget geojson by id or canonical name
     params:
       - name: id
+        description: |-
+          Search criteria:
+          -   <number\> Numeric identifier.
+          -   <string\> Canonical name.
         required: true
         schema:
           type: [number, string]

@@ -6,6 +6,7 @@ methods:
     title: Search in ASN database
     params:
       - name: addr
+        description: IP address.
         required: true
         schema:
           type: string
@@ -14,6 +15,7 @@ methods:
     title: Search in Country database
     params:
       - name: addr
+        description: IP address.
         required: true
         schema:
           type: string
@@ -22,6 +24,7 @@ methods:
     title: Search in City database
     params:
       - name: addr
+        description: IP address.
         required: true
         schema:
           type: string

@@ -6,7 +6,7 @@ methods:
     title: Get continent by ISO2 or name
     params:
       - name: id
-        description: Continent ISO2 alpha-2 code or name.
+        description: Continent ISO alpha-2 code or name.
         required: true
         schema:
           type: string

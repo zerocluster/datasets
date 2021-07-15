@@ -50,7 +50,7 @@ curl \
 
 <!-- tabs:end -->
 
--   `id` <string\> Continent ISO2 alpha-2 code or name.
+-   `id` <string\> Continent ISO alpha-2 code or name.
 
 ### Get all continents
 
@@ -101,7 +101,7 @@ curl \
 
 <!-- tabs:end -->
 
--   `id` <string\> Continent ISO alpha-2 code, ISO alpha-3 or name.
+-   `id` <string\> Country ISO alpha-2 code, ISO alpha-3 or name.
 
 ### Get all countries
 
@@ -156,7 +156,7 @@ curl \
 
 ## Currency lookup
 
-### Get currency by iso3, symbol or name
+### Get currency by ISO3, symbol or name
 
 <!-- tabs:start -->
 
@@ -181,7 +181,7 @@ curl \
 
 <!-- tabs:end -->
 
--   `id` <string\>
+-   `id` <string\> Currency ISO alpha-3 code, symbol or name.
 
 ### Get all currencies
 
@@ -232,7 +232,7 @@ curl \
 
 <!-- tabs:end -->
 
--   `addr` <string\>
+-   `addr` <string\> IP address.
 
 ### Search in Country database
 
@@ -259,7 +259,7 @@ curl \
 
 <!-- tabs:end -->
 
--   `addr` <string\>
+-   `addr` <string\> IP address.
 
 ### Search in City database
 
@@ -286,7 +286,7 @@ curl \
 
 <!-- tabs:end -->
 
--   `addr` <string\>
+-   `addr` <string\> IP address.
 
 ## Google GEOTarget lookup
 
@@ -315,7 +315,9 @@ curl \
 
 <!-- tabs:end -->
 
--   `id` <number\> | <string\>
+-   `id` <number\> | <string\> Search criteria:
+    -   <number\> Numeric identifier.
+    -   <string\> Canonical name.
 
 ### Get GEOTarget geojson by id or canonical name
 
@@ -342,7 +344,9 @@ curl \
 
 <!-- tabs:end -->
 
--   `id` <number\> | <string\>
+-   `id` <number\> | <string\> Search criteria:
+    -   <number\> Numeric identifier.
+    -   <string\> Canonical name.
 
 ## Language lookup
 

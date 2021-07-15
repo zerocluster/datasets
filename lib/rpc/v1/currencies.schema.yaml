@@ -3,9 +3,10 @@ permissions: ["*"]
 
 methods:
   get:
-    title: Get currency by iso3, symbol or name
+    title: Get currency by ISO3, symbol or name
     params:
       - name: id
+        description: Currency ISO alpha-3 code, symbol or name.
         required: true
         schema:
           type: string
