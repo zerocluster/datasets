@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.5 (2021-07-15)
+
+Changed:
+
+-   luxon v2
+
 ### 2.6.4 (2021-07-15)
 
 Changed:
