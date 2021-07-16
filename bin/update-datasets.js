@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import "#core";
-
 import updater from "#lib/updater";
 
 const res = await updater.update( { "sync": true } );

@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import "#core";
-
 import updater from "#lib/updater";
 
 if ( process.env.DATASETS_DOWNLOAD !== "false" ) {
