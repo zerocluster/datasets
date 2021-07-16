@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.6 (2021-07-16)
+
+Fixed:
+
+-   utils moved to @softvisio/utils
+
 ### 2.6.5 (2021-07-15)
 
 Changed:
