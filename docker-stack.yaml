@@ -17,7 +17,8 @@ services:
         max_replicas_per_node: 1
 
     environment:
-      MAXMIND_LICENSE_KEY:
+      APP_MAXMIND_LICENSE_KEY:
+      APP_GITHUB_TOKEN:
 
     networks: [private]
 
