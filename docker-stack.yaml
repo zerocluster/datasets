@@ -25,6 +25,7 @@ services:
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
       - { type: volume, source: datasets, target: /var/lib/docker/volumes/datasets/_data }
+      - { type: bind, source: /root/.config/softvisio/config.js, target: /root/.config/softvisio/config.js }
 
     build:
       context: .
