@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.9 (2021-07-21)
+
+Fixed:
+
+-   result status updated
+
 ### 2.6.8 (2021-07-21)
 
 Added:
