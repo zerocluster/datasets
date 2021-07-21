@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.7 (2021-07-21)
+
+Added:
+
+-   read github token from env
+
 ### 2.6.6 (2021-07-16)
 
 Fixed:
