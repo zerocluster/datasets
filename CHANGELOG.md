@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.8 (2021-07-21)
+
+Added:
+
+-   docker mount softvisio config
+
 ### 2.6.7 (2021-07-21)
 
 Added:
