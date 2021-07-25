@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.6.10 (2021-07-25)
+
+Fixed:
+
+-   cache max -> maxSize
+-   cache-lru changed
+
 ### 2.6.9 (2021-07-21)
 
 Fixed:
