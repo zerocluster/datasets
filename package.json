@@ -30,8 +30,8 @@
     },
     "dependencies": {
         "@softvisio/sqlite": "^1.3.0",
+        "@softvisio/utils": "^1.4.0",
         "geo-tz": "^6.0.1",
-        "lru-cache": "^6.0.0",
         "luxon": "^2.0.0",
         "mmdb-lib": "^1.2.0",
         "tar": "^6.1.0",
