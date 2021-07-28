@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 import sql from "#core/sql";
-import fs from "#core/fs";
+import fs from "fs";
 import url from "url";
 import tar from "tar";
 import fetch from "#core/fetch";
+import config from "#core/config";
 
 import CONST from "#lib/const";
 
@@ -50,5 +51,5 @@ await _export( "timezones", "timezone" );
 dbh.db.close();
 
 async function _export ( name, table ) {
-    fs.config.write( location + `/${name}.json`, ( await dbh.select( `SELECT * FROM "${table}"` ) ).data, { "readable": true } );
+    config.write( location + `/${name}.json`, ( await dbh.select( `SELECT * FROM "${table}"` ) ).data, { "readable": true } );
 }

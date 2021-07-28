@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import sql from "#core/sql";
-import fs from "#core/fs";
+import fs from "fs";
 import url from "url";
 import csv from "fast-csv";
 import * as uule from "#core/api/google/uule";
@@ -10,6 +10,7 @@ import GitHub from "#core/api/github";
 import tar from "tar";
 import utils from "#lib/utils";
 import CLI from "#core/cli";
+import config from "#core/config";
 
 import CONST from "#lib/const";
 
@@ -67,14 +68,14 @@ await dbh.do( sql`INSERT INTO "geotarget"`.VALUES( geotargets ) );
 dbh.db.close();
 
 // upload
-const config = await env.getUserConfig();
-if ( !config.github.token ) {
+const userConfig = await env.getUserConfig();
+if ( !userConfig.github.token ) {
     console.log( `No GitHub token found` );
 
     process.exit();
 }
 
-const github = new GitHub( config.github.token );
+const github = new GitHub( userConfig.github.token );
 const remoteIndex = await utils.getRemoteIndex();
 
 tar.c( {
@@ -92,7 +93,7 @@ console.log( res + "" );
 if ( !res.ok ) process.exit( 2 );
 
 remoteIndex.datasets.lastModified = new Date();
-fs.config.write( location + "/index.json", remoteIndex, { "readable": true } );
+config.write( location + "/index.json", remoteIndex, { "readable": true } );
 
 process.stdout.write( `Uploading: index.json ... ` );
 res = await utils.uploadAsset( github, location + "/index.json" );
@@ -100,7 +101,7 @@ console.log( res + "" );
 if ( !res.ok ) process.exit( 2 );
 
 async function _import ( name, table ) {
-    const data = fs.config.read( location + "/" + name + ".json" );
+    const data = config.read( location + "/" + name + ".json" );
 
     await dbh.do( dbh.queryToString( sql`INSERT INTO "__name__"`.VALUES( data ) ).replace( "__name__", table ) );
 }
