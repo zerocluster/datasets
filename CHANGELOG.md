@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.11 (2021-07-28)
+
+Fixed:
+
+-   #core/fs removed
+
 ### 2.6.10 (2021-07-25)
 
 Fixed:
