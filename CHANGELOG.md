@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.13 (2021-07-31)
+
+Fixed:
+
+-   @softvisio/api added
+
 ### 2.6.12 (2021-07-31)
 
 Fixed:
