@@ -30,6 +30,7 @@
         "install": "node bin/install.js"
     },
     "dependencies": {
+        "@softvisio/api": "^1.0.1",
         "@softvisio/app": "^1.0.1",
         "@softvisio/sqlite": "^1.3.0",
         "geo-tz": "^6.0.1",
