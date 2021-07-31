@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.6.12 (2021-07-31)
+
+Fixed:
+
+-   imports fixed
+
 ### 2.6.11 (2021-07-28)
 
 Fixed:
