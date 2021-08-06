@@ -33,9 +33,11 @@
         "@softvisio/api": "^1.0.1",
         "@softvisio/core": "^4.20.0",
         "@softvisio/sqlite": "^1.3.0",
+        "@turf/turf": "^6.5.0",
         "geo-tz": "^6.0.1",
         "luxon": "^2.0.0",
         "mmdb-lib": "^1.2.0",
+        "rbush": "^1.4.3",
         "tar": "^6.1.0",
         "which-country": "^1.0.0"
     },
