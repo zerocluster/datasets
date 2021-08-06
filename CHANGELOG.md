@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.7.0 (2021-08-06)
+
+Added:
+
+-   country by coordinates improved
+
 ### 2.6.14 (2021-08-03)
 
 Fixed:
