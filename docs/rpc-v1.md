@@ -154,6 +154,33 @@ curl \
     -   `latitude` <number> Latitude.
     -   `longitude` <number> Longitude.
 
+### Get random coordinates inside country
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/countries/get-country-random-coordinates", id );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -X POST \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    -H "Content-Type: application/json" \
+    -d '[id]' \
+    "http://datasets:8080/v1/countries/get-country-random-coordinates"
+```
+
+<!-- tabs:end -->
+
+-   `id` <string\> Country ISO alpha-2 code, ISO alpha-3 or name.
+
 ## Currency lookup
 
 ### Get currency by ISO code, symbol or name
