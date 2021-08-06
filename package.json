@@ -38,8 +38,7 @@
         "luxon": "^2.0.0",
         "mmdb-lib": "^1.2.0",
         "rbush": "^1.4.3",
-        "tar": "^6.1.0",
-        "which-country": "^1.0.0"
+        "tar": "^6.1.0"
     },
     "devDependencies": {
         "fast-csv": "^4.3.6"
