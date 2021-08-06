@@ -30,3 +30,12 @@ methods:
             longitude: { type: number }
           required: [latitude, longitude]
           additionalProperties: false
+
+  get-country-random-coordinates:
+    title: Get random coordinates inside country
+    params:
+      - name: id
+        description: Country ISO alpha-2 code, ISO alpha-3 or name.
+        required: true
+        schema:
+          type: string
