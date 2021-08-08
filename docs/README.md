@@ -16,5 +16,21 @@ npm i @softvisio/datasets
 
 ## Datasets
 
--   Countries Geo JSON: [https://datahub.io/core/geo-countries/r/0.geojson](https://datahub.io/core/geo-countries/r/0.geojson).
 -   Google Geo Targets: [https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1](https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1).
+
+### countries.geojson
+
+```shell
+docker run --rm -it -v $PWD:/var/local/host softvisio/core
+
+# inside socker
+dnf install -y unzip wget gdal
+
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+
+unzip ne_10m_admin_0_countries.zip
+
+ogr2ogr -select iso_a2 -f geojson ne_10m_admin_0_countries.geojson ne_10m_admin_0_countries.shp
+
+cp ne_10m_admin_0_countries.geojson /var/local/host
+```
