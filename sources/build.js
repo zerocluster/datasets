@@ -8,6 +8,7 @@ import bbox from "@turf/bbox";
 import csv from "fast-csv";
 import * as uule from "#core/api/google/uule";
 import CONST from "#lib/const";
+import fetch from "#core/fetch";
 
 const sources = url.fileURLToPath( new URL( "./", import.meta.url ) );
 const data = url.fileURLToPath( new URL( "../data", import.meta.url ) );
@@ -106,7 +107,6 @@ CREATE INDEX idx_timezone_abbr ON "timezone" ("abbr");
         return new Date();
     },
 
-    // XXX find source file, or download from google
     async ["google-geotargets"] ( dataset, path ) {
         const dbh = await sql.new( url.pathToFileURL( path ) );
 
@@ -127,10 +127,23 @@ CREATE INDEX idx_geotarget_type ON "geotarget" ("type");
 CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
     ` );
 
+        let res = await fetch( "https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1" );
+        if ( !res.ok ) throw res;
+
+        const text = await res.text();
+
+        const match = text.match( /href="\/adwords\/api\/docs\/appendix\/geo\/geotargets-(\d{4}-\d{2}-\d{2})\.csv"/ );
+
+        if ( !match ) throw Error( `Geotargets parsing error` );
+
+        res = await fetch( `https://developers.google.com/adwords/api/docs/appendix/geo/geotargets-${match[1]}.csv` );
+        if ( !res.ok ) throw res;
+
         const values = [];
 
         await new Promise( resolve => {
-            csv.parseFile( data + "/geotargets-2021-07-27.csv", { "headers": headers => ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } )
+            const stream = csv
+                .parse( { "headers": headers => ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } )
                 .on( "error", error => console.error( error ) )
                 .on( "data", row => {
                     row.type = row.type.toLowerCase();
@@ -143,13 +156,15 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
                 .on( "end", rowCount => {
                     resolve();
                 } );
+
+            res.body.pipe( stream );
         } );
 
         await dbh.do( sql`INSERT INTO "geotarget"`.VALUES( values ) );
 
         dbh.db.close();
 
-        return new Date();
+        return new Date( match[1] );
     },
 
     async ["countries-geojson"] ( dataset, path ) {
@@ -293,3 +308,5 @@ for ( const id in DATASETS ) {
 
     console.log( index[id] );
 }
+
+console.log( index );
