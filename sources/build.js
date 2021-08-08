@@ -9,7 +9,20 @@ import csv from "fast-csv";
 import * as uule from "#core/api/google/uule";
 import CONST from "#lib/const";
 import fetch from "#core/fetch";
+import env from "#core/env";
+import GitHub from "@softvisio/api/github";
+import tar from "tar";
+import utils from "#lib/utils";
 
+const userConfig = await env.getUserConfig();
+if ( !userConfig.github.token ) {
+    console.log( `No GitHub token found` );
+
+    process.exit();
+}
+
+const github = new GitHub( userConfig.github.token );
+const remoteIndex = await utils.getRemoteIndex();
 const sources = url.fileURLToPath( new URL( "./", import.meta.url ) );
 const data = url.fileURLToPath( new URL( "../data", import.meta.url ) );
 
@@ -295,6 +308,7 @@ CREATE INDEX "triangles_country_max" ON "triangles" ("country", "max");
 
 const index = {};
 
+// build
 for ( const id in DATASETS ) {
     process.stdout.write( `Building "${id}" ... ` );
 
@@ -309,4 +323,39 @@ for ( const id in DATASETS ) {
     console.log( index[id] );
 }
 
-console.log( index );
+var modified;
+
+// upload
+for ( const id in index ) {
+    const dataset = CONST.index[id];
+
+    if ( remoteIndex[id]?.lastModified === index[id].toISOString() ) continue;
+
+    remoteIndex[id] ||= {};
+    remoteIndex[id].lastModified = index[id].toISOString();
+    modified = true;
+
+    process.stdout.write( `Uploading: "${id}" ... ` );
+
+    // upload
+    tar.c( {
+        "cwd": data,
+        "gzip": true,
+        "sync": true,
+        "portable": true,
+        "file": `${data}/${id}.tar.gz`,
+    },
+    [dataset.name] );
+
+    const res = await utils.uploadAsset( github, `${data}/${id}.tar.gz` );
+    console.log( res + "" );
+    if ( !res.ok ) process.exit( 2 );
+}
+
+if ( modified ) {
+    config.write( data + "/index.json", remoteIndex, { "readable": true } );
+
+    process.stdout.write( `Uploading: "index.json" ... ` );
+    const res = await utils.uploadAsset( github, data + "/index.json" );
+    console.log( res + "" );
+}
