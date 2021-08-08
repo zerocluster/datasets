@@ -1,0 +1,980 @@
+[
+    {
+        "id": "AWG",
+        "iso3": "AWG",
+        "name": "Aruban florin",
+        "symbol": "ƒ"
+    },
+    {
+        "id": "AFN",
+        "iso3": "AFN",
+        "name": "Afghan afghani",
+        "symbol": "؋"
+    },
+    {
+        "id": "AOA",
+        "iso3": "AOA",
+        "name": "Angolan kwanza",
+        "symbol": "Kz"
+    },
+    {
+        "id": "XCD",
+        "iso3": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "EUR",
+        "iso3": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+    },
+    {
+        "id": "ALL",
+        "iso3": "ALL",
+        "name": "Albanian lek",
+        "symbol": "L"
+    },
+    {
+        "id": "AED",
+        "iso3": "AED",
+        "name": "United Arab Emirates dirham",
+        "symbol": "د.إ"
+    },
+    {
+        "id": "ARS",
+        "iso3": "ARS",
+        "name": "Argentine peso",
+        "symbol": "$"
+    },
+    {
+        "id": "AMD",
+        "iso3": "AMD",
+        "name": "Armenian dram",
+        "symbol": "֏"
+    },
+    {
+        "id": "USD",
+        "iso3": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "AUD",
+        "iso3": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "AZN",
+        "iso3": "AZN",
+        "name": "Azerbaijani manat",
+        "symbol": "₼"
+    },
+    {
+        "id": "BIF",
+        "iso3": "BIF",
+        "name": "Burundian franc",
+        "symbol": "Fr"
+    },
+    {
+        "id": "XOF",
+        "iso3": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+    },
+    {
+        "id": "BDT",
+        "iso3": "BDT",
+        "name": "Bangladeshi taka",
+        "symbol": "৳"
+    },
+    {
+        "id": "BGN",
+        "iso3": "BGN",
+        "name": "Bulgarian lev",
+        "symbol": "лв"
+    },
+    {
+        "id": "BHD",
+        "iso3": "BHD",
+        "name": "Bahraini dinar",
+        "symbol": ".د.ب"
+    },
+    {
+        "id": "BSD",
+        "iso3": "BSD",
+        "name": "Bahamian dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "BAM",
+        "iso3": "BAM",
+        "name": "Bosnia and Herzegovina convertible mark",
+        "symbol": ""
+    },
+    {
+        "id": "GBP",
+        "iso3": "GBP",
+        "name": "British pound",
+        "symbol": "£"
+    },
+    {
+        "id": "SHP",
+        "iso3": "SHP",
+        "name": "Saint Helena pound",
+        "symbol": "£"
+    },
+    {
+        "id": "BYN",
+        "iso3": "BYN",
+        "name": "Belarusian ruble",
+        "symbol": "Br"
+    },
+    {
+        "id": "BZD",
+        "iso3": "BZD",
+        "name": "Belize dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "BMD",
+        "iso3": "BMD",
+        "name": "Bermudian dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "BOB",
+        "iso3": "BOB",
+        "name": "Bolivian boliviano",
+        "symbol": "Bs."
+    },
+    {
+        "id": "BRL",
+        "iso3": "BRL",
+        "name": "Brazilian real",
+        "symbol": "R$"
+    },
+    {
+        "id": "BBD",
+        "iso3": "BBD",
+        "name": "Barbadian dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "BND",
+        "iso3": "BND",
+        "name": "Brunei dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "SGD",
+        "iso3": "SGD",
+        "name": "Singapore dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "BTN",
+        "iso3": "BTN",
+        "name": "Bhutanese ngultrum",
+        "symbol": "Nu."
+    },
+    {
+        "id": "INR",
+        "iso3": "INR",
+        "name": "Indian rupee",
+        "symbol": "₹"
+    },
+    {
+        "id": "BWP",
+        "iso3": "BWP",
+        "name": "Botswana pula",
+        "symbol": "P"
+    },
+    {
+        "id": "XAF",
+        "iso3": "XAF",
+        "name": "Central African CFA franc",
+        "symbol": "Fr"
+    },
+    {
+        "id": "CAD",
+        "iso3": "CAD",
+        "name": "Canadian dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "CHF",
+        "iso3": "CHF",
+        "name": "Swiss franc",
+        "symbol": "Fr"
+    },
+    {
+        "id": "CLP",
+        "iso3": "CLP",
+        "name": "Chilean peso",
+        "symbol": "$"
+    },
+    {
+        "id": "CNY",
+        "iso3": "CNY",
+        "name": "Chinese yuan",
+        "symbol": "¥"
+    },
+    {
+        "id": "CDF",
+        "iso3": "CDF",
+        "name": "Congolese franc",
+        "symbol": "FC"
+    },
+    {
+        "id": "CKD",
+        "iso3": "CKD",
+        "name": "Cook Islands dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "NZD",
+        "iso3": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "COP",
+        "iso3": "COP",
+        "name": "Colombian peso",
+        "symbol": "$"
+    },
+    {
+        "id": "KMF",
+        "iso3": "KMF",
+        "name": "Comorian franc",
+        "symbol": "Fr"
+    },
+    {
+        "id": "CVE",
+        "iso3": "CVE",
+        "name": "Cape Verdean escudo",
+        "symbol": "Esc"
+    },
+    {
+        "id": "CRC",
+        "iso3": "CRC",
+        "name": "Costa Rican colón",
+        "symbol": "₡"
+    },
+    {
+        "id": "CUC",
+        "iso3": "CUC",
+        "name": "Cuban convertible peso",
+        "symbol": "$"
+    },
+    {
+        "id": "CUP",
+        "iso3": "CUP",
+        "name": "Cuban peso",
+        "symbol": "$"
+    },
+    {
+        "id": "ANG",
+        "iso3": "ANG",
+        "name": "Netherlands Antillean guilder",
+        "symbol": "ƒ"
+    },
+    {
+        "id": "KYD",
+        "iso3": "KYD",
+        "name": "Cayman Islands dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "CZK",
+        "iso3": "CZK",
+        "name": "Czech koruna",
+        "symbol": "Kč"
+    },
+    {
+        "id": "DJF",
+        "iso3": "DJF",
+        "name": "Djiboutian franc",
+        "symbol": "Fr"
+    },
+    {
+        "id": "DKK",
+        "iso3": "DKK",
+        "name": "Danish krone",
+        "symbol": "kr."
+    },
+    {
+        "id": "DOP",
+        "iso3": "DOP",
+        "name": "Dominican peso",
+        "symbol": "$"
+    },
+    {
+        "id": "DZD",
+        "iso3": "DZD",
+        "name": "Algerian dinar",
+        "symbol": "دج"
+    },
+    {
+        "id": "EGP",
+        "iso3": "EGP",
+        "name": "Egyptian pound",
+        "symbol": "E£"
+    },
+    {
+        "id": "ERN",
+        "iso3": "ERN",
+        "name": "Eritrean nakfa",
+        "symbol": "Nfk"
+    },
+    {
+        "id": "MAD",
+        "iso3": "MAD",
+        "name": "Moroccan dirham",
+        "symbol": "د.م."
+    },
+    {
+        "id": "MRU",
+        "iso3": "MRU",
+        "name": "Mauritanian ouguiya",
+        "symbol": "UM"
+    },
+    {
+        "id": "ETB",
+        "iso3": "ETB",
+        "name": "Ethiopian birr",
+        "symbol": "Br"
+    },
+    {
+        "id": "FJD",
+        "iso3": "FJD",
+        "name": "Fijian dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "FKP",
+        "iso3": "FKP",
+        "name": "Falkland Islands pound",
+        "symbol": "£"
+    },
+    {
+        "id": "FOK",
+        "iso3": "FOK",
+        "name": "Faroese króna",
+        "symbol": "kr"
+    },
+    {
+        "id": "GEL",
+        "iso3": "GEL",
+        "name": "lari",
+        "symbol": "₾"
+    },
+    {
+        "id": "GGP",
+        "iso3": "GGP",
+        "name": "Guernsey pound",
+        "symbol": "£"
+    },
+    {
+        "id": "GHS",
+        "iso3": "GHS",
+        "name": "Ghanaian cedi",
+        "symbol": "₵"
+    },
+    {
+        "id": "GIP",
+        "iso3": "GIP",
+        "name": "Gibraltar pound",
+        "symbol": "£"
+    },
+    {
+        "id": "GNF",
+        "iso3": "GNF",
+        "name": "Guinean franc",
+        "symbol": "Fr"
+    },
+    {
+        "id": "GMD",
+        "iso3": "GMD",
+        "name": "dalasi",
+        "symbol": "D"
+    },
+    {
+        "id": "GTQ",
+        "iso3": "GTQ",
+        "name": "Guatemalan quetzal",
+        "symbol": "Q"
+    },
+    {
+        "id": "GYD",
+        "iso3": "GYD",
+        "name": "Guyanese dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "HKD",
+        "iso3": "HKD",
+        "name": "Hong Kong dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "HNL",
+        "iso3": "HNL",
+        "name": "Honduran lempira",
+        "symbol": "L"
+    },
+    {
+        "id": "HRK",
+        "iso3": "HRK",
+        "name": "Croatian kuna",
+        "symbol": "kn"
+    },
+    {
+        "id": "HTG",
+        "iso3": "HTG",
+        "name": "Haitian gourde",
+        "symbol": "G"
+    },
+    {
+        "id": "HUF",
+        "iso3": "HUF",
+        "name": "Hungarian forint",
+        "symbol": "Ft"
+    },
+    {
+        "id": "IDR",
+        "iso3": "IDR",
+        "name": "Indonesian rupiah",
+        "symbol": "Rp"
+    },
+    {
+        "id": "IMP",
+        "iso3": "IMP",
+        "name": "Manx pound",
+        "symbol": "£"
+    },
+    {
+        "id": "IRR",
+        "iso3": "IRR",
+        "name": "Iranian rial",
+        "symbol": "﷼"
+    },
+    {
+        "id": "IQD",
+        "iso3": "IQD",
+        "name": "Iraqi dinar",
+        "symbol": "ع.د"
+    },
+    {
+        "id": "ISK",
+        "iso3": "ISK",
+        "name": "Icelandic króna",
+        "symbol": "kr"
+    },
+    {
+        "id": "ILS",
+        "iso3": "ILS",
+        "name": "Israeli new shekel",
+        "symbol": "₪"
+    },
+    {
+        "id": "JMD",
+        "iso3": "JMD",
+        "name": "Jamaican dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "JEP",
+        "iso3": "JEP",
+        "name": "Jersey pound",
+        "symbol": "£"
+    },
+    {
+        "id": "JOD",
+        "iso3": "JOD",
+        "name": "Jordanian dinar",
+        "symbol": "JD"
+    },
+    {
+        "id": "JPY",
+        "iso3": "JPY",
+        "name": "Japanese yen",
+        "symbol": "¥"
+    },
+    {
+        "id": "KZT",
+        "iso3": "KZT",
+        "name": "Kazakhstani tenge",
+        "symbol": "₸"
+    },
+    {
+        "id": "KES",
+        "iso3": "KES",
+        "name": "Kenyan shilling",
+        "symbol": "Sh"
+    },
+    {
+        "id": "KGS",
+        "iso3": "KGS",
+        "name": "Kyrgyzstani som",
+        "symbol": "с"
+    },
+    {
+        "id": "KHR",
+        "iso3": "KHR",
+        "name": "Cambodian riel",
+        "symbol": "៛"
+    },
+    {
+        "id": "KID",
+        "iso3": "KID",
+        "name": "Kiribati dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "KRW",
+        "iso3": "KRW",
+        "name": "South Korean won",
+        "symbol": "₩"
+    },
+    {
+        "id": "KWD",
+        "iso3": "KWD",
+        "name": "Kuwaiti dinar",
+        "symbol": "د.ك"
+    },
+    {
+        "id": "LAK",
+        "iso3": "LAK",
+        "name": "Lao kip",
+        "symbol": "₭"
+    },
+    {
+        "id": "LBP",
+        "iso3": "LBP",
+        "name": "Lebanese pound",
+        "symbol": "ل.ل"
+    },
+    {
+        "id": "LRD",
+        "iso3": "LRD",
+        "name": "Liberian dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "LYD",
+        "iso3": "LYD",
+        "name": "Libyan dinar",
+        "symbol": "ل.د"
+    },
+    {
+        "id": "LKR",
+        "iso3": "LKR",
+        "name": "Sri Lankan rupee",
+        "symbol": "Rs  රු"
+    },
+    {
+        "id": "LSL",
+        "iso3": "LSL",
+        "name": "Lesotho loti",
+        "symbol": "L"
+    },
+    {
+        "id": "ZAR",
+        "iso3": "ZAR",
+        "name": "South African rand",
+        "symbol": "Rs"
+    },
+    {
+        "id": "MOP",
+        "iso3": "MOP",
+        "name": "Macanese pataca",
+        "symbol": "P"
+    },
+    {
+        "id": "MDL",
+        "iso3": "MDL",
+        "name": "Moldovan leu",
+        "symbol": "L"
+    },
+    {
+        "id": "MGA",
+        "iso3": "MGA",
+        "name": "Malagasy ariary",
+        "symbol": "Ar"
+    },
+    {
+        "id": "MVR",
+        "iso3": "MVR",
+        "name": "Maldivian rufiyaa",
+        "symbol": ".ރ"
+    },
+    {
+        "id": "MXN",
+        "iso3": "MXN",
+        "name": "Mexican peso",
+        "symbol": "$"
+    },
+    {
+        "id": "MKD",
+        "iso3": "MKD",
+        "name": "denar",
+        "symbol": "den"
+    },
+    {
+        "id": "MMK",
+        "iso3": "MMK",
+        "name": "Burmese kyat",
+        "symbol": "Ks"
+    },
+    {
+        "id": "MNT",
+        "iso3": "MNT",
+        "name": "Mongolian tögrög",
+        "symbol": "₮"
+    },
+    {
+        "id": "MZN",
+        "iso3": "MZN",
+        "name": "Mozambican metical",
+        "symbol": "MT"
+    },
+    {
+        "id": "MUR",
+        "iso3": "MUR",
+        "name": "Mauritian rupee",
+        "symbol": "₨"
+    },
+    {
+        "id": "MWK",
+        "iso3": "MWK",
+        "name": "Malawian kwacha",
+        "symbol": "MK"
+    },
+    {
+        "id": "MYR",
+        "iso3": "MYR",
+        "name": "Malaysian ringgit",
+        "symbol": "RM"
+    },
+    {
+        "id": "NAD",
+        "iso3": "NAD",
+        "name": "Namibian dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "XPF",
+        "iso3": "XPF",
+        "name": "CFP franc",
+        "symbol": "₣"
+    },
+    {
+        "id": "NGN",
+        "iso3": "NGN",
+        "name": "Nigerian naira",
+        "symbol": "₦"
+    },
+    {
+        "id": "NIO",
+        "iso3": "NIO",
+        "name": "Nicaraguan córdoba",
+        "symbol": "C$"
+    },
+    {
+        "id": "NOK",
+        "iso3": "NOK",
+        "name": "Norwegian krone",
+        "symbol": "kr"
+    },
+    {
+        "id": "NPR",
+        "iso3": "NPR",
+        "name": "Nepalese rupee",
+        "symbol": "₨"
+    },
+    {
+        "id": "OMR",
+        "iso3": "OMR",
+        "name": "Omani rial",
+        "symbol": "ر.ع."
+    },
+    {
+        "id": "PKR",
+        "iso3": "PKR",
+        "name": "Pakistani rupee",
+        "symbol": "₨"
+    },
+    {
+        "id": "PAB",
+        "iso3": "PAB",
+        "name": "Panamanian balboa",
+        "symbol": "B/."
+    },
+    {
+        "id": "PEN",
+        "iso3": "PEN",
+        "name": "Peruvian sol",
+        "symbol": "S/."
+    },
+    {
+        "id": "PHP",
+        "iso3": "PHP",
+        "name": "Philippine peso",
+        "symbol": "₱"
+    },
+    {
+        "id": "PGK",
+        "iso3": "PGK",
+        "name": "Papua New Guinean kina",
+        "symbol": "K"
+    },
+    {
+        "id": "PLN",
+        "iso3": "PLN",
+        "name": "Polish złoty",
+        "symbol": "zł"
+    },
+    {
+        "id": "KPW",
+        "iso3": "KPW",
+        "name": "North Korean won",
+        "symbol": "₩"
+    },
+    {
+        "id": "PYG",
+        "iso3": "PYG",
+        "name": "Paraguayan guaraní",
+        "symbol": "₲"
+    },
+    {
+        "id": "QAR",
+        "iso3": "QAR",
+        "name": "Qatari riyal",
+        "symbol": "ر.ق"
+    },
+    {
+        "id": "RON",
+        "iso3": "RON",
+        "name": "Romanian leu",
+        "symbol": "lei"
+    },
+    {
+        "id": "RUB",
+        "iso3": "RUB",
+        "name": "Russian ruble",
+        "symbol": "₽"
+    },
+    {
+        "id": "RWF",
+        "iso3": "RWF",
+        "name": "Rwandan franc",
+        "symbol": "Fr"
+    },
+    {
+        "id": "SAR",
+        "iso3": "SAR",
+        "name": "Saudi riyal",
+        "symbol": "ر.س"
+    },
+    {
+        "id": "SDG",
+        "iso3": "SDG",
+        "name": "Sudanese pound",
+        "symbol": ""
+    },
+    {
+        "id": "SBD",
+        "iso3": "SBD",
+        "name": "Solomon Islands dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "SLL",
+        "iso3": "SLL",
+        "name": "Sierra Leonean leone",
+        "symbol": "Le"
+    },
+    {
+        "id": "SOS",
+        "iso3": "SOS",
+        "name": "Somali shilling",
+        "symbol": "Sh"
+    },
+    {
+        "id": "RSD",
+        "iso3": "RSD",
+        "name": "Serbian dinar",
+        "symbol": "дин."
+    },
+    {
+        "id": "SSP",
+        "iso3": "SSP",
+        "name": "South Sudanese pound",
+        "symbol": "£"
+    },
+    {
+        "id": "STN",
+        "iso3": "STN",
+        "name": "São Tomé and Príncipe dobra",
+        "symbol": "Db"
+    },
+    {
+        "id": "SRD",
+        "iso3": "SRD",
+        "name": "Surinamese dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "SEK",
+        "iso3": "SEK",
+        "name": "Swedish krona",
+        "symbol": "kr"
+    },
+    {
+        "id": "SZL",
+        "iso3": "SZL",
+        "name": "Swazi lilangeni",
+        "symbol": "L"
+    },
+    {
+        "id": "SCR",
+        "iso3": "SCR",
+        "name": "Seychellois rupee",
+        "symbol": "₨"
+    },
+    {
+        "id": "SYP",
+        "iso3": "SYP",
+        "name": "Syrian pound",
+        "symbol": "£"
+    },
+    {
+        "id": "THB",
+        "iso3": "THB",
+        "name": "Thai baht",
+        "symbol": "฿"
+    },
+    {
+        "id": "TJS",
+        "iso3": "TJS",
+        "name": "Tajikistani somoni",
+        "symbol": "ЅМ"
+    },
+    {
+        "id": "TMT",
+        "iso3": "TMT",
+        "name": "Turkmenistan manat",
+        "symbol": "m"
+    },
+    {
+        "id": "TOP",
+        "iso3": "TOP",
+        "name": "Tongan paʻanga",
+        "symbol": "T$"
+    },
+    {
+        "id": "TTD",
+        "iso3": "TTD",
+        "name": "Trinidad and Tobago dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "TND",
+        "iso3": "TND",
+        "name": "Tunisian dinar",
+        "symbol": "د.ت"
+    },
+    {
+        "id": "TRY",
+        "iso3": "TRY",
+        "name": "Turkish lira",
+        "symbol": "₺"
+    },
+    {
+        "id": "TVD",
+        "iso3": "TVD",
+        "name": "Tuvaluan dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "TWD",
+        "iso3": "TWD",
+        "name": "New Taiwan dollar",
+        "symbol": "$"
+    },
+    {
+        "id": "TZS",
+        "iso3": "TZS",
+        "name": "Tanzanian shilling",
+        "symbol": "Sh"
+    },
+    {
+        "id": "UGX",
+        "iso3": "UGX",
+        "name": "Ugandan shilling",
+        "symbol": "Sh"
+    },
+    {
+        "id": "UAH",
+        "iso3": "UAH",
+        "name": "Ukrainian hryvnia",
+        "symbol": "₴"
+    },
+    {
+        "id": "UYU",
+        "iso3": "UYU",
+        "name": "Uruguayan peso",
+        "symbol": "$"
+    },
+    {
+        "id": "UZS",
+        "iso3": "UZS",
+        "name": "Uzbekistani soʻm",
+        "symbol": "so'm"
+    },
+    {
+        "id": "VES",
+        "iso3": "VES",
+        "name": "Venezuelan bolívar soberano",
+        "symbol": "Bs.S."
+    },
+    {
+        "id": "VND",
+        "iso3": "VND",
+        "name": "Vietnamese đồng",
+        "symbol": "₫"
+    },
+    {
+        "id": "VUV",
+        "iso3": "VUV",
+        "name": "Vanuatu vatu",
+        "symbol": "Vt"
+    },
+    {
+        "id": "WST",
+        "iso3": "WST",
+        "name": "Samoan tālā",
+        "symbol": "T"
+    },
+    {
+        "id": "YER",
+        "iso3": "YER",
+        "name": "Yemeni rial",
+        "symbol": "﷼"
+    },
+    {
+        "id": "ZMW",
+        "iso3": "ZMW",
+        "name": "Zambian kwacha",
+        "symbol": "ZK"
+    },
+    {
+        "id": "ZWB",
+        "iso3": "ZWB",
+        "name": "Zimbabwean bonds",
+        "symbol": "$"
+    }
+]

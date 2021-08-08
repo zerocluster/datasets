@@ -1,0 +1,37 @@
+[
+    {
+        "id": "AF",
+        "iso2": "AF",
+        "name": "Africa"
+    },
+    {
+        "id": "AN",
+        "iso2": "AN",
+        "name": "Antarctica"
+    },
+    {
+        "id": "AS",
+        "iso2": "AS",
+        "name": "Asia"
+    },
+    {
+        "id": "EU",
+        "iso2": "EU",
+        "name": "Europe"
+    },
+    {
+        "id": "NA",
+        "iso2": "NA",
+        "name": "North america"
+    },
+    {
+        "id": "OC",
+        "iso2": "OC",
+        "name": "Oceania"
+    },
+    {
+        "id": "SA",
+        "iso2": "SA",
+        "name": "South america"
+    }
+]
