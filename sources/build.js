@@ -22,9 +22,16 @@ if ( !userConfig.github.token ) {
 }
 
 const github = new GitHub( userConfig.github.token );
-const remoteIndex = await utils.getRemoteIndex();
 const sources = url.fileURLToPath( new URL( "./", import.meta.url ) );
 const data = url.fileURLToPath( new URL( "../data", import.meta.url ) );
+
+try {
+    var remoteIndex = await utils.getRemoteIndex();
+}
+catch ( e ) {
+    if ( e.status === 404 ) remoteIndex = {};
+    else throw `Unable to fetch remote index`;
+}
 
 const DATASETS = {
     async ["datasets"] ( dataset, path ) {
