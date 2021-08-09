@@ -1,5 +1,14 @@
 # Changelog
 
+### 2.8.0 (2021-08-09)
+
+Changed:
+
+-   datasets refactored
+-   docs updated
+-   sources added
+-   link to the datasets added
+
 ### 2.7.0 (2021-08-06)
 
 Added:
