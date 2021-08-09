@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.8.1 (2021-08-09)
+
+Fixed:
+
+-   npmignore fixed
+
 ### 2.8.0 (2021-08-09)
 
 Changed:
