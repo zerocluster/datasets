@@ -187,12 +187,13 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
         return new Date( match[1] );
     },
 
-    async ["countries-geojson"] ( dataset, path ) {
+    async ["countries-polygons"] ( dataset, path ) {
         const dbh = await sql.new( url.pathToFileURL( path ) );
 
         await dbh.exec( sql`
-CREATE TABLE "countries" (
-    "country" text NOT NULL,
+CREATE TABLE "polygon" (
+    "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+    "country_iso2" text NOT NULL,
     "minLongitude" float NOT NULL,
     "minLatitude" float NOT NULL,
     "maxLongitude" float NOT NULL,
@@ -200,7 +201,7 @@ CREATE TABLE "countries" (
     "geojson" json NOT NULL
 );
 
-CREATE INDEX "countries_country_bbox" ON "countries" ("country", "minLongitude", "minLatitude", "maxLongitude", "maxLatitude");
+CREATE INDEX "polygon_bbox" ON "polygon" ("minLongitude", "minLatitude", "maxLongitude", "maxLatitude");
     ` );
 
         const json = config.read( data + "/ne_10m_admin_0_countries.geo.json" );
@@ -214,7 +215,7 @@ CREATE INDEX "countries_country_bbox" ON "countries" ("country", "minLongitude",
                 const _bbox = bbox( { "type": "Polygon", coordinates } );
 
                 const record = {
-                    "country": feature.properties.ISO_A2,
+                    "country_iso2": feature.properties.ISO_A2,
                     "minLongitude": _bbox[0],
                     "minLatitude": _bbox[1],
                     "maxLongitude": _bbox[2],
@@ -226,7 +227,7 @@ CREATE INDEX "countries_country_bbox" ON "countries" ("country", "minLongitude",
             }
         }
 
-        await dbh.do( sql`INSERT INTO "countries"`.VALUES( values ) );
+        await dbh.do( sql`INSERT INTO "polygon"`.VALUES( values ) );
 
         dbh.db.close();
 
@@ -237,8 +238,9 @@ CREATE INDEX "countries_country_bbox" ON "countries" ("country", "minLongitude",
         const dbh = await sql.new( url.pathToFileURL( path ) );
 
         await dbh.exec( sql`
-CREATE TABLE "triangles" (
-    "country" text NOT NULL,
+CREATE TABLE "triangle" (
+    "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+    "country_iso2" text NOT NULL,
     "max" float NOT NULL,
     "point1_x" float NOT NULL,
     "point1_y" float NOT NULL,
@@ -248,13 +250,13 @@ CREATE TABLE "triangles" (
     "point3_y" float NOT NULL
 );
 
-CREATE INDEX "triangles_country_max" ON "triangles" ("country", "max");
+CREATE INDEX "triangle_country_iso2_max" ON "triangle" ("country_iso2", "max");
     ` );
 
         const json = config.read( data + "/ne_10m_admin_0_countries.geo.json" );
 
         for ( const feature of json.features ) {
-            const country = feature.properties.ISO_A2;
+            const country_iso2 = feature.properties.ISO_A2;
 
             const index = [];
 
@@ -293,7 +295,7 @@ CREATE INDEX "triangles_country_max" ON "triangles" ("country", "max");
                 max += triangle.properties.area / totalArea;
 
                 values.push( {
-                    country,
+                    country_iso2,
                     max,
                     "point1_x": triangle.coordinates[0][0][0],
                     "point1_y": triangle.coordinates[0][0][1],
@@ -304,7 +306,7 @@ CREATE INDEX "triangles_country_max" ON "triangles" ("country", "max");
                 } );
             }
 
-            await dbh.do( sql`INSERT INTO "triangles"`.VALUES( values ) );
+            await dbh.do( sql`INSERT INTO "triangle"`.VALUES( values ) );
         }
 
         dbh.db.close();

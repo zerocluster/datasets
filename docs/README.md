@@ -30,7 +30,7 @@ wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m
 
 unzip ne_10m_admin_0_countries.zip
 
-ogr2ogr -select iso_a2 -f geojson ne_10m_admin_0_countries.geojson ne_10m_admin_0_countries.shp
+ogr2ogr -f geojson ne_10m_admin_0_countries.geojson ne_10m_admin_0_countries.shp
 
 cp ne_10m_admin_0_countries.geojson /var/local/host
 ```
