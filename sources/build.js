@@ -318,7 +318,7 @@ var modified;
 for ( const id in index ) {
     const dataset = CONST.index[id];
 
-    if ( index[id].lastModified && remoteIndex[id]?.hash === index[id].lastModified.toISOString() ) continue;
+    if ( index[id].lastModified && remoteIndex[id]?.lastModified === index[id].lastModified.toISOString() ) continue;
     if ( index[id].hash && remoteIndex[id]?.hash === index[id].hash ) continue;
 
     remoteIndex[id] = index[id];
