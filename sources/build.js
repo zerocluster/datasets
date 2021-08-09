@@ -1,3 +1,4 @@
+import "#core/stream";
 import sql from "#core/sql";
 import earcut from "earcut";
 import fs from "fs";
@@ -12,6 +13,10 @@ import env from "#core/env";
 import GitHub from "@softvisio/api/github";
 import tar from "tar";
 import utils from "#lib/utils";
+import crypto from "crypto";
+
+const HASH_ALGORITHM = "sha3-512";
+const HASH_ENCODING = "hex";
 
 const userConfig = await env.getUserConfig();
 if ( !userConfig.github.token ) {
@@ -111,8 +116,14 @@ CREATE INDEX idx_timezone_abbr ON "timezone" ("abbr");
 
     ` );
 
+        const hash = crypto.createHash( HASH_ALGORITHM );
+
         const _import = async function _import ( name, table ) {
-            const data = config.read( sources + "/" + name + ".json" );
+            const json = fs.readFileSync( sources + "/" + name + ".json" );
+
+            hash.update( json );
+
+            const data = JSON.parse( json );
 
             await dbh.do( dbh.queryToString( sql`INSERT INTO "__name__"`.VALUES( data ) ).replace( "__name__", table ) );
         };
@@ -125,7 +136,7 @@ CREATE INDEX idx_timezone_abbr ON "timezone" ("abbr");
 
         dbh.db.close();
 
-        return new Date();
+        return hash.digest( HASH_ENCODING );
     },
 
     async ["google-geotargets"] ( dataset, path ) {
@@ -162,11 +173,15 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
         res = await fetch( `https://developers.google.com/adwords/api/docs/appendix/geo/geotargets-${match[1]}.csv` );
         if ( !res.ok ) throw res;
 
+        const data = await res.body.buffer();
+
+        const hash = crypto.createHash( HASH_ALGORITHM );
+        hash.update( data );
+
         const values = [];
 
         await new Promise( resolve => {
-            const stream = csv
-                .parse( { "headers": headers => ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } )
+            csv.parseString( data, { "headers": headers => ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } )
                 .on( "error", error => console.error( error ) )
                 .on( "data", row => {
                     row.type = row.type.toLowerCase();
@@ -179,19 +194,22 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
                 .on( "end", rowCount => {
                     resolve();
                 } );
-
-            res.body.pipe( stream );
         } );
 
         await dbh.do( sql`INSERT INTO "geotarget"`.VALUES( values ) );
 
         dbh.db.close();
 
-        return new Date( match[1] );
+        return hash.digest( HASH_ENCODING );
     },
 
     async ["countries.geo.json"] ( dataset, path ) {
-        return new Date();
+        const json = fs.readFileSync( path );
+
+        const hash = crypto.createHash( HASH_ALGORITHM );
+        hash.update( json );
+
+        return hash.digest( HASH_ENCODING );
     },
 
     async ["countries-triangles"] ( dataset, path ) {
@@ -215,7 +233,12 @@ CREATE TABLE "triangle" (
 CREATE INDEX "triangle_country_iso2_max" ON "triangle" ("country_iso2", "max");
     ` );
 
-        const json = config.read( data + "/countries.geo.json" );
+        var json = fs.readFileSync( data + "/countries.geo.json" );
+
+        const hash = crypto.createHash( HASH_ALGORITHM );
+        hash.update( json );
+
+        json = JSON.parse( json );
 
         for ( const feature of json.features ) {
             const country_iso2 = feature.properties.ISO_A2;
@@ -273,7 +296,7 @@ CREATE INDEX "triangle_country_iso2_max" ON "triangle" ("country_iso2", "max");
 
         dbh.db.close();
 
-        return new Date();
+        return hash.digest( HASH_ENCODING );
     },
 };
 
@@ -289,7 +312,7 @@ for ( const id in DATASETS ) {
 
     index[id] = await DATASETS[id]( dataset, path );
 
-    console.log( index[id] );
+    console.log( "OK" );
 }
 
 var modified;
@@ -298,10 +321,10 @@ var modified;
 for ( const id in index ) {
     const dataset = CONST.index[id];
 
-    if ( remoteIndex[id]?.lastModified === index[id].toISOString() ) continue;
+    if ( remoteIndex[id]?.hash === index[id] ) continue;
 
     remoteIndex[id] ||= {};
-    remoteIndex[id].lastModified = index[id].toISOString();
+    remoteIndex[id].hash = index[id];
     modified = true;
 
     process.stdout.write( `Uploading: "${id}" ... ` );
