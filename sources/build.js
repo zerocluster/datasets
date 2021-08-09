@@ -4,7 +4,6 @@ import fs from "fs";
 import url from "url";
 import * as config from "#core/config";
 import area from "@turf/area";
-import bbox from "@turf/bbox";
 import csv from "fast-csv";
 import * as uule from "#core/api/google/uule";
 import CONST from "#lib/const";
@@ -35,6 +34,8 @@ catch ( e ) {
 
 const DATASETS = {
     async ["datasets"] ( dataset, path ) {
+        fs.rmSync( path, { "force": true } );
+
         const dbh = await sql.new( url.pathToFileURL( path ) );
 
         await dbh.exec( sql`
@@ -128,6 +129,8 @@ CREATE INDEX idx_timezone_abbr ON "timezone" ("abbr");
     },
 
     async ["google-geotargets"] ( dataset, path ) {
+        fs.rmSync( path, { "force": true } );
+
         const dbh = await sql.new( url.pathToFileURL( path ) );
 
         await dbh.exec( sql`
@@ -187,54 +190,13 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
         return new Date( match[1] );
     },
 
-    async ["countries-polygons"] ( dataset, path ) {
-        const dbh = await sql.new( url.pathToFileURL( path ) );
-
-        await dbh.exec( sql`
-CREATE TABLE "polygon" (
-    "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
-    "country_iso2" text NOT NULL,
-    "minLongitude" float NOT NULL,
-    "minLatitude" float NOT NULL,
-    "maxLongitude" float NOT NULL,
-    "maxLatitude" float NOT NULL,
-    "geojson" json NOT NULL
-);
-
-CREATE INDEX "polygon_bbox" ON "polygon" ("minLongitude", "minLatitude", "maxLongitude", "maxLatitude");
-    ` );
-
-        const json = config.read( data + "/ne_10m_admin_0_countries.geo.json" );
-
-        const values = [];
-
-        for ( const feature of json.features ) {
-            const polygons = feature.geometry.type === "MultiPolygon" ? feature.geometry.coordinates : [feature.geometry.coordinates];
-
-            for ( const coordinates of polygons ) {
-                const _bbox = bbox( { "type": "Polygon", coordinates } );
-
-                const record = {
-                    "country_iso2": feature.properties.ISO_A2,
-                    "minLongitude": _bbox[0],
-                    "minLatitude": _bbox[1],
-                    "maxLongitude": _bbox[2],
-                    "maxLatitude": _bbox[3],
-                    "geojson": { "type": "Polygon", coordinates },
-                };
-
-                values.push( record );
-            }
-        }
-
-        await dbh.do( sql`INSERT INTO "polygon"`.VALUES( values ) );
-
-        dbh.db.close();
-
+    async ["countries.geo.json"] ( dataset, path ) {
         return new Date();
     },
 
     async ["countries-triangles"] ( dataset, path ) {
+        fs.rmSync( path, { "force": true } );
+
         const dbh = await sql.new( url.pathToFileURL( path ) );
 
         await dbh.exec( sql`
@@ -253,7 +215,7 @@ CREATE TABLE "triangle" (
 CREATE INDEX "triangle_country_iso2_max" ON "triangle" ("country_iso2", "max");
     ` );
 
-        const json = config.read( data + "/ne_10m_admin_0_countries.geo.json" );
+        const json = config.read( data + "/countries.geo.json" );
 
         for ( const feature of json.features ) {
             const country_iso2 = feature.properties.ISO_A2;
@@ -324,8 +286,6 @@ for ( const id in DATASETS ) {
     const dataset = CONST.index[id];
 
     const path = data + "/" + dataset.name;
-
-    fs.rmSync( path, { "force": true } );
 
     index[id] = await DATASETS[id]( dataset, path );
 
