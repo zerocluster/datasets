@@ -201,9 +201,7 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
     },
 
     async ["countries.geo.json"] ( dataset, path ) {
-        var json = fs.readFileSync( data + "/ne_10m_admin_0_countries.geo.json" );
-
-        json = JSON.stringify( JSON.parse( json ) );
+        const json = JSON.stringify( config.read( data + "/ne_10m_admin_0_countries.geo.json" ) );
 
         const hash = crypto.createHash( HASH_ALGORITHM );
         hash.update( json );
@@ -234,12 +232,10 @@ CREATE TABLE "triangle" (
 CREATE INDEX "triangle_country_iso2_max" ON "triangle" ("country_iso2", "max");
     ` );
 
-        var json = fs.readFileSync( data + "/ne_10m_admin_0_countries.geo.json" );
+        const json = config.read( data + "/ne_10m_admin_0_countries.geo.json" );
 
         const hash = crypto.createHash( HASH_ALGORITHM );
-        hash.update( json );
-
-        json = JSON.parse( json );
+        hash.update( JSON.stringify( json ) );
 
         for ( const feature of json.features ) {
             const country_iso2 = feature.properties.ISO_A2;
