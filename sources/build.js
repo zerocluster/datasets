@@ -360,4 +360,4 @@ for ( const id in index ) {
     fs.rmSync( `${data}/${id}.tar.gz`, { "force": true } );
 }
 
-// fs.rmSync( data + "/index.json", { "force": true } );
+fs.rmSync( data + "/index.json", { "force": true } );
