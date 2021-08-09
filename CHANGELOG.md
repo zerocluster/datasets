@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.8.3 (2021-08-09)
+
+Fixed:
+
+-   datasets reloader refactored
+
 ### 2.8.2 (2021-08-09)
 
 Changed:
