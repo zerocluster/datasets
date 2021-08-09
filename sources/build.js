@@ -201,10 +201,14 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
     },
 
     async ["countries.geo.json"] ( dataset, path ) {
-        const json = fs.readFileSync( path );
+        var json = fs.readFileSync( data + "/ne_10m_admin_0_countries.geo.json" );
+
+        json = JSON.stringify( JSON.parse( json ) );
 
         const hash = crypto.createHash( HASH_ALGORITHM );
         hash.update( json );
+
+        fs.writeFileSync( path, json );
 
         return { "hash": hash.digest( HASH_ENCODING ) };
     },
@@ -230,7 +234,7 @@ CREATE TABLE "triangle" (
 CREATE INDEX "triangle_country_iso2_max" ON "triangle" ("country_iso2", "max");
     ` );
 
-        var json = fs.readFileSync( data + "/countries.geo.json" );
+        var json = fs.readFileSync( data + "/ne_10m_admin_0_countries.geo.json" );
 
         const hash = crypto.createHash( HASH_ALGORITHM );
         hash.update( json );
@@ -341,6 +345,7 @@ for ( const id in index ) {
     if ( !res.ok ) process.exit( 2 );
 }
 
+// upload index
 if ( modified ) {
     config.write( data + "/index.json", remoteIndex, { "readable": true } );
 
@@ -348,3 +353,11 @@ if ( modified ) {
     const res = await utils.uploadAsset( github, data + "/index.json" );
     console.log( res + "" );
 }
+
+// cleanup
+for ( const id in index ) {
+    fs.rmSync( data + "/" + CONST.index[id].name, { "force": true } );
+    fs.rmSync( `${data}/${id}.tar.gz`, { "force": true } );
+}
+
+fs.rmSync( data + "/index.json", { "force": true } );
