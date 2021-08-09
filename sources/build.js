@@ -136,7 +136,7 @@ CREATE INDEX idx_timezone_abbr ON "timezone" ("abbr");
 
         dbh.db.close();
 
-        return hash.digest( HASH_ENCODING );
+        return { "hash": hash.digest( HASH_ENCODING ) };
     },
 
     async ["google-geotargets"] ( dataset, path ) {
@@ -175,9 +175,6 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
 
         const data = await res.body.buffer();
 
-        const hash = crypto.createHash( HASH_ALGORITHM );
-        hash.update( data );
-
         const values = [];
 
         await new Promise( resolve => {
@@ -200,7 +197,7 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
 
         dbh.db.close();
 
-        return hash.digest( HASH_ENCODING );
+        return { "lastModified": new Date( match[1] ) };
     },
 
     async ["countries.geo.json"] ( dataset, path ) {
@@ -209,7 +206,7 @@ CREATE INDEX idx_geotarget_status ON "geotarget" ("status");
         const hash = crypto.createHash( HASH_ALGORITHM );
         hash.update( json );
 
-        return hash.digest( HASH_ENCODING );
+        return { "hash": hash.digest( HASH_ENCODING ) };
     },
 
     async ["countries-triangles"] ( dataset, path ) {
@@ -296,7 +293,7 @@ CREATE INDEX "triangle_country_iso2_max" ON "triangle" ("country_iso2", "max");
 
         dbh.db.close();
 
-        return hash.digest( HASH_ENCODING );
+        return { "hash": hash.digest( HASH_ENCODING ) };
     },
 };
 
@@ -321,10 +318,10 @@ var modified;
 for ( const id in index ) {
     const dataset = CONST.index[id];
 
-    if ( remoteIndex[id]?.hash === index[id] ) continue;
+    if ( index[id].lastModified && remoteIndex[id]?.hash === index[id].lastModified.toISOString() ) continue;
+    if ( index[id].hash && remoteIndex[id]?.hash === index[id].hash ) continue;
 
-    remoteIndex[id] ||= {};
-    remoteIndex[id].hash = index[id];
+    remoteIndex[id] = index[id];
     modified = true;
 
     process.stdout.write( `Uploading: "${id}" ... ` );
