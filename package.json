@@ -34,7 +34,6 @@
         "@softvisio/core": "^4.20.0",
         "@softvisio/sqlite": "^1.3.0",
         "@turf/turf": "^6.5.0",
-        "earcut": "^2.2.3",
         "geo-tz": "^6.0.1",
         "luxon": "^2.0.0",
         "mmdb-lib": "^1.2.0",
@@ -42,6 +41,7 @@
         "tar": "^6.1.0"
     },
     "devDependencies": {
+        "earcut": "^2.2.3",
         "fast-csv": "^4.3.6"
     }
 }
