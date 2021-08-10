@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.8.4 (2021-08-10)
+
+Fixed:
+
+-   deps fixed
+
 ### 2.8.3 (2021-08-09)
 
 Fixed:
