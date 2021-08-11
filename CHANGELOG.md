@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.8.5 (2021-08-11)
+
+Fixed:
+
+-   updater sync fixed
+
 ### 2.8.4 (2021-08-10)
 
 Fixed:
