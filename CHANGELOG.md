@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.9.1 (2021-08-13)
+
+Fixed:
+
+-   exit code fixed
+
 ### 2.9.0 (2021-08-13)
 
 Changed:
