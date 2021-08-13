@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.9.0 (2021-08-13)
+
+Changed:
+
+-   updater refactored
+
 ### 2.8.5 (2021-08-11)
 
 Fixed:
