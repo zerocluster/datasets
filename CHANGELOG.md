@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.9.3 (2021-08-13)
+
+Fixed:
+
+-   path fixed
+
 ### 2.9.2 (2021-08-13)
 
 Fixed:
