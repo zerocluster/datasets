@@ -27,7 +27,7 @@
         "update-datasets": "bin/update-datasets.js"
     },
     "scripts": {
-        "install": "node bin/install.js"
+        "install": "node bin/update-datasets.js"
     },
     "dependencies": {
         "@softvisio/api": "^1.0.1",
