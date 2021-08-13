@@ -18,7 +18,7 @@ const CLI = {
 
 await Cli.parse( CLI );
 
-if ( process.env.DATASETS_DOWNLOAD === "false" ) process.exit();
+if ( process.env.DATASETS_DOWNLOAD === "false" ) process.exit( 0 );
 
 const res = await updater.update( { "build": process.cli.options.build } );
 
