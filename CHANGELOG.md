@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.9.4 (2021-08-14)
+
+Fixed:
+
+-   updater report improved
+
 ### 2.9.3 (2021-08-13)
 
 Fixed:
