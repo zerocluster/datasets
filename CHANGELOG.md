@@ -1,5 +1,13 @@
 # Changelog
 
+### 2.9.5 (2021-08-19)
+
+Fixed:
+
+-   fix for remote index not found
+-   make sqlite methods synchronous
+-   sql sqlite.db property renamed to .sqlite
+
 ### 2.9.4 (2021-08-14)
 
 Fixed:
