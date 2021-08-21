@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.9.6 (2021-08-21)
+
+Fixed:
+
+-   dockerignore updated
+
 ### 2.9.5 (2021-08-19)
 
 Fixed:
