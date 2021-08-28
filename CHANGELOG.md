@@ -1,5 +1,17 @@
 # Changelog
 
+### 2.10.0 (2021-08-28)
+
+Added:
+
+-   github actions
+
+Fixed:
+
+-   mkdir typo
+-   github api moved to the core
+-   db patches renamed
+
 ### 2.9.6 (2021-08-21)
 
 Fixed:
