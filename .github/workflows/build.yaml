@@ -14,6 +14,7 @@ jobs:
       - run: |
           . /etc/profile.d/n.sh
           echo token: $GITHUB_TOKEN
+          echo token1: $MAXMIND_LICENSE_KEY
           export DATASETS_DOWNLOAD=false
           npm i
           bin/update-datasets.js --build --force
