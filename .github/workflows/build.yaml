@@ -1,7 +1,7 @@
 name: Build datasets
 on: workflow_dispatch
 # schedule:
-#   - cron: "30 5,17 * * *"
+#   - cron: "0 12 * * *" # every day at 12:00
 
 jobs:
   build:
@@ -11,6 +11,7 @@ jobs:
     steps:
       - run: |
           . /etc/profile.d/n.sh
+          npm i
           bin/update-datasets.js --build
         shell: bash
         working-directory: /var/local/package
