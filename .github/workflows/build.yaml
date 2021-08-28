@@ -1,0 +1,16 @@
+name: Build datasets
+on: workflow_dispatch
+# schedule:
+#   - cron: "30 5,17 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: softvisio/datasets
+    steps:
+      - run: |
+          . /etc/profile.d/n.sh
+          bin/update-datasets.js --build
+        shell: bash
+        working-directory: /var/local/package
