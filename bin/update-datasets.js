@@ -13,12 +13,19 @@ const CLI = {
                 "type": "boolean",
             },
         },
+        "force": {
+            "description": "ignore DATASETS_DOWNLOAD environment variable",
+            "default": false,
+            "schema": {
+                "type": "boolean",
+            },
+        },
     },
 };
 
 await Cli.parse( CLI );
 
-if ( process.env.DATASETS_DOWNLOAD === "false" ) process.exit( 0 );
+if ( !process.cli.options.force && process.env.DATASETS_DOWNLOAD === "false" ) process.exit( 0 );
 
 const res = await updater.update( { "build": process.cli.options.build } );
 

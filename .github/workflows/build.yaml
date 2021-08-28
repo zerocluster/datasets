@@ -9,17 +9,13 @@ jobs:
     container:
       image: softvisio/datasets
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         MAXMIND_LICENSE_KEY: ${{ secrets.MAXMIND_LICENSE_KEY }}
     steps:
       - run: |
           . /etc/profile.d/n.sh
-          env
-          echo $GITHUB_TOKEN
-          echo $MAXMIND_LICENSE_KEY
+          echo token: $GITHUB_TOKEN
           export DATASETS_DOWNLOAD=false
           npm i
-          export DATASETS_DOWNLOAD=true
-          bin/update-datasets.js --build
+          bin/update-datasets.js --build --force
         shell: bash
         working-directory: /var/local/package
