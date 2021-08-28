@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.10.1 (2021-08-28)
+
+-   ignore 404 build error
+-   github actions
+-   typo
+
 ### 2.10.0 (2021-08-28)
 
 Added:
