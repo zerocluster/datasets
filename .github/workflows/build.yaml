@@ -11,6 +11,9 @@ jobs:
     steps:
       - run: |
           . /etc/profile.d/n.sh
+          env
+          echo $MAXMIND_LICENSE_KEY
+          export DATASETS_DOWNLOAD=false
           npm i
           bin/update-datasets.js --build
         shell: bash
