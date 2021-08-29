@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import Cli from "#core/cli";
-import updater from "#lib/updater";
+import resources from "#lib/resources";
 
 const CLI = {
     "title": "Update datasets",
@@ -27,7 +27,7 @@ await Cli.parse( CLI );
 
 if ( !process.cli.options.force && process.env.DATASETS_DOWNLOAD === "false" ) process.exit( 0 );
 
-const res = await updater.update( { "build": process.cli.options.build } );
+const res = await resources.update( { "build": process.cli.options.build } );
 
 if ( !res.ok ) {
     console.log( `Datasets update error: ` + res );
