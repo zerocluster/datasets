@@ -36,8 +36,7 @@
         "geo-tz": "^6.0.1",
         "luxon": "^2.0.0",
         "mmdb-lib": "^1.2.0",
-        "rbush": "^3.0.0",
-        "tar": "^6.1.0"
+        "rbush": "^3.0.0"
     },
     "devDependencies": {
         "earcut": "^2.2.3",
