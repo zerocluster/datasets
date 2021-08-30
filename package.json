@@ -24,10 +24,10 @@
         "#lib/*": "./lib/*.js"
     },
     "bin": {
-        "update-datasets": "bin/update-datasets.js"
+        "update-datasets": "bin/update.js"
     },
     "scripts": {
-        "install": "node bin/update-datasets.js"
+        "install": "node bin/update.js"
     },
     "dependencies": {
         "@softvisio/core": "^4.20.0",

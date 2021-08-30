@@ -16,6 +16,6 @@ jobs:
           . /etc/profile.d/n.sh
           export DATASETS_DOWNLOAD=false
           npm i --no-fund --no-audit
-          bin/update-datasets.js --build --force
+          bin/update.js --build --force
         shell: bash
         working-directory: /var/local/package
