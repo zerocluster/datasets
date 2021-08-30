@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.11.1 (2021-08-30)
+
+Fixed:
+
+-   resources updater
+-   benchmarks fixed
+
 ### 2.11.0 (2021-08-29)
 
 Added:
