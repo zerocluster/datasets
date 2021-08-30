@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.5 (2021-08-30)
+
+Fixed:
+
+-   default resources update interval fixed
+
 ### 2.11.4 (2021-08-30)
 
 Changed:
