@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.3 (2021-08-30)
+
+Fixed:
+
+-   scripts renamed
+
 ### 2.11.2 (2021-08-30)
 
 Fixed:
