@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.2 (2021-08-30)
+
+Fixed:
+
+-   tests updated
+
 ### 2.11.1 (2021-08-30)
 
 Fixed:
