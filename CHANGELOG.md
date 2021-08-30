@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.4 (2021-08-30)
+
+Changed:
+
+-   docker base image changed to softvisio/node
+
 ### 2.11.3 (2021-08-30)
 
 Fixed:
