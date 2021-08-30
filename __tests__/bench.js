@@ -27,12 +27,10 @@ const t = {
     },
 };
 
-// console.log( await t.remote() );
-// console.log( await t.remoteHTTP() );
+// console.log( await t.geoip_asn() );
+// console.log( await t.geoip_asn_http() );
 // console.log( await t.country() );
 // console.log( await t.continent() );
-// console.log( await t.ip() );
+// console.log( await t.geoip_country() );
 
 bench( "datasets", t, 10000, 50 );
-
-// process.exit();
