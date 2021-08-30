@@ -2,16 +2,16 @@
 
 import API from "#core/api";
 
-const api = new API( "ws://devel:8080/" );
-const apiHTTP = new API( "http://devel:8080/" );
+const api = API.new( "ws://devel:10000/" );
+const apiHTTP = API.new( "http://devel:10000/" );
 
 const ip = "22.12.41.1";
 
 const t = {
-    async remote () {
+    async geoip_asn () {
         return api.call( "geoip/asn", ip );
     },
-    async remoteHTTP () {
+    async geoip_asn_http () {
         return apiHTTP.call( "geoip/asn", ip );
     },
     async country () {
@@ -20,12 +20,18 @@ const t = {
     async continent () {
         return api.call( "continent/get", "AN" );
     },
+    async geoip_country () {
+        const ip = Math.ceil( Math.random() * 4_294_967_296 );
+
+        return api.call( "geoip/country", ip );
+    },
 };
 
 // console.log( await t.remote() );
 // console.log( await t.remoteHTTP() );
 // console.log( await t.country() );
 // console.log( await t.continent() );
+// console.log( await t.ip() );
 
 bench( "datasets", t, 10000, 50 );
 
