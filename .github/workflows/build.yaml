@@ -13,9 +13,8 @@ jobs:
         MAXMIND_LICENSE_KEY: ${{ secrets.MAXMIND_LICENSE_KEY }}
     steps:
       - run: |
-          . /etc/profile.d/n.sh
           export DATASETS_DOWNLOAD=false
-          npm i --no-fund --no-audit
-          bin/update.js --build --force
+          npm i
+          node bin/update.js --build --force
         shell: bash
         working-directory: /var/local/package
