@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.7 (2021-09-04)
+
+Fixes:
+
+-   fix: build datasets github action
+
 ### 2.11.6 (2021-09-03)
 
 Fixes:
