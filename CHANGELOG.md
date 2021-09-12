@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.10 (2021-09-12)
+
+Fixes:
+
+-   fix: datasets location under windows
+
 ### 2.11.9 (2021-09-12)
 
 Fixes:
