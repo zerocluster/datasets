@@ -6,8 +6,11 @@ Link to the datasets: [https://github.com/softvisio/datasets/releases/tag/data](
 
 ## Install
 
+Use `docker-stack.yaml` and `.config.yaml` files, provided in this repository.
+
 ```shell
-npm i @softvisio/datasets
+# deploy
+docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 ```
 
 ## Usage
@@ -21,7 +24,7 @@ npm i @softvisio/datasets
 ### countries.geojson
 
 ```shell
-docker run --rm -it -v $PWD:/var/local/host softvisio/core
+docker run --rm -it -v $PWD:/var/local/host softvisio/node
 
 # inside socker
 dnf install -y unzip wget gdal

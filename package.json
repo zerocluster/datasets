@@ -1,7 +1,8 @@
 {
-    "name": "@softvisio/datasets",
+    "name": "datasets",
     "version": "2.11.8",
-    "description": "Various static datasets",
+    "private": true,
+    "description": "Datasets service",
     "keywords": [
         "softvisio",
         "datasets"
