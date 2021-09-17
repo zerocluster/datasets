@@ -1,6 +1,6 @@
 {
     "name": "services/datasets",
-    "version": "2.11.10",
+    "version": "2.11.11",
     "private": true,
     "description": "Datasets service",
     "keywords": [
