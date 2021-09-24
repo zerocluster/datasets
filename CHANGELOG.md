@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.11.12 (2021-09-24)
+
+Fixes:
+
+-   fix: make sqlite calls async
+-   fix: open datasets in read only mode
+
 ### 2.11.11 (2021-09-17)
 
 Fixes:
