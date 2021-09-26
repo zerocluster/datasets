@@ -1,3 +1,4 @@
 {
-    "version": 0
+    "type": "sqlite",
+    "patch": 0
 }
