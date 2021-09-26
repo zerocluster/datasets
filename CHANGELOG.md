@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.11.13 (2021-09-26)
+
+Fixes:
+
+-   fix: db type added
+-   fix: make sqlite calls async
+-   fix: make sqlite fully sync
+-   fix: open dataset
+-   fix: terminate process on sql migration errors
+
 ### 2.11.12 (2021-09-24)
 
 Fixes:
