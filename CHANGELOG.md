@@ -1,5 +1,12 @@
 # Changelog
 
+### 2.11.14 (2021-09-27)
+
+Fixes:
+
+-   fix: sql initial patch set to null
+-   fix: sql module
+
 ### 2.11.13 (2021-09-26)
 
 Fixes:
