@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.11.15 (2021-09-30)
+
+Fixes:
+
+-   fix: config files renamed
+
 ### 2.11.14 (2021-09-27)
 
 Fixes:
