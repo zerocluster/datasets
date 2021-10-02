@@ -1,5 +1,5 @@
 {
-    "name": "services/datasets",
+    "name": "datasets",
     "version": "2.11.15",
     "private": true,
     "description": "Datasets service",
