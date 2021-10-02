@@ -2,7 +2,7 @@
 
 Shared datasets for use as service.
 
-Link to the datasets: [https://github.com/softvisio/datasets/releases/tag/data](https://github.com/softvisio/datasets/releases/tag/data).
+Link to the datasets: [https://github.com/zerocluster/datasets/releases/tag/data](https://github.com/zerocluster/datasets/releases/tag/data).
 
 ## Install
 
@@ -24,7 +24,7 @@ docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 ### countries.geojson
 
 ```shell
-docker run --rm -it -v $PWD:/var/local/host softvisio/node
+docker run --rm -it -v $PWD:/var/local/host zerocluster/node
 
 # inside socker
 dnf install -y unzip wget gdal

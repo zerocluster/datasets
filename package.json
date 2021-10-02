@@ -4,17 +4,17 @@
     "private": true,
     "description": "Datasets service",
     "keywords": [
-        "softvisio",
+        "zerocluster",
         "datasets"
     ],
-    "homepage": "https://github.com/softvisio/datasets",
+    "homepage": "https://github.com/zerocluster/datasets",
     "bugs": {
-        "url": "https://github.com/softvisio/datasets/issues",
+        "url": "https://github.com/zerocluster/datasets/issues",
         "email": "zdm@softvisio.net"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/softvisio/datasets.git"
+        "url": "https://github.com/zerocluster/datasets.git"
     },
     "license": "ISC",
     "author": "zdm <zdm@softvisio.net>",
