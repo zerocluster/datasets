@@ -1,5 +1,5 @@
 {
-    "name": "datasets",
+    "name": "@zerocluster/datasets",
     "version": "2.12.0",
     "private": true,
     "description": "Datasets service",
