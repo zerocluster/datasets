@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.12.1 (2021-10-02)
+
+Fixes:
+
+-   fix: package name
+
 ### 2.12.0 (2021-10-02)
 
 Features:
