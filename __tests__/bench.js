@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 
-import API from "#core/api";
+import Api from "#core/api";
 
-const api = API.new( "ws://devel:10000/" );
-const apiHTTP = API.new( "http://devel:10000/" );
+const api = Api.new( "ws://devel:10000/" );
+const apiHttp = Api.new( "http://devel:10000/" );
 
 const ip = "22.12.41.1";
 
 const t = {
-    async geoip_asn () {
+    async geoipAsn () {
         return api.call( "geoip/asn", ip );
     },
-    async geoip_asn_http () {
-        return apiHTTP.call( "geoip/asn", ip );
+    async geoipAsnHttp () {
+        return apiHttp.call( "geoip/asn", ip );
     },
     async country () {
         return api.call( "country/get", "RU" );
@@ -20,7 +20,7 @@ const t = {
     async continent () {
         return api.call( "continent/get", "AN" );
     },
-    async geoip_country () {
+    async geoipCountry () {
         const ip = Math.ceil( Math.random() * 4_294_967_296 );
 
         return api.call( "geoip/country", ip );
