@@ -1,5 +1,17 @@
 # Changelog
 
+### 3.0.0-alpha.0 (2021-10-04)
+
+Breaking changes:
+
+-   feat!: strict camel case
+
+Fixes:
+
+-   fix: docke stack softvisio config mount removed
+
+Migration:
+
 ### 2.12.2 (2021-10-02)
 
 Fixes:
