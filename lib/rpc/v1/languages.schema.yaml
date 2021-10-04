@@ -11,5 +11,5 @@ methods:
         schema:
           type: string
 
-  get-all:
+  getAll:
     title: Get all languages

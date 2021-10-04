@@ -11,10 +11,10 @@ methods:
         schema:
           type: string
 
-  get-all:
+  getAll:
     title: Get all timezones
 
-  get-by-coordinates:
+  getByCoordinates:
     title: Search for the timezone by the geo coordinates
     params:
       - name: coordinates
