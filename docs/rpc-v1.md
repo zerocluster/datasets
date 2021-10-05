@@ -11,14 +11,18 @@
 
 <!-- prettier-ignore -->
 ```javascript
-const api = API.new( "ws://datasets:8080/" )
+import Api from "@softvisio/core/api";
+
+const api = Api.new( "ws://datasets:8080/" )
 ```
 
 #### **HTTP**
 
 <!-- prettier-ignore -->
 ```javascript
-const api = API.new( "http://datasets:8080/" )
+import Api from "@softvisio/core/api";
+
+const api = Api.new( "http://datasets:8080/" )
 ```
 
 <!-- tabs:end -->

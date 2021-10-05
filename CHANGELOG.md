@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.0.0-alpha.1 (2021-10-05)
+
+Fixes:
+
+-   fix: dockerhub actions image set to next
+-   fix: strict camel case
+
+Migration:
+
 ### 3.0.0-alpha.0 (2021-10-04)
 
 Breaking changes:
