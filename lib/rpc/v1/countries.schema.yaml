@@ -11,10 +11,10 @@ methods:
         schema:
           type: string
 
-  getAll:
+  get-all:
     title: Get all countries
 
-  getByCoordinates:
+  get-by-coordinates:
     title: Get country by coordinates
     params:
       - name: coordinates
@@ -31,7 +31,7 @@ methods:
           required: [latitude, longitude]
           additionalProperties: false
 
-  getCountryRandomCoordinates:
+  get-country-random-coordinates:
     title: Get random coordinates inside country
     params:
       - name: id

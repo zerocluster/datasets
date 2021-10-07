@@ -14,7 +14,7 @@ methods:
         schema:
           type: [number, string]
 
-  getGeoJson:
+  get-geojson:
     title: Get GEOTarget geojson by id or canonical name
     params:
       - name: id

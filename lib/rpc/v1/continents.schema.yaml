@@ -11,5 +11,5 @@ methods:
         schema:
           type: string
 
-  getAll:
+  get-all:
     title: Get all continents
