@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.0.1 (2021-10-07)
+
+Fixes:
+
+-   fix: sql unquoted
+
 ### 3.0.0 (2021-10-07)
 
 Features:
