@@ -1,5 +1,13 @@
 # Changelog
 
+### 3.0.0 (2021-10-07)
+
+Features:
+
+-   feat: camel case api reverted
+
+Migration:
+
 ### 3.0.0-alpha.1 (2021-10-05)
 
 Fixes:

@@ -64,7 +64,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/continents/getAll" );
+const res = await api.call( "/v1/continents/get-all" );
 ```
 
 #### **Shell**
@@ -73,7 +73,7 @@ const res = await api.call( "/v1/continents/getAll" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/continents/getAll"
+    "http://datasets:8080/v1/continents/get-all"
 ```
 
 <!-- tabs:end -->
@@ -115,7 +115,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/countries/getAll" );
+const res = await api.call( "/v1/countries/get-all" );
 ```
 
 #### **Shell**
@@ -124,7 +124,7 @@ const res = await api.call( "/v1/countries/getAll" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/countries/getAll"
+    "http://datasets:8080/v1/countries/get-all"
 ```
 
 <!-- tabs:end -->
@@ -137,7 +137,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/countries/getByCoordinates", coordinates );
+const res = await api.call( "/v1/countries/get-by-coordinates", coordinates );
 ```
 
 #### **Shell**
@@ -149,7 +149,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[coordinates]' \
-    "http://datasets:8080/v1/countries/getByCoordinates"
+    "http://datasets:8080/v1/countries/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
@@ -166,7 +166,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/countries/getCountryRandomCoordinates", id );
+const res = await api.call( "/v1/countries/get-country-random-coordinates", id );
 ```
 
 #### **Shell**
@@ -178,7 +178,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id]' \
-    "http://datasets:8080/v1/countries/getCountryRandomCoordinates"
+    "http://datasets:8080/v1/countries/get-country-random-coordinates"
 ```
 
 <!-- tabs:end -->
@@ -222,7 +222,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/currencies/getAll" );
+const res = await api.call( "/v1/currencies/get-all" );
 ```
 
 #### **Shell**
@@ -231,7 +231,7 @@ const res = await api.call( "/v1/currencies/getAll" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/currencies/getAll"
+    "http://datasets:8080/v1/currencies/get-all"
 ```
 
 <!-- tabs:end -->
@@ -358,7 +358,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/geotargets/getGeoJson", id );
+const res = await api.call( "/v1/geotargets/get-geojson", id );
 ```
 
 #### **Shell**
@@ -370,7 +370,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id]' \
-    "http://datasets:8080/v1/geotargets/getGeoJson"
+    "http://datasets:8080/v1/geotargets/get-geojson"
 ```
 
 <!-- tabs:end -->
@@ -416,7 +416,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/languages/getAll" );
+const res = await api.call( "/v1/languages/get-all" );
 ```
 
 #### **Shell**
@@ -425,7 +425,7 @@ const res = await api.call( "/v1/languages/getAll" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/languages/getAll"
+    "http://datasets:8080/v1/languages/get-all"
 ```
 
 <!-- tabs:end -->
@@ -467,7 +467,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezones/getAll" );
+const res = await api.call( "/v1/timezones/get-all" );
 ```
 
 #### **Shell**
@@ -476,7 +476,7 @@ const res = await api.call( "/v1/timezones/getAll" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/timezones/getAll"
+    "http://datasets:8080/v1/timezones/get-all"
 ```
 
 <!-- tabs:end -->
@@ -489,7 +489,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezones/getByCoordinates", coordinates );
+const res = await api.call( "/v1/timezones/get-by-coordinates", coordinates );
 ```
 
 #### **Shell**
@@ -501,7 +501,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[coordinates]' \
-    "http://datasets:8080/v1/timezones/getByCoordinates"
+    "http://datasets:8080/v1/timezones/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
