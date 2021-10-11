@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.0.2 (2021-10-11)
+
+Fixes:
+
+-   fix: uule lib moved
+
 ### 3.0.1 (2021-10-07)
 
 Fixes:
