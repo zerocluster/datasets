@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.1.1 (2021-10-22)
+
+Fixes:
+
+-   fix: datasets version added
+
 ### 3.1.0 (2021-10-22)
 
 Features:
