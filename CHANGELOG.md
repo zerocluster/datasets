@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.1.0 (2021-10-22)
+
+Features:
+
+-   feat: search geotarget by country iso2
+
+Fixes:
+
+-   fix: sqlite indexes
+
 ### 3.0.2 (2021-10-11)
 
 Fixes:
