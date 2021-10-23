@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.1.2 (2021-10-23)
+
+Fixes:
+
+-   fix: geotarget search by name
+
 ### 3.1.1 (2021-10-22)
 
 Fixes:
