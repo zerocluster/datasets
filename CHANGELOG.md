@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.1.3 (2021-10-23)
+
+Fixes:
+
+-   fix: geotarget version
+
 ### 3.1.2 (2021-10-23)
 
 Fixes:
