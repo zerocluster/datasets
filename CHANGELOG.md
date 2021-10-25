@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.3.0 (2021-10-25)
+
+Features:
+
+-   feat: random_point
+
+Fixes:
+
+-   fix: osm query
+
 ### 3.2.0 (2021-10-25)
 
 Features:
