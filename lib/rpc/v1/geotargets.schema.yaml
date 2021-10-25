@@ -20,5 +20,5 @@ methods:
             center: { type: booleaan }
             bbox: { type: booleaan }
             polygon: { type: booleaan }
-            random_coordinate: { type: booleaan }
+            random_coordinates: { type: booleaan }
           additionalProperties: false
