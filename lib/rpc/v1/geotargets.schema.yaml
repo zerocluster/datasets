@@ -13,15 +13,12 @@ methods:
         required: true
         schema:
           type: [number, string]
-
-  get-geojson:
-    title: Get GEOTarget geojson by id or canonical name
-    params:
-      - name: id
-        description: |-
-          Search criteria:
-          -   <number\> Numeric identifier.
-          -   <string\> Canonical name.
-        required: true
+      - name: options
         schema:
-          type: [number, string]
+          type: object
+          properties:
+            center: { type: booleaan }
+            bbox: { type: booleaan }
+            polygon: { type: booleaan }
+            random_coordinate: { type: booleaan }
+          additionalProperties: false
