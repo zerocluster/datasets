@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.3.1 (2021-10-25)
+
+Fixes:
+
+-   fix: osm
+
 ### 3.3.0 (2021-10-25)
 
 Features:
