@@ -17,8 +17,8 @@ methods:
         schema:
           type: object
           properties:
-            center: { type: booleaan }
-            bbox: { type: booleaan }
-            polygon: { type: booleaan }
-            random_coordinates: { type: booleaan }
+            center: { type: boolean }
+            bbox: { type: boolean }
+            polygon: { type: boolean }
+            random_coordinates: { type: boolean }
           additionalProperties: false
