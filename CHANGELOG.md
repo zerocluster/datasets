@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.2.0 (2021-10-25)
+
+Features:
+
+-   feat: geotargets features
+
+Fixes:
+
+-   fix: geotargets query
+
 ### 3.1.3 (2021-10-23)
 
 Fixes:

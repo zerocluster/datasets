@@ -158,33 +158,6 @@ curl \
     -   `latitude` <number> Latitude.
     -   `longitude` <number> Longitude.
 
-### Get random coordinates inside country
-
-<!-- tabs:start -->
-
-#### **JavaScript**
-
-<!-- prettier-ignore -->
-```javascript
-const res = await api.call( "/v1/countries/get-country-random-coordinates", id );
-```
-
-#### **Shell**
-
-<!-- prettier-ignore -->
-```shell
-curl \
-    -X POST \
-    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    -H "Content-Type: application/json" \
-    -d '[id]' \
-    "http://datasets:8080/v1/countries/get-country-random-coordinates"
-```
-
-<!-- tabs:end -->
-
--   `id` <string\> Country ISO alpha-2 code, ISO alpha-3 or name.
-
 ## Currency lookup
 
 ### Get currency by ISO code, symbol or name
@@ -329,7 +302,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/geotargets/get", id );
+const res = await api.call( "/v1/geotargets/get", id, options? );
 ```
 
 #### **Shell**
@@ -340,7 +313,7 @@ curl \
     -X POST \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
-    -d '[id]' \
+    -d '[id, options?]' \
     "http://datasets:8080/v1/geotargets/get"
 ```
 
@@ -349,35 +322,7 @@ curl \
 -   `id` <number\> | <string\> Search criteria:
     -   <number\> Numeric identifier.
     -   <string\> Canonical name.
-
-### Get GEOTarget geojson by id or canonical name
-
-<!-- tabs:start -->
-
-#### **JavaScript**
-
-<!-- prettier-ignore -->
-```javascript
-const res = await api.call( "/v1/geotargets/get-geojson", id );
-```
-
-#### **Shell**
-
-<!-- prettier-ignore -->
-```shell
-curl \
-    -X POST \
-    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    -H "Content-Type: application/json" \
-    -d '[id]' \
-    "http://datasets:8080/v1/geotargets/get-geojson"
-```
-
-<!-- tabs:end -->
-
--   `id` <number\> | <string\> Search criteria:
-    -   <number\> Numeric identifier.
-    -   <string\> Canonical name.
+-   `options?` <Object\>
 
 ## Language lookup
 
