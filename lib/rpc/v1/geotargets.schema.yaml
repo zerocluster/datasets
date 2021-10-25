@@ -19,7 +19,7 @@ methods:
           properties:
             center: { type: boolean }
             bbox: { type: boolean }
-            polygon: { type: boolean }
+            geojson: { type: boolean }
             random_coordinates: { type: boolean }
             random_point: { type: boolean }
           additionalProperties: false
