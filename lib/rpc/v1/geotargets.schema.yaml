@@ -21,4 +21,5 @@ methods:
             bbox: { type: boolean }
             polygon: { type: boolean }
             random_coordinates: { type: boolean }
+            random_point: { type: boolean }
           additionalProperties: false
