@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.3.2 (2021-10-26)
+
+No notable changes since the previous release.
+
 ### 3.3.1 (2021-10-25)
 
 Fixes:
