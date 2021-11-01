@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.4.0 (2021-11-01)
+
+Features:
+
+-   feat: sql emits property
+
 ### 3.3.2 (2021-10-26)
 
 No notable changes since the previous release.
