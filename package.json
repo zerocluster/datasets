@@ -28,7 +28,8 @@
         "update-datasets": "bin/update.js"
     },
     "scripts": {
-        "install": "node bin/update.js"
+        "dev": "bin/main.js --mode=development",
+        "install": "bin/update.js"
     },
     "dependencies": {
         "@softvisio/core": "^6.0.0",
