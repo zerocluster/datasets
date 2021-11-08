@@ -1,5 +1,16 @@
 # Changelog
 
+### 3.5.0 (2021-11-08)
+
+Features:
+
+-   feat: db schema index.yaml
+-   feat: dev script
+
+Fixes:
+
+-   fix: api schema files renamed
+
 ### 3.4.0 (2021-11-01)
 
 Features:
