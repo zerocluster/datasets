@@ -1,6 +1,0 @@
-{
-    "module": "main",
-    "type": "sqlite",
-    "patch": null,
-    "emits": []
-}

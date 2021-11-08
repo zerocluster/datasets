@@ -1,0 +1,4 @@
+module: main
+type: sqlite
+patch: ~
+emits: []
