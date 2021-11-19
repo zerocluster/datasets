@@ -23,3 +23,28 @@ methods:
             random_coordinates: { type: boolean }
             random_point: { type: boolean }
           additionalProperties: false
+
+  suggest-country:
+    title: Suggests country
+    params:
+      - name: options
+        required: true
+        schema:
+          read:
+            fields:
+              name: { type: string, operator: like, required: true }
+            offset: false
+            limit: { default_limit: 20, max_results: 20 }
+
+  suggest-city:
+    title: Suggests city
+    params:
+      - name: options
+        required: true
+        schema:
+          read:
+            fields:
+              country: { type: string, operator: "=", required: true }
+              name: { type: string, operator: like, required: true }
+            offset: false
+            limit: { default_limit: 20, max_results: 20 }
