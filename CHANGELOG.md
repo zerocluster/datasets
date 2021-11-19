@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.7.0 (2021-11-19)
+
+Features:
+
+-   feat: geotargets suggests
+
 ### 3.6.0 (2021-11-18)
 
 Features:

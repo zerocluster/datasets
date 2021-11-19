@@ -324,6 +324,105 @@ curl \
     -   <string\> Canonical name.
 -   `options?` <Object\>
 
+### Suggests country
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/geotargets/suggest-country", options );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -X POST \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    -H "Content-Type: application/json" \
+    -d '[options]' \
+    "http://datasets:8080/v1/geotargets/suggest-country"
+```
+
+<!-- tabs:end -->
+
+-   `options` <Object\>
+    -   `where` <Object\> Set of the filters by field values:
+        -   `name` <Array\> **Required**. Filter by the `name` field value:
+            -   <string\> Filter operator, one of the: `"like"`.
+            -   <string\> Field value.
+    -   `limit` <integer\> Max rows to return. **Default:** `20`. This method returns `20` rows maximum.
+    -   Example (this is the abstract data structure example, not related to the current method):
+        ```json
+        {
+            "where": {
+                "field_a": [">=", 100],
+                "field_b": ["!=", null],
+                "field_c": ["=", "string"]
+            },
+            "order_by": [
+                ["field_a", "asc"],
+                ["field_b", "desc"]
+            ],
+            "offset": 100,
+            "limit": 50
+        }
+        ```
+
+### Suggests city
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/geotargets/suggest-city", options );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -X POST \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    -H "Content-Type: application/json" \
+    -d '[options]' \
+    "http://datasets:8080/v1/geotargets/suggest-city"
+```
+
+<!-- tabs:end -->
+
+-   `options` <Object\>
+    -   `where` <Object\> Set of the filters by field values:
+        -   `country` <Array\> **Required**. Filter by the `country` field value:
+            -   <string\> Filter operator, one of the: `"="`.
+            -   <string\> Field value.
+        -   `name` <Array\> **Required**. Filter by the `name` field value:
+            -   <string\> Filter operator, one of the: `"like"`.
+            -   <string\> Field value.
+    -   `limit` <integer\> Max rows to return. **Default:** `20`. This method returns `20` rows maximum.
+    -   Example (this is the abstract data structure example, not related to the current method):
+        ```json
+        {
+            "where": {
+                "field_a": [">=", 100],
+                "field_b": ["!=", null],
+                "field_c": ["=", "string"]
+            },
+            "order_by": [
+                ["field_a", "asc"],
+                ["field_b", "desc"]
+            ],
+            "offset": 100,
+            "limit": 50
+        }
+        ```
+
 ## Language lookup
 
 ### Get language by ISO code or name
