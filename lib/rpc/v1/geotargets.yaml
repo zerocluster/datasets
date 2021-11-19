@@ -34,7 +34,7 @@ methods:
             fields:
               name: { type: string, operator: like, required: true }
             offset: false
-            limit: { default_limit: 20, max_results: 20 }
+            limit: { defaultLimit: 20, maxResults: 20 }
 
   suggest-city:
     title: Suggests city
@@ -47,4 +47,4 @@ methods:
               country: { type: string, operator: "=", required: true }
               name: { type: string, operator: like, required: true }
             offset: false
-            limit: { default_limit: 20, max_results: 20 }
+            limit: { defaultLimit: 20, maxResults: 20 }
