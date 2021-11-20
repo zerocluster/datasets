@@ -1,5 +1,17 @@
 # Changelog
 
+### 3.9.0 (2021-11-20)
+
+Features:
+
+-   feat: build script added
+-   feat: update script added
+
+Fixes:
+
+-   fix: datasets collation
+-   fix: geotargets collation
+
 ### 3.8.0 (2021-11-20)
 
 Features:
