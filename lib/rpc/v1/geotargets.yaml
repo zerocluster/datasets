@@ -24,8 +24,8 @@ methods:
             random_point: { type: boolean }
           additionalProperties: false
 
-  suggest-country:
-    title: Suggests country
+  suggest-geotargets:
+    title: Suggest geotargets
     params:
       - name: options
         required: true
@@ -33,18 +33,7 @@ methods:
           read:
             fields:
               name: { type: string, operator: like, required: true }
+              type: { type: string, operator: ["=", "in"], enum: [airport, autonomous community, borough, canton, city, city region, congressional district, country, county, department, district, governorate, municipality, national park, neighborhood, okrug, postal code, prefecture, province, region, state, territory, tv region, union territory, university], required: true }
+              country: { type: string, operator: "=", description: "Country ISO2 code." }
             offset: false
-            limit: { defaultLimit: 20, maxResults: 20 }
-
-  suggest-city:
-    title: Suggests city
-    params:
-      - name: options
-        required: true
-        schema:
-          read:
-            fields:
-              country: { type: string, operator: "=", required: true }
-              name: { type: string, operator: like, required: true }
-            offset: false
-            limit: { defaultLimit: 20, maxResults: 20 }
+            limit: { defaultLimit: 20, maxResults: 50 }
