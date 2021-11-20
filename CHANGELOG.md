@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.8.0 (2021-11-20)
+
+Features:
+
+-   feat: api read optional dbh
+-   feat: suggest eotargets method
+
 ### 3.7.0 (2021-11-19)
 
 Features:
