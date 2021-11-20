@@ -25,7 +25,7 @@ const CLI = {
 
 await Cli.parse( CLI );
 
-if ( !process.cli.options.force && process.env.DATASETS_DOWNLOAD === "false" ) process.exit( 0 );
+if ( process.env.DATASETS_DOWNLOAD === "false" && !process.cli.options.build && !process.cli.options.force ) process.exit( 0 );
 
 const res = await resources.update( { "build": process.cli.options.build } );
 
