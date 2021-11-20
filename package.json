@@ -30,7 +30,8 @@
     "scripts": {
         "build": "node bin/update.js --build",
         "dev": "node bin/main.js --mode=development",
-        "install": "node bin/update.js"
+        "install": "node bin/update.js",
+        "update": "node bin/update.js --force"
     },
     "dependencies": {
         "@softvisio/core": "^6.0.0",
