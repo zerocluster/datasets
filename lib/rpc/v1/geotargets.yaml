@@ -1,15 +1,15 @@
-title: Google GEOTarget lookup
+title: Geo target lookup
 permissions: ["*"]
 
 methods:
-  get:
-    title: Get GEOTarget by id or canonical name
+  get-geotarget:
+    title: Get geotarget by id, canonical name or country iso2 code
     params:
       - name: id
         description: |-
           Search criteria:
           -   <number\> Numeric identifier.
-          -   <string\> Canonical name.
+          -   <string\> Canonical name or country iso2 code.
         required: true
         schema:
           type: [number, string]
