@@ -20,7 +20,6 @@
     "author": "zdm <zdm@softvisio.net>",
     "type": "module",
     "imports": {
-        "#app/*": "@softvisio/core/app/*",
         "#core/*": "@softvisio/core/*",
         "#lib/*": "./lib/*.js"
     },
