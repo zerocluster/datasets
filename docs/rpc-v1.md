@@ -292,9 +292,9 @@ curl \
 
 -   `addr` <string\> IP address.
 
-## Google GEOTarget lookup
+## Geo target lookup
 
-### Get GEOTarget by id or canonical name
+### Get geotarget by id, canonical name or country iso2 code
 
 <!-- tabs:start -->
 
@@ -302,7 +302,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/geotargets/get", id, options? );
+const res = await api.call( "/v1/geotargets/get-geotarget", id, options? );
 ```
 
 #### **Shell**
@@ -314,14 +314,14 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id, options?]' \
-    "http://datasets:8080/v1/geotargets/get"
+    "http://datasets:8080/v1/geotargets/get-geotarget"
 ```
 
 <!-- tabs:end -->
 
 -   `id` <number\> | <string\> Search criteria:
     -   <number\> Numeric identifier.
-    -   <string\> Canonical name.
+    -   <string\> Canonical name or country iso2 code.
 -   `options?` <Object\>
 
 ### Suggest geotargets

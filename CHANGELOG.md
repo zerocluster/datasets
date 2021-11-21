@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.10.0 (2021-11-21)
+
+Features:
+
+-   feat: geotargets/get replaced with geotargets/get-geotarget
+
+Fixes:
+
+-   fix: #app import removed
+
 ### 3.9.0 (2021-11-20)
 
 Features:
