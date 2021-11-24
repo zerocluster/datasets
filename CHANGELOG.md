@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.11.0 (2021-11-24)
+
+Features:
+
+-   feat: sql migrate refactored
+
 ### 3.10.0 (2021-11-21)
 
 Features:
