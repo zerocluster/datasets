@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.11.1 (2021-11-25)
+
+Fixes:
+
+-   fix: use core luxon
+
 ### 3.11.0 (2021-11-24)
 
 Features:
