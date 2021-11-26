@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.12.0 (2021-11-26)
+
+Features:
+
+-   feat: geo-tz 7
+
 ### 3.11.1 (2021-11-25)
 
 Fixes:
