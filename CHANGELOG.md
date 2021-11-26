@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.12.1 (2021-11-26)
+
+Fixes:
+
+-   fix: geotz reverted to 6
+
 ### 3.12.0 (2021-11-26)
 
 Features:
