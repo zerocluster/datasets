@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.12.3 (2021-11-27)
+
+Fixes:
+
+-   fix: bench port
+
 ### 3.12.2 (2021-11-27)
 
 Fixes:
