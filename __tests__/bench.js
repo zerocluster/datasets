@@ -2,8 +2,8 @@
 
 import Api from "#core/api";
 
-// const port = 10000;
-const port = 8080;
+// const port = 80;
+const port = 10000;
 
 const api = Api.new( `ws://devel:${port}/` );
 const apiHttp = Api.new( `http://devel:${port}/` );
