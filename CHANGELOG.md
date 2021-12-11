@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.12.4 (2021-12-11)
+
+Fixes:
+
+-   fix: dbh schema refactored
+
 ### 3.12.3 (2021-11-27)
 
 Fixes:
