@@ -2,8 +2,8 @@
 
 ### API connect URLs
 
--   API HTTP URL: `http://datasets:8080/`
--   API WebSockets URL: `ws://datasets:8080/`
+-   API HTTP URL: `http://datasets/api/`
+-   API WebSockets URL: `ws://datasets/api/`
 
 <!-- tabs:start -->
 
@@ -13,7 +13,7 @@
 ```javascript
 import Api from "@softvisio/core/api";
 
-const api = Api.new( "ws://datasets:8080/" )
+const api = Api.new( "ws://datasets/api/" )
 ```
 
 #### **HTTP**
@@ -22,7 +22,7 @@ const api = Api.new( "ws://datasets:8080/" )
 ```javascript
 import Api from "@softvisio/core/api";
 
-const api = Api.new( "http://datasets:8080/" )
+const api = Api.new( "http://datasets/api/" )
 ```
 
 <!-- tabs:end -->
@@ -49,7 +49,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id]' \
-    "http://datasets:8080/v1/continents/get"
+    "http://datasets/api/v1/continents/get"
 ```
 
 <!-- tabs:end -->
@@ -73,7 +73,7 @@ const res = await api.call( "/v1/continents/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/continents/get-all"
+    "http://datasets/api/v1/continents/get-all"
 ```
 
 <!-- tabs:end -->
@@ -100,7 +100,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id]' \
-    "http://datasets:8080/v1/countries/get"
+    "http://datasets/api/v1/countries/get"
 ```
 
 <!-- tabs:end -->
@@ -124,7 +124,7 @@ const res = await api.call( "/v1/countries/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/countries/get-all"
+    "http://datasets/api/v1/countries/get-all"
 ```
 
 <!-- tabs:end -->
@@ -149,7 +149,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[coordinates]' \
-    "http://datasets:8080/v1/countries/get-by-coordinates"
+    "http://datasets/api/v1/countries/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
@@ -180,7 +180,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id]' \
-    "http://datasets:8080/v1/currencies/get"
+    "http://datasets/api/v1/currencies/get"
 ```
 
 <!-- tabs:end -->
@@ -204,7 +204,7 @@ const res = await api.call( "/v1/currencies/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/currencies/get-all"
+    "http://datasets/api/v1/currencies/get-all"
 ```
 
 <!-- tabs:end -->
@@ -231,7 +231,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[addr]' \
-    "http://datasets:8080/v1/geoip/asn"
+    "http://datasets/api/v1/geoip/asn"
 ```
 
 <!-- tabs:end -->
@@ -258,7 +258,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[addr]' \
-    "http://datasets:8080/v1/geoip/country"
+    "http://datasets/api/v1/geoip/country"
 ```
 
 <!-- tabs:end -->
@@ -285,7 +285,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[addr]' \
-    "http://datasets:8080/v1/geoip/city"
+    "http://datasets/api/v1/geoip/city"
 ```
 
 <!-- tabs:end -->
@@ -314,7 +314,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id, options?]' \
-    "http://datasets:8080/v1/geotargets/get-geotarget"
+    "http://datasets/api/v1/geotargets/get-geotarget"
 ```
 
 <!-- tabs:end -->
@@ -344,7 +344,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[options]' \
-    "http://datasets:8080/v1/geotargets/suggest-geotargets"
+    "http://datasets/api/v1/geotargets/suggest-geotargets"
 ```
 
 <!-- tabs:end -->
@@ -400,7 +400,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id]' \
-    "http://datasets:8080/v1/languages/get"
+    "http://datasets/api/v1/languages/get"
 ```
 
 <!-- tabs:end -->
@@ -424,7 +424,7 @@ const res = await api.call( "/v1/languages/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/languages/get-all"
+    "http://datasets/api/v1/languages/get-all"
 ```
 
 <!-- tabs:end -->
@@ -451,7 +451,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[id]' \
-    "http://datasets:8080/v1/timezones/get"
+    "http://datasets/api/v1/timezones/get"
 ```
 
 <!-- tabs:end -->
@@ -475,7 +475,7 @@ const res = await api.call( "/v1/timezones/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets:8080/v1/timezones/get-all"
+    "http://datasets/api/v1/timezones/get-all"
 ```
 
 <!-- tabs:end -->
@@ -500,7 +500,7 @@ curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
     -H "Content-Type: application/json" \
     -d '[coordinates]' \
-    "http://datasets:8080/v1/timezones/get-by-coordinates"
+    "http://datasets/api/v1/timezones/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
