@@ -16,6 +16,13 @@ services:
       placement:
         max_replicas_per_node: 1
 
+    healthcheck:
+      test: curl -f http://127.0.0.1/healthcheck || exit 1
+      start_period: 60s
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
     environment:
       APP_MAXMIND_LICENSE_KEY:
       APP_GITHUB_TOKEN:
