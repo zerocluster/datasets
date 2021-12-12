@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.12.5 (2021-12-12)
+
+Fixes:
+
+-   fix: docker healthcheck
+
 ### 3.12.4 (2021-12-11)
 
 Fixes:
