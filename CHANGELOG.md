@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.12.7 (2021-12-18)
+
+Fixes:
+
+-   fix: get timezone by coords
+
 ### 3.12.6 (2021-12-12)
 
 Fixes:
