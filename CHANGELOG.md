@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.12.8 (2021-12-31)
+
+Fixes:
+
+-   fix: github action name
+
 ### 3.12.7 (2021-12-18)
 
 Fixes:
