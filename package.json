@@ -38,7 +38,7 @@
         "@turf/turf": "^6.5.0",
         "earcut": "^2.2.3",
         "geo-tz": "^7.0.0",
-        "mmdb-lib": "^1.2.0",
+        "mmdb-lib": "^2.0.0",
         "rbush": "^3.0.0"
     },
     "devDependencies": {
