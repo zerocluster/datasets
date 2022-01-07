@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.13.0 (2022-01-07)
+
+Features:
+
+-   feat: mmdb-lib v2
+
 ### 3.12.8 (2021-12-31)
 
 Fixes:
