@@ -1,5 +1,7 @@
 title: Maxmind GeoIP lookup
 permissions: ["*"]
+emits:
+  - update
 
 methods:
   asn:
