@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.14.0 (2022-01-25)
+
+Features:
+
+-   feat: api schema emits
+
+Fixes:
+
+-   fix: lru cache refactored
+
 ### 3.13.1 (2022-01-11)
 
 Fixes:
