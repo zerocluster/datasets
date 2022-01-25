@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.14.1 (2022-01-25)
+
+Fixes:
+
+-   fix: thread superclass
+
 ### 3.14.0 (2022-01-25)
 
 Features:
