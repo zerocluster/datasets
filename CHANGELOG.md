@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.15.0 (2022-01-31)
+
+Features:
+
+-   feat: cities coordinates
+
+Fixes:
+
+-   fix: resources renamed
+
 ### 3.14.4 (2022-01-28)
 
 Fixes:
