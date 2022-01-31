@@ -21,7 +21,8 @@
     "type": "module",
     "imports": {
         "#core/*": "@softvisio/core/*",
-        "#lib/*": "./lib/*.js"
+        "#lib/*": "./lib/*.js",
+        "#resources/*": "./resources/*"
     },
     "bin": {
         "update-datasets": "bin/update.js"
