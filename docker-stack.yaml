@@ -27,6 +27,9 @@ services:
       APP_MAXMIND_LICENSE_KEY:
       APP_GITHUB_TOKEN:
 
+    configs:
+      - { source: env.production.local.yaml, target: /var/local/package/env.production.local.yaml }
+
     networks: [private]
 
     volumes:
@@ -35,6 +38,9 @@ services:
 
     build:
       context: .
+
+configs:
+  env.production.local.yaml: { file: env.production.local.yaml }
 
 networks:
   private: { external: true }
