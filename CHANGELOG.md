@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.16.0 (2022-02-02)
+
+Features:
+
+-   feat: google maps api
+
+Fixes:
+
+-   fix: cache-lru relocated
+
 ### 3.15.0 (2022-01-31)
 
 Features:

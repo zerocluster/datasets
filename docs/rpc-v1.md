@@ -360,9 +360,6 @@ curl \
         -   `country` <Array\> Country ISO2 code. Filter by the `country` field value:
             -   <string\> Filter operator, one of the: `"="`.
             -   <string\> Field value.
-        -   `coordinates` <Array\> Returns items, which have coordinates. Filter by the `coordinates` field value:
-            -   <string\> Filter operator, one of the: `"="`.
-            -   <boolean\> Field value. Allowed values: `true`.
     -   `limit` <integer\> Max rows to return. **Default:** `20`. This method returns `50` rows maximum.
     -   Example (this is the abstract data structure example, not related to the current method):
         ```json
