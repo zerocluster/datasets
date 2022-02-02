@@ -17,6 +17,7 @@ methods:
         schema:
           type: object
           properties:
+            geocode: { type: boolean }
             center: { type: boolean }
             bbox: { type: boolean }
             geojson: { type: boolean }
@@ -35,6 +36,5 @@ methods:
               name: { type: string, operator: like, required: true }
               type: { type: string, operator: ["=", "in"], enum: [airport, autonomous community, borough, canton, city, city region, congressional district, country, county, department, district, governorate, municipality, national park, neighborhood, okrug, postal code, prefecture, province, region, state, territory, tv region, union territory, university], required: true }
               country: { type: string, operator: "=", description: "Country ISO2 code." }
-              coordinates: { type: boolean, operator: "=", const: true, description: "Returns items, which have coordinates." }
             offset: false
             limit: { defaultLimit: 20, maxResults: 50 }
