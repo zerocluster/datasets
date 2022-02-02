@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.16.1 (2022-02-02)
+
+Fixes:
+
+-   fix: docker stack
+
 ### 3.16.0 (2022-02-02)
 
 Features:
