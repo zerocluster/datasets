@@ -31,6 +31,7 @@
         "build": "node bin/update.js --build",
         "dev": "node bin/main.js --mode=development",
         "install": "node bin/update.js",
+        "main": "node bin/main.js",
         "update": "node bin/update.js --force"
     },
     "dependencies": {
