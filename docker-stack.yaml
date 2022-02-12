@@ -23,10 +23,8 @@ services:
       timeout: 10s
       retries: 3
 
-    environment:
-      # NODE_ENV: development
-      APP_MAXMIND_LICENSE_KEY:
-      APP_GITHUB_TOKEN:
+    # environment:
+    #   NODE_ENV: development
 
     configs:
       - { source: env.yaml, target: /var/local/package/env.yaml }
