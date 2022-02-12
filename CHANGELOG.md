@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.16.4 (2022-02-12)
+
+Fixes:
+
+-   fix: env vars updated
+
 ### 3.16.3 (2022-02-11)
 
 Fixes:
