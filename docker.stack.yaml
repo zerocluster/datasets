@@ -39,7 +39,7 @@ services:
       context: .
 
 configs:
-  env.yaml: { file: env.production.local.yaml }
+  env.yaml: { file: env.yaml }
 
 networks:
   private: { external: true }
