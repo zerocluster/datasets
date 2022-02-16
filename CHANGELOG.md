@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.16.7 (2022-02-16)
+
+Fixes:
+
+-   fix: options default value
+
 ### 3.16.6 (2022-02-16)
 
 Fixes:
