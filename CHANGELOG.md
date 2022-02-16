@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.16.6 (2022-02-16)
+
+Fixes:
+
+-   fix: configs update
+
 ### 3.16.5 (2022-02-12)
 
 Fixes:
