@@ -7,16 +7,16 @@
         "zerocluster",
         "datasets"
     ],
-    "homepage": "https://github.com/zerocluster/datasets",
+    "homepage": "https://zerocluster.github.io/datasets/",
     "bugs": {
         "url": "https://github.com/zerocluster/datasets/issues",
-        "email": "zdm@softvisio.net"
+        "email": "zdm <zdm@softvisio.net>"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/zerocluster/datasets.git"
     },
-    "license": "ISC",
+    "license": "Proprietary Software",
     "author": "zdm <zdm@softvisio.net>",
     "type": "module",
     "imports": {
