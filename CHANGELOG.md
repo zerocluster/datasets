@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.17.2 (2022-02-21)
+
+Fixes:
+
+-   fix: resources github token
+-   fix: resources repo
+
 ### 3.17.1 (2022-02-21)
 
 Fixes:
