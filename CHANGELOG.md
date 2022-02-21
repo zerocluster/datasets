@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.17.3 (2022-02-21)
+
+Fixes:
+
+-   fix: ghithub action renamed
+
 ### 3.17.2 (2022-02-21)
 
 Fixes:
