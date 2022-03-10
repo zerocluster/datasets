@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.17.4 (2022-03-10)
+
+Fixes:
+
+-   fix: github deps
+
 ### 3.17.3 (2022-02-21)
 
 Fixes:
