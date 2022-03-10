@@ -14,7 +14,7 @@ jobs:
     steps:
       - run: |
           export DATASETS_DOWNLOAD=false
-          npm i
+          NODE_ENV= npm i
           node bin/update.js --build --force
         shell: bash
         working-directory: /var/local/package
