@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.17.5 (2022-03-30)
+
+Fixes:
+
+-   fix: docker stack use ingress network
+
 ### 3.17.4 (2022-03-10)
 
 Fixes:
