@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.17.6 (2022-03-31)
+
+Fixes:
+
+-   fix: docker stack network added
+
 ### 3.17.5 (2022-03-30)
 
 Fixes:
