@@ -29,7 +29,7 @@ services:
     configs:
       - { source: env.yaml, target: /var/local/package/env.yaml }
 
-    networks: [swarm]
+    networks: [main]
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
@@ -42,7 +42,7 @@ configs:
   env.yaml: { file: env.yaml }
 
 networks:
-  swarm: { external: true }
+  main: { external: true }
 
 volumes:
   datasets: { name: datasets }
