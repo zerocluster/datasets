@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.17.7 (2022-03-31)
+
+Fixes:
+
+-   fix: network renamed to main
+
 ### 3.17.6 (2022-03-31)
 
 Fixes:
