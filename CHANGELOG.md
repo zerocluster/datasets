@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.17.8 (2022-04-13)
+
+Fixes:
+
+-   fix: resources update event
+
 ### 3.17.7 (2022-03-31)
 
 Fixes:
