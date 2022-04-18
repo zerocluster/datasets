@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.17.10 (2022-04-18)
+
+Fixes:
+
+-   fix: dockerfile label
+
 ### 3.17.9 (2022-04-18)
 
 Fixes:
