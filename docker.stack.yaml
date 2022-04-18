@@ -7,7 +7,7 @@ version: "3.9"
 
 services:
   datasets:
-    image: zerocluster/datasets
+    image: ghcr.io/zerocluster/datasets
     init: true
     stop_grace_period: 5m
 
