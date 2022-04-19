@@ -1,7 +1,5 @@
 FROM ghcr.io/zerocluster/node
 
-LABEL org.opencontainers.image.source="https://github.com/zerocluster/datasets"
-
 RUN \
     # install deps
     export DATASETS_DOWNLOAD=false \
