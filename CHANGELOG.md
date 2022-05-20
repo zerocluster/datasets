@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.18.0 (2022-05-20)
+
+Features:
+
+-   feat: semaphore set refactored
+
 ### 3.17.13 (2022-04-22)
 
 Fixes:
