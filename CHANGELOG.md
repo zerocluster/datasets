@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.18.1 (2022-05-28)
+
+Fixes:
+
+-   fix: fetch browser undefined
+
 ### 3.18.0 (2022-05-20)
 
 Features:
