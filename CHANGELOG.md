@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.18.2 (2022-06-07)
+
+Fixes:
+
+-   fix: gmaps api methods renamed
+
 ### 3.18.1 (2022-05-28)
 
 Fixes:
