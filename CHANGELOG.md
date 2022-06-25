@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.18.3 (2022-06-25)
+
+Fixes:
+
+-   fix: geotargets parsing
+
 ### 3.18.2 (2022-06-07)
 
 Fixes:
