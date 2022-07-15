@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.18.4 (2022-07-15)
+
+Fixes:
+
+-   fix: prinamry key fixed
+
 ### 3.18.3 (2022-06-25)
 
 Fixes:
