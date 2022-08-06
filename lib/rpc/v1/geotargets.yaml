@@ -1,5 +1,5 @@
 title: Geo target lookup
-permissions: ["*"]
+roles: ["*"]
 
 methods:
   get-geotarget:

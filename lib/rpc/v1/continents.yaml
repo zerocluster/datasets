@@ -1,5 +1,5 @@
 title: Continent lookup
-permissions: ["*"]
+roles: ["*"]
 
 methods:
   get:
