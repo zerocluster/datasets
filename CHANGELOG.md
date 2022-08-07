@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.0 (2022-08-07)
+
+Features:
+
+-   feat: permissions renamed to roles
+
 ### 3.18.4 (2022-07-15)
 
 Fixes:
