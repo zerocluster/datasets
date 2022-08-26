@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.1 (2022-08-26)
+
+Fixes:
+
+-   fix: todo removed
+
 ### 3.19.0 (2022-08-07)
 
 Features:
