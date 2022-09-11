@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.2 (2022-09-11)
+
+Fixes:
+
+-   fix: sql schema
+
 ### 3.19.1 (2022-08-26)
 
 Fixes:
