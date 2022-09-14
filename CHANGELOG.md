@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.3 (2022-09-14)
+
+Fixes:
+
+-   fix: scripts urls
+
 ### 3.19.2 (2022-09-11)
 
 Fixes:
