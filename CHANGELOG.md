@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.4 (2022-09-30)
+
+Fixes:
+
+-   fix: fetch default user agent
+
 ### 3.19.3 (2022-09-14)
 
 Fixes:
