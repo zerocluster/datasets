@@ -1,5 +1,4 @@
 title: Country lookup
-roles: ["*"]
 
 methods:
   get:

@@ -1,5 +1,4 @@
 title: Maxmind GeoIP lookup
-roles: ["*"]
 
 methods:
   asn:
