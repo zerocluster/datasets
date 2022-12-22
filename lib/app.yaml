@@ -4,4 +4,6 @@ dependencies:
 components:
   rpc: ~
 
+  threads: ~
+
 config: ~
