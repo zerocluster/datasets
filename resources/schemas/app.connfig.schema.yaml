@@ -1,0 +1,6 @@
+type: object
+properties:
+  googleApiKey: { type: string }
+
+required: [googleApiKey]
+additionalProperties: false
