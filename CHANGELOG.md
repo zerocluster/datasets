@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.19.7 (2022-12-24)
+
+Fixes:
+
+-   fix: app run threads
+-   fix: geotargets parser
+
 ### 3.19.6 (2022-12-22)
 
 Fixes:
