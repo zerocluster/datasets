@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.8 (2022-12-25)
+
+Fixes:
+
+-   fix: google targets parser
+
 ### 3.19.7 (2022-12-24)
 
 Fixes:
