@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.11 (2023-03-23)
+
+Fixes:
+
+-   fix: QUERIES const renamed to SQL
+
 ### 3.19.10 (2023-02-14)
 
 Fixes:

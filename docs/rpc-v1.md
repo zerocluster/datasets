@@ -27,9 +27,9 @@ const api = Api.new( "http://datasets/api/" )
 
 <!-- tabs:end -->
 
-## Continent lookup
+## Timezone lookup
 
-### Get continent by ISO code or name
+### Get timezone by abbreviation or name
 
 <!-- tabs:start -->
 
@@ -37,7 +37,7 @@ const api = Api.new( "http://datasets/api/" )
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/continents/get", id );
+const res = await api.call( "/v1/timezones/get", id );
 ```
 
 #### **Shell**
@@ -46,12 +46,12 @@ const res = await api.call( "/v1/continents/get", id );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/continents/get"
+    "http://datasets/api/v1/timezones/get"
 ```
 
 <!-- tabs:end -->
 
--   `id` <string\> Continent ISO alpha-2 code or name.
+-   `id` <string\> Timezone id, abbreviatoin or name.
 
     <details>
         <summary>JSON schema</summary>
@@ -64,7 +64,7 @@ curl \
 
     </details>
 
-### Get all continents
+### Get all timezones
 
 <!-- tabs:start -->
 
@@ -72,7 +72,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/continents/get-all" );
+const res = await api.call( "/v1/timezones/get-all" );
 ```
 
 #### **Shell**
@@ -81,14 +81,12 @@ const res = await api.call( "/v1/continents/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/continents/get-all"
+    "http://datasets/api/v1/timezones/get-all"
 ```
 
 <!-- tabs:end -->
 
-## Country lookup
-
-### Get country by ISO code or name
+### Search for the timezone by the geo coordinates
 
 <!-- tabs:start -->
 
@@ -96,7 +94,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/countries/get", id );
+const res = await api.call( "/v1/timezones/get-by-coordinates", coordinates );
 ```
 
 #### **Shell**
@@ -105,72 +103,15 @@ const res = await api.call( "/v1/countries/get", id );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/countries/get"
-```
-
-<!-- tabs:end -->
-
--   `id` <string\> Country ISO alpha-2 code, ISO alpha-3 or name.
-
-    <details>
-        <summary>JSON schema</summary>
-
-    ```json
-    {
-        "type": "string"
-    }
-    ```
-
-    </details>
-
-### Get all countries
-
-<!-- tabs:start -->
-
-#### **JavaScript**
-
-<!-- prettier-ignore -->
-```javascript
-const res = await api.call( "/v1/countries/get-all" );
-```
-
-#### **Shell**
-
-<!-- prettier-ignore -->
-```shell
-curl \
-    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/countries/get-all"
-```
-
-<!-- tabs:end -->
-
-### Get country by coordinates
-
-<!-- tabs:start -->
-
-#### **JavaScript**
-
-<!-- prettier-ignore -->
-```javascript
-const res = await api.call( "/v1/countries/get-by-coordinates", coordinates );
-```
-
-#### **Shell**
-
-<!-- prettier-ignore -->
-```shell
-curl \
-    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/countries/get-by-coordinates"
+    "http://datasets/api/v1/timezones/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
 
 -   `coordinates` <Object\> Coordinates object:
 
-    -   `latitude` <number> Latitude.
-    -   `longitude` <number> Longitude.
+    -   `latitude` <number\> Latitude.
+    -   `longitude` <number\> Longitude.
 
     <details>
         <summary>JSON schema</summary>
@@ -193,9 +134,9 @@ curl \
 
     </details>
 
-## Currency lookup
+## Language lookup
 
-### Get currency by ISO code, symbol or name
+### Get language by ISO code or name
 
 <!-- tabs:start -->
 
@@ -203,7 +144,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/currencies/get", id );
+const res = await api.call( "/v1/languages/get", id );
 ```
 
 #### **Shell**
@@ -212,12 +153,12 @@ const res = await api.call( "/v1/currencies/get", id );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/currencies/get"
+    "http://datasets/api/v1/languages/get"
 ```
 
 <!-- tabs:end -->
 
--   `id` <string\> Currency ISO alpha-3 code, symbol or name.
+-   `id` <string\> Language ISO alpha-2, ISO alpha-3 code or name.
 
     <details>
         <summary>JSON schema</summary>
@@ -230,7 +171,7 @@ curl \
 
     </details>
 
-### Get all currencies
+### Get all languages
 
 <!-- tabs:start -->
 
@@ -238,7 +179,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/currencies/get-all" );
+const res = await api.call( "/v1/languages/get-all" );
 ```
 
 #### **Shell**
@@ -247,117 +188,10 @@ const res = await api.call( "/v1/currencies/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/currencies/get-all"
+    "http://datasets/api/v1/languages/get-all"
 ```
 
 <!-- tabs:end -->
-
-## Maxmind GeoIP lookup
-
-### Search in ASN database
-
-<!-- tabs:start -->
-
-#### **JavaScript**
-
-<!-- prettier-ignore -->
-```javascript
-const res = await api.call( "/v1/geoip/asn", addr );
-```
-
-#### **Shell**
-
-<!-- prettier-ignore -->
-```shell
-curl \
-    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/geoip/asn"
-```
-
-<!-- tabs:end -->
-
--   `addr` <string\> IP address.
-
-    <details>
-        <summary>JSON schema</summary>
-
-    ```json
-    {
-        "type": "string"
-    }
-    ```
-
-    </details>
-
-### Search in Country database
-
-<!-- tabs:start -->
-
-#### **JavaScript**
-
-<!-- prettier-ignore -->
-```javascript
-const res = await api.call( "/v1/geoip/country", addr );
-```
-
-#### **Shell**
-
-<!-- prettier-ignore -->
-```shell
-curl \
-    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/geoip/country"
-```
-
-<!-- tabs:end -->
-
--   `addr` <string\> IP address.
-
-    <details>
-        <summary>JSON schema</summary>
-
-    ```json
-    {
-        "type": "string"
-    }
-    ```
-
-    </details>
-
-### Search in City database
-
-<!-- tabs:start -->
-
-#### **JavaScript**
-
-<!-- prettier-ignore -->
-```javascript
-const res = await api.call( "/v1/geoip/city", addr );
-```
-
-#### **Shell**
-
-<!-- prettier-ignore -->
-```shell
-curl \
-    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/geoip/city"
-```
-
-<!-- tabs:end -->
-
--   `addr` <string\> IP address.
-
-    <details>
-        <summary>JSON schema</summary>
-
-    ```json
-    {
-        "type": "string"
-    }
-    ```
-
-    </details>
 
 ## Geo target lookup
 
@@ -520,9 +354,9 @@ curl \
 
     </details>
 
-## Language lookup
+## Maxmind GeoIP lookup
 
-### Get language by ISO code or name
+### Search in ASN database
 
 <!-- tabs:start -->
 
@@ -530,7 +364,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/languages/get", id );
+const res = await api.call( "/v1/geoip/asn", addr );
 ```
 
 #### **Shell**
@@ -539,12 +373,12 @@ const res = await api.call( "/v1/languages/get", id );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/languages/get"
+    "http://datasets/api/v1/geoip/asn"
 ```
 
 <!-- tabs:end -->
 
--   `id` <string\> Language ISO alpha-2, ISO alpha-3 code or name.
+-   `addr` <string\> IP address.
 
     <details>
         <summary>JSON schema</summary>
@@ -557,7 +391,7 @@ curl \
 
     </details>
 
-### Get all languages
+### Search in Country database
 
 <!-- tabs:start -->
 
@@ -565,7 +399,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/languages/get-all" );
+const res = await api.call( "/v1/geoip/country", addr );
 ```
 
 #### **Shell**
@@ -574,36 +408,12 @@ const res = await api.call( "/v1/languages/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/languages/get-all"
+    "http://datasets/api/v1/geoip/country"
 ```
 
 <!-- tabs:end -->
 
-## Timezone lookup
-
-### Get timezone by abbreviation or name
-
-<!-- tabs:start -->
-
-#### **JavaScript**
-
-<!-- prettier-ignore -->
-```javascript
-const res = await api.call( "/v1/timezones/get", id );
-```
-
-#### **Shell**
-
-<!-- prettier-ignore -->
-```shell
-curl \
-    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/timezones/get"
-```
-
-<!-- tabs:end -->
-
--   `id` <string\> Timezone id, abbreviatoin or name.
+-   `addr` <string\> IP address.
 
     <details>
         <summary>JSON schema</summary>
@@ -616,7 +426,7 @@ curl \
 
     </details>
 
-### Get all timezones
+### Search in City database
 
 <!-- tabs:start -->
 
@@ -624,7 +434,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezones/get-all" );
+const res = await api.call( "/v1/geoip/city", addr );
 ```
 
 #### **Shell**
@@ -633,12 +443,27 @@ const res = await api.call( "/v1/timezones/get-all" );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/timezones/get-all"
+    "http://datasets/api/v1/geoip/city"
 ```
 
 <!-- tabs:end -->
 
-### Search for the timezone by the geo coordinates
+-   `addr` <string\> IP address.
+
+    <details>
+        <summary>JSON schema</summary>
+
+    ```json
+    {
+        "type": "string"
+    }
+    ```
+
+    </details>
+
+## Currency lookup
+
+### Get currency by ISO code, symbol or name
 
 <!-- tabs:start -->
 
@@ -646,7 +471,7 @@ curl \
 
 <!-- prettier-ignore -->
 ```javascript
-const res = await api.call( "/v1/timezones/get-by-coordinates", coordinates );
+const res = await api.call( "/v1/currencies/get", id );
 ```
 
 #### **Shell**
@@ -655,15 +480,131 @@ const res = await api.call( "/v1/timezones/get-by-coordinates", coordinates );
 ```shell
 curl \
     -H "Authorization: Bearer <YOUR-API-TOKEN>" \
-    "http://datasets/api/v1/timezones/get-by-coordinates"
+    "http://datasets/api/v1/currencies/get"
+```
+
+<!-- tabs:end -->
+
+-   `id` <string\> Currency ISO alpha-3 code, symbol or name.
+
+    <details>
+        <summary>JSON schema</summary>
+
+    ```json
+    {
+        "type": "string"
+    }
+    ```
+
+    </details>
+
+### Get all currencies
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/currencies/get-all" );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    "http://datasets/api/v1/currencies/get-all"
+```
+
+<!-- tabs:end -->
+
+## Country lookup
+
+### Get country by ISO code or name
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/countries/get", id );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    "http://datasets/api/v1/countries/get"
+```
+
+<!-- tabs:end -->
+
+-   `id` <string\> Country ISO alpha-2 code, ISO alpha-3 or name.
+
+    <details>
+        <summary>JSON schema</summary>
+
+    ```json
+    {
+        "type": "string"
+    }
+    ```
+
+    </details>
+
+### Get all countries
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/countries/get-all" );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    "http://datasets/api/v1/countries/get-all"
+```
+
+<!-- tabs:end -->
+
+### Get country by coordinates
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/countries/get-by-coordinates", coordinates );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    "http://datasets/api/v1/countries/get-by-coordinates"
 ```
 
 <!-- tabs:end -->
 
 -   `coordinates` <Object\> Coordinates object:
 
-    -   `latitude` <number\> Latitude.
-    -   `longitude` <number\> Longitude.
+    -   `latitude` <number> Latitude.
+    -   `longitude` <number> Longitude.
 
     <details>
         <summary>JSON schema</summary>
@@ -685,3 +626,62 @@ curl \
     ```
 
     </details>
+
+## Continent lookup
+
+### Get continent by ISO code or name
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/continents/get", id );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    "http://datasets/api/v1/continents/get"
+```
+
+<!-- tabs:end -->
+
+-   `id` <string\> Continent ISO alpha-2 code or name.
+
+    <details>
+        <summary>JSON schema</summary>
+
+    ```json
+    {
+        "type": "string"
+    }
+    ```
+
+    </details>
+
+### Get all continents
+
+<!-- tabs:start -->
+
+#### **JavaScript**
+
+<!-- prettier-ignore -->
+```javascript
+const res = await api.call( "/v1/continents/get-all" );
+```
+
+#### **Shell**
+
+<!-- prettier-ignore -->
+```shell
+curl \
+    -H "Authorization: Bearer <YOUR-API-TOKEN>" \
+    "http://datasets/api/v1/continents/get-all"
+```
+
+<!-- tabs:end -->
