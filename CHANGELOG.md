@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.12 (2023-03-30)
+
+Fixes:
+
+-   fix: app privateHttpServer
+
 ### 3.19.11 (2023-03-23)
 
 Fixes:
