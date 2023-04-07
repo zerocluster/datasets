@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.13 (2023-04-07)
+
+Fixes:
+
+-   fix: geotargets parser
+
 ### 3.19.12 (2023-03-30)
 
 Fixes:
