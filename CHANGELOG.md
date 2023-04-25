@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.19.15 (2023-04-25)
+
+Fixes:
+
+-   fix: substring optimized
+
 ### 3.19.14 (2023-04-22)
 
 Fixes:
