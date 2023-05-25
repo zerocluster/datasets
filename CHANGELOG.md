@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.20.1 (2023-05-25)
+
+Fixes:
+
+-   fix: app components
+
 ### 3.20.0 (2023-05-06)
 
 Features:
