@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.20.3 (2023-05-29)
+
+Fixes:
+
+-   fix: app docks gen
+
 ### 3.20.2 (2023-05-29)
 
 Fixes:
