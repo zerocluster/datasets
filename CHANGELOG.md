@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.20.7 (2023-06-06)
+
+Fixes:
+
+-   fix: publish methods renamed
+
 ### 3.20.6 (2023-06-06)
 
 Fixes:
