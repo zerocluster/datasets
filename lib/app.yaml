@@ -2,9 +2,11 @@ dependencies:
   - "@softvisio/core"
 
 services:
-  default:
+  rpc:
     rpc: true
     threads: true
+
+defaultService: rpc
 
 components: ~
 
