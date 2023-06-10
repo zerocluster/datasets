@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.20.8 (2023-06-10)
+
+Fixes:
+
+-   fix: app cli
+-   fix: threads options
+
 ### 3.20.7 (2023-06-06)
 
 Fixes:
