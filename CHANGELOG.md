@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.21.2 (2023-07-02)
+
+Fixes:
+
+-   fix: maxmind
+
 ### 3.21.1 (2023-06-15)
 
 Fixes:
