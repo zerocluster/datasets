@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.21.5 (2023-07-10)
+
+Fixes:
+
+-   fix: build
+-   fix: datasets
+-   fix: global scripts
+-   fix: resource update
+-   fix: resources
+
 ### 3.21.4 (2023-07-06)
 
 Fixes:
