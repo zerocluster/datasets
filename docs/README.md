@@ -2,7 +2,7 @@
 
 Shared datasets for use as service.
 
-Link to the datasets: [https://github.com/zerocluster/datasets/releases/tag/data](https://github.com/zerocluster/datasets/releases/tag/data).
+Link to the datasets: [https://github.com/zerocluster/datasets/releases/tag/resources](https://github.com/zerocluster/datasets/releases/tag/resources).
 
 ## Install
 
