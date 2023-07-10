@@ -24,9 +24,6 @@
         "#lib/*": "./lib/*.js",
         "#resources/*": "./resources/*"
     },
-    "bin": {
-        "update-datasets": "bin/update.js"
-    },
     "scripts": {
         "build": "node bin/update.js --build",
         "dev": "node bin/main.js --mode=development",
