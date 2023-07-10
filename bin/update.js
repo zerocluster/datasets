@@ -18,9 +18,9 @@ const CLI = {
 
 await Cli.parse( CLI );
 
-externalResources.add( "softvisio-node/geoip-asn/resources/countries.geo.json", import.meta.url );
-externalResources.add( "softvisio-node/geoip-asn/resources/datasets", import.meta.url );
-externalResources.add( "softvisio-node/geoip-asn/resources/geotargets", import.meta.url );
+externalResources.add( "zerocluster/datasets/resources/countries.geo.json", import.meta.url );
+externalResources.add( "zerocluster/datasets/resources/datasets", import.meta.url );
+externalResources.add( "zerocluster/datasets/resources/geotargets", import.meta.url );
 
 const res = await externalResources.update( {
     "remote": true,
