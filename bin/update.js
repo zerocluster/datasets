@@ -1,20 +1,13 @@
 #!/usr/bin/env node
 
-import Cli from "#core/cli";
-import resources from "#lib/resources";
+import Cli from "#lib/cli";
+import externalResources from "#lib/external-resources";
 
 const CLI = {
-    "title": "Update datasets",
+    "title": "Update resources",
     "options": {
-        "build": {
-            "description": "build datasets",
-            "default": false,
-            "schema": {
-                "type": "boolean",
-            },
-        },
         "force": {
-            "description": "ignore DATASETS_DOWNLOAD environment variable",
+            "description": "Force build",
             "default": false,
             "schema": {
                 "type": "boolean",
@@ -25,12 +18,16 @@ const CLI = {
 
 await Cli.parse( CLI );
 
-if ( process.env.DATASETS_DOWNLOAD === "false" && !process.cli.options.build && !process.cli.options.force ) process.exit( 0 );
+externalResources.add( "softvisio-node/core/resources/geolite2-country", import.meta.url );
+externalResources.add( "softvisio-node/core/resources/http", import.meta.url );
+externalResources.add( "softvisio-node/core/resources/public-suffixes", import.meta.url );
+externalResources.add( "softvisio-node/core/resources/subnets", import.meta.url );
+externalResources.add( "softvisio-node/core/resources/tld", import.meta.url );
 
-const res = await resources.update( { "build": process.cli.options.build } );
+const res = await externalResources.update( {
+    "remote": true,
+    "force": process.cli.options.force,
+    "silent": false,
+} );
 
-if ( !res.ok ) {
-    console.log( `Datasets update error: ` + res );
-
-    process.exit( 3 );
-}
+if ( !res.ok ) process.exit( 1 );
