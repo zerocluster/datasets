@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.21.7 (2023-07-12)
+
+Fixes:
+
+-   fix: skip resources download
+
 ### 3.21.6 (2023-07-12)
 
 Fixes:
