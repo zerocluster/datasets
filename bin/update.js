@@ -3,6 +3,8 @@
 import Cli from "#core/cli";
 import externalResources from "#core/external-resources";
 
+if ( process.env.DATASETS_DOWNLOAD === "false" ) process.exit( 0 );
+
 const CLI = {
     "title": "Update resources",
     "options": {
