@@ -20,9 +20,9 @@ const CLI = {
 
 await Cli.parse( CLI );
 
-externalResources.add( "zerocluster/datasets/resources/countries.geo.json", import.meta.url );
-externalResources.add( "zerocluster/datasets/resources/datasets", import.meta.url );
-externalResources.add( "zerocluster/datasets/resources/geotargets", import.meta.url );
+externalResources.add( "zerocluster/datasets/resources/countries.geo.json" );
+externalResources.add( "zerocluster/datasets/resources/datasets" );
+externalResources.add( "zerocluster/datasets/resources/geotargets" );
 
 const res = await externalResources.update( {
     "remote": true,
