@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 import Cli from "#core/cli";
-import CountriesGeoJson from "#lib/external-resources/countries.geo.json";
-import Datasets from "#lib/external-resources/datasets";
-import Geotargets from "#lib/external-resources/geotargets";
+import CountriesGeoJson from "#lib/countries.geo.json";
+import Datasets from "#lib/datasets";
+import Geotargets from "#lib/geotargets";
 
 const CLI = {
     "title": "Update resources",
