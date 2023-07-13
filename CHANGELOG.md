@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.21.11 (2023-07-13)
+
+Fixes:
+
+-   fix: build
+-   fix: gitignore
+
 ### 3.21.10 (2023-07-13)
 
 Fixes:
