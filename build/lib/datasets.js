@@ -1,4 +1,4 @@
-import ExternalResourceBuilder from "#core/external-resources/builder";
+import ExternalResourceBuilder from "#core/external-resource-builder";
 import url from "node:url";
 import sql from "#core/sql";
 import fs from "node:fs";

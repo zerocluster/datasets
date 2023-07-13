@@ -1,4 +1,4 @@
-import ExternalResourceBuilder from "#core/external-resources/builder";
+import ExternalResourceBuilder from "#core/external-resource-builder";
 import fs from "node:fs";
 import url from "node:url";
 import { readConfig } from "#core/config";
