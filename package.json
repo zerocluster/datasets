@@ -27,8 +27,7 @@
     "scripts": {
         "dev": "node bin/main.js --mode=development",
         "docker": "node bin/main.js",
-        "install": "node bin/update.js",
-        "update": "node bin/update.js"
+        "install": "node bin/install.js"
     },
     "dependencies": {
         "@softvisio/api": "^2.3.4",
