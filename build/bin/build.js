@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import Cli from "#core/cli";
+import ExternalResourceBuilder from "#core/external-resource-builder";
 import CountriesGeoJson from "#lib/countries.geo.json";
 import Datasets from "#lib/datasets";
 import Geotargets from "#lib/geotargets";
@@ -20,13 +21,15 @@ const CLI = {
 
 await Cli.parse( CLI );
 
-var res;
+const res = await ExternalResourceBuilder.build(
+    [
 
-res = await new CountriesGeoJson().build( { "force": process.cli.options.force } );
-if ( !res.ok ) process.exit( 1 );
+        //
+        CountriesGeoJson,
+        Datasets,
+        Geotargets,
+    ],
+    { "force": process.cli.options.force }
+);
 
-res = await new Datasets().build( { "force": process.cli.options.force } );
-if ( !res.ok ) process.exit( 1 );
-
-res = await new Geotargets().build( { "force": process.cli.options.force } );
 if ( !res.ok ) process.exit( 1 );
