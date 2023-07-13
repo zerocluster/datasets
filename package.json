@@ -40,9 +40,5 @@
         "earcut": "^2.2.3",
         "geo-tz": "^7.0.0",
         "rbush": "^3.0.0"
-    },
-    "devDependencies": {
-        "fast-csv": "^4.3.6",
-        "linkedom": "^0.14.25"
     }
 }

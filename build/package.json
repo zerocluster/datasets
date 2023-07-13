@@ -3,13 +3,15 @@
     "type": "module",
     "imports": {
         "#core/*": "@softvisio/core/*",
-        "#lib/*": "./lib/*.js"
+        "#lib/*": "./lib/*.js",
+        "#resources/*": "./resources/*"
     },
     "scripts": {
         "build": "node bin/build.js"
     },
     "dependencies": {
         "@softvisio/core": "latest",
-        "uws": "github:uNetworking/uWebSockets.js#semver:>=20.6.0"
+        "fast-csv": "^4.3.6",
+        "linkedom": "^0.14.25"
     }
 }
