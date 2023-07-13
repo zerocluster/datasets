@@ -6,7 +6,7 @@ import { readConfig } from "#core/config";
 
 const VERSION = 2;
 
-const SOURCE_PATH = url.fileURLToPath( new URL( "../../resources/sources", import.meta.url ) );
+const SOURCE_PATH = url.fileURLToPath( new URL( "../resources", import.meta.url ) );
 const SOURCES = ["continent", "country", "currency", "language", "timezone"];
 
 export default class Datasets extends ExternalResourceBuilder {

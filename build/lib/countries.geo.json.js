@@ -3,7 +3,7 @@ import fs from "node:fs";
 import url from "node:url";
 import { readConfig } from "#core/config";
 
-const SOURCE_PATH = url.fileURLToPath( new URL( "../../resources/sources", import.meta.url ) );
+const SOURCE_PATH = url.fileURLToPath( new URL( "../resources", import.meta.url ) );
 
 export default class CountriesGeoJson extends ExternalResourceBuilder {
 
