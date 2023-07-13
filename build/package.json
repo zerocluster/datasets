@@ -1,0 +1,15 @@
+{
+    "private": true,
+    "type": "module",
+    "imports": {
+        "#core/*": "@softvisio/core/*",
+        "#lib/*": "./lib/*.js"
+    },
+    "scripts": {
+        "build": "node bin/build.js"
+    },
+    "dependencies": {
+        "@softvisio/core": "latest",
+        "uws": "github:uNetworking/uWebSockets.js#semver:>=20.6.0"
+    }
+}
