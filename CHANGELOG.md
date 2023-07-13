@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.21.13 (2023-07-13)
+
+Fixes:
+
+-   fix: install script
+
 ### 3.21.12 (2023-07-13)
 
 Fixes:
