@@ -2,7 +2,7 @@ FROM ghcr.io/zerocluster/node
 
 RUN \
     # install deps
-    export DATASETS_DOWNLOAD=false \
+    export DOWNLOAD_EXTERNAL_RESOURCES=false \
     && npm i --omit=dev \
     \
     # cleanup
