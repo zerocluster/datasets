@@ -11,6 +11,7 @@
     },
     "dependencies": {
         "@softvisio/core": "latest",
+        "@softvisio/sqlite": "^1.15.13",
         "fast-csv": "^4.3.6",
         "linkedom": "^0.14.25"
     }
