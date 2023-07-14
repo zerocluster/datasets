@@ -41,5 +41,5 @@ ogr2ogr -select iso_a2 -f geojson countries.geo.json ne_10m_admin_0_countries.sh
 
 cp countries.geo.json /var/local/host
 
-softvisio-cli lint -a compress countries.geo.json
+softvisio-cli lint -a compress --no-lintignore countries.geo.json
 ```
