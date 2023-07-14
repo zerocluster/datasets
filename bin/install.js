@@ -23,7 +23,6 @@ externalResources.add( "zerocluster/datasets/resources/datasets" );
 externalResources.add( "zerocluster/datasets/resources/geotargets" );
 
 const res = await externalResources.update( {
-    "remote": true,
     "force": process.cli.options.force,
     "silent": false,
 } );
