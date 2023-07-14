@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.21.16 (2023-07-14)
+
+Fixes:
+
+-   fix: update defaults
+
 ### 3.21.15 (2023-07-13)
 
 Fixes:
