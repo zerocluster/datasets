@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.21.17 (2023-07-14)
+
+Fixes:
+
+-   fix: countries updated
+-   fix: docs
+
 ### 3.21.16 (2023-07-14)
 
 Fixes:
