@@ -24,7 +24,7 @@ docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 ### countries.geojson
 
 ```shell
-docker run --rm -it -v $PWD:/var/local/host zerocluster/node
+docker run --rm -it -v $PWD:/var/local/host ghcr.io/zerocluster/node
 
 # inside socker
 apt update
@@ -33,11 +33,13 @@ apt install -y unzip wget gdal-bin
 wget https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
 
 # without boundary lakes
-# https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries_lakes.zip
+# wget https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries_lakes.zip
 
 unzip ne_10m_admin_0_countries.zip
 
 ogr2ogr -select iso_a2 -f geojson countries.geo.json ne_10m_admin_0_countries.shp
 
 cp countries.geo.json /var/local/host
+
+softvisio-cli lint -a compress countries.geo.json
 ```
