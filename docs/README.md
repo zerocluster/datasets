@@ -27,9 +27,13 @@ docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 docker run --rm -it -v $PWD:/var/local/host zerocluster/node
 
 # inside socker
-dnf install -y unzip wget gdal
+apt update
+apt install -y unzip wget gdal-bin
 
-wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+wget https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+
+# without boundary lakes
+# https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries_lakes.zip
 
 unzip ne_10m_admin_0_countries.zip
 
