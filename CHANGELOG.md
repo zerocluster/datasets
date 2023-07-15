@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.21.20 (2023-07-15)
+
+Fixes:
+
+-   fix: geojson builder
+
 ### 3.21.19 (2023-07-14)
 
 Fixes:
