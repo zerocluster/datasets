@@ -2,7 +2,7 @@ import ExternalResourceBuilder from "#core/external-resource-builder";
 import fs from "node:fs";
 import { readConfig } from "#core/config";
 import AdmZip from "adm-zip";
-import fetch from "core/fetch";
+import fetch from "#core/fetch";
 import { TmpDir } from "#core/tmp";
 import childProcess from "node:child_process";
 
