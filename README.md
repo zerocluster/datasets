@@ -19,31 +19,8 @@ docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 
 ## Usage
 
-<!-- Tell about how to use the project, give code examples -->
-
 ## Datasets
 
 -   Google Geo Targets: [https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1](https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1).
 
-### countries.geojson
-
-```shell
-docker run --rm -it -v $PWD:/var/local/host ghcr.io/zerocluster/node
-
-# inside socker
-apt update
-apt install -y unzip wget gdal-bin
-
-wget https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
-
-# without boundary lakes
-# wget https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries_lakes.zip
-
-unzip ne_10m_admin_0_countries.zip
-
-ogr2ogr -select iso_a2 -f geojson countries.geo.json ne_10m_admin_0_countries.shp
-
-cp countries.geo.json /var/local/host
-
-softvisio-cli lint -a compress --no-lintignore countries.geo.json
-```
+-   Countries GEO JSOM: [https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/).
