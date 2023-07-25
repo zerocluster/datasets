@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.21.23 (2023-07-25)
+
+Fixes:
+
+-   fix: docker stack
+
 ### 3.21.22 (2023-07-17)
 
 Fixes:
