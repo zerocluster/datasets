@@ -3,8 +3,9 @@ dependencies:
 
 services:
   rpc:
-    rpc: true
-    threads: true
+    components:
+      rpc: true
+      threads: true
 
 defaultService: rpc
 
