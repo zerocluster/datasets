@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.21.24 (2023-07-25)
+
+Fixes:
+
+-   fix: app config
+
 ### 3.21.23 (2023-07-25)
 
 Fixes:
