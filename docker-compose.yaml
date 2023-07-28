@@ -34,8 +34,7 @@ services:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
       - { type: volume, source: datasets, target: /var/local/package/data }
 
-    build:
-      context: .
+    build: .
 
 configs:
   env.yaml: { file: env.yaml }
