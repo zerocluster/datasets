@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.21.25 (2023-07-28)
+
+Fixes:
+
+-   fix: docker build refactored
+
 ### 3.21.24 (2023-07-25)
 
 Fixes:
