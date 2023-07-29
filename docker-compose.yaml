@@ -37,7 +37,3 @@ networks:
 
 volumes:
   datasets: { name: datasets }
-
-x-build:
-  default_tag: latest
-  auto_tags: [main, latest, next]
