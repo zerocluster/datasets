@@ -4,7 +4,7 @@ import sql from "#core/sql";
 import fetch from "#core/fetch";
 import { DOMParser } from "linkedom";
 import csv from "fast-csv";
-import uule from "#core/utils/uule";
+import * as uule from "#core/utils/uule";
 
 const VERSION = 4;
 
@@ -52,7 +52,10 @@ CREATE INDEX geotarget_type_nams_country_idx ON geotarget ( type, name, country 
         res = await fetch( res.data.url );
         if ( !res.ok ) throw res;
 
-        const data = await res.buffer();
+        const data = await res.text();
+
+        // NOTE patch
+        data.replace( `"9041231","Athens International Airport "Eleftherios Venizelos"","Athens International Airport "Eleftherios Venizelos",Decentralized Administration of Attica,Greece","9069538","GR","Airport",Active`, `"9041231","Athens International Airport ""Eleftherios Venizelos""","Athens International Airport ""Eleftherios Venizelos"", Decentralized Administration of Attica"", Greece","9069538","GR","Airport",Active` );
 
         const values = [];
 
