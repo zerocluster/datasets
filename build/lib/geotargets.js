@@ -3,6 +3,8 @@ import url from "node:url";
 import sql from "#core/sql";
 import fetch from "#core/fetch";
 import { DOMParser } from "linkedom";
+import csv from "fast-csv";
+import uule from "#core/utils/uule";
 
 const VERSION = 4;
 
@@ -27,9 +29,7 @@ export default class GeoTargets extends ExternalResourceBuilder {
 
         if ( !res.ok ) return res;
 
-        const dbh = await sql.new( url.pathToFileURL( location + "/geotargets.sqlite" ) ),
-            { "default": csv } = await import( "fast-csv" ),
-            uule = await import( "#core/utils/uule" );
+        const dbh = await sql.new( url.pathToFileURL( location + "/geotargets.sqlite" ) );
 
         dbh.exec( sql`
 CREATE TABLE IF NOT EXISTS geotarget (
