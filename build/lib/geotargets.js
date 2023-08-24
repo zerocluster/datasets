@@ -3,7 +3,7 @@ import url from "node:url";
 import sql from "#core/sql";
 import fetch from "#core/fetch";
 import { DOMParser } from "linkedom";
-import csv from "fast-csv";
+import csv from "#core/csv";
 import * as uule from "#core/utils/uule";
 
 const VERSION = 4;
@@ -57,22 +57,11 @@ CREATE INDEX geotarget_type_nams_country_idx ON geotarget ( type, name, country 
         // NOTE patch
         data = data.replace( `"9041231","Athens International Airport "Eleftherios Venizelos"","Athens International Airport "Eleftherios Venizelos",Decentralized Administration of Attica,Greece","9069538","GR","Airport",Active`, `"9041231","Athens International Airport ""Eleftherios Venizelos""","Athens International Airport ""Eleftherios Venizelos"", Decentralized Administration of Attica"", Greece","9069538","GR","Airport",Active` );
 
-        const values = [];
+        const values = csv.parse( data, { "fields": ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } ).map( row => {
+            row.type = row.type.toLowerCase();
+            row.status = row.status.toLowerCase();
 
-        await new Promise( resolve => {
-            csv.parseString( data, { "headers": headers => ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } )
-                .on( "error", error => console.error( error ) )
-                .on( "data", row => {
-                    row.type = row.type.toLowerCase();
-                    row.status = row.status.toLowerCase();
-
-                    row.uule = uule.encode( row.canonical_name );
-
-                    values.push( row );
-                } )
-                .on( "end", rowCount => {
-                    resolve();
-                } );
+            row.uule = uule.encode( row.canonical_name );
         } );
 
         dbh.do( sql`INSERT INTO "geotarget"`.VALUES( values ) );
