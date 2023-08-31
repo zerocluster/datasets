@@ -55,7 +55,13 @@ CREATE INDEX geotarget_type_nams_country_idx ON geotarget ( type, name, country 
         let data = await res.text();
 
         // NOTE patch
-        data = data.replace( `"9041231","Athens International Airport "Eleftherios Venizelos"","Athens International Airport "Eleftherios Venizelos",Decentralized Administration of Attica,Greece","9069538","GR","Airport",Active`, `"9041231","Athens International Airport ""Eleftherios Venizelos""","Athens International Airport ""Eleftherios Venizelos"", Decentralized Administration of Attica"", Greece","9069538","GR","Airport",Active` );
+        data = data.replace(
+
+            //
+            `"9041231","Athens International Airport """Eleftherios Venizelos"""","Athens International Airport """Eleftherios Venizelos""",Decentralized Administration of Attica,Greece","9069538","GR","Airport",Active`,
+
+            `"9041231","Athens International Airport ""Eleftherios Venizelos"""","Athens International Airport ""Eleftherios Venizelos""",Decentralized Administration of Attica,Greece","9069538","GR","Airport",Active`
+        );
 
         const values = csv.parse( data, { "header": ["id", "name", "canonical_name", "parent_id", "country", "type", "status"] } ).map( row => {
             row.type = row.type.toLowerCase();
