@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.22.1 (2023-08-31)
+
+Fixes:
+
+-   fix: geitargets csv
+
 ### 3.22.0 (2023-08-25)
 
 Features:
