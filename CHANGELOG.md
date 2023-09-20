@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.23.0 (2023-09-20)
+
+Features:
+
+-   feat: dbh destroy
+
 ### 3.22.1 (2023-08-31)
 
 Fixes:
