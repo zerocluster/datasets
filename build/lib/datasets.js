@@ -115,7 +115,7 @@ CREATE INDEX timezone_abbr_idx ON timezone ( abbr );
             if ( !res.ok ) return res;
         }
 
-        dbh.close();
+        dbh.destroy();
 
         return result( 200 );
     }

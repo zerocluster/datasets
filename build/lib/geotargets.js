@@ -68,7 +68,7 @@ CREATE INDEX geotarget_type_nams_country_idx ON geotarget ( type, name, country 
 
         dbh.do( sql`INSERT INTO "geotarget"`.VALUES( values ) );
 
-        dbh.close();
+        dbh.destroy();
 
         return result( 200 );
     }
