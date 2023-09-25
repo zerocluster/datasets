@@ -4,7 +4,7 @@ import sql from "#core/sql";
 import fetch from "#core/fetch";
 import { DOMParser } from "linkedom";
 import csv from "#core/csv";
-import * as uule from "#core/utils/uule";
+import * as uule from "#core/api/google/uule";
 
 const VERSION = 4;
 
