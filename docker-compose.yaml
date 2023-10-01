@@ -16,7 +16,7 @@ services:
       placement:
         max_replicas_per_node: 1
 
-    command: ""
+    command: run
 
     configs:
       - { source: env.yaml, target: /var/local/package/env.yaml }
