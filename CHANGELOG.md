@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.0 (2023-10-09)
+
+Features:
+
+-   feat: sql contains
+
 ### 3.23.2 (2023-10-01)
 
 Fixes:
