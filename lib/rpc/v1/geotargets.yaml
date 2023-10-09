@@ -32,7 +32,7 @@ methods:
         schema:
           read:
             fields:
-              name: { type: string, operator: like, required: true }
+              name: { type: string, operator: contains, required: true }
               type: { type: string, operator: ["=", "in"], enum: [airport, autonomous community, borough, canton, city, city region, congressional district, country, county, department, district, governorate, municipality, national park, neighborhood, okrug, postal code, prefecture, province, region, state, territory, tv region, union territory, university], required: true }
               country: { type: string, operator: "=", description: "Country ISO2 code." }
             offset: false
