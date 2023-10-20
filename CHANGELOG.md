@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.24.1 (2023-10-20)
+
+Fixes:
+
+-   fix: api
+-   fix: package repo url
+
 ### 3.24.0 (2023-10-09)
 
 Features:
