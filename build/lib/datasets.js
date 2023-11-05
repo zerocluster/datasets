@@ -4,8 +4,6 @@ import sql from "#core/sql";
 import fs from "node:fs";
 import { readConfig } from "#core/config";
 
-const VERSION = 2;
-
 const SOURCE_PATH = url.fileURLToPath( new URL( "../resources", import.meta.url ) );
 const SOURCES = ["continent", "country", "currency", "language", "timezone"];
 
@@ -30,7 +28,7 @@ export default class Datasets extends ExternalResourceBuilder {
             hash.update( JSON.stringify( json ) );
         }
 
-        return result( 200, VERSION + ":" + hash.digest( "hex" ) );
+        return result( 200, hash );
     }
 
     async _build ( location ) {

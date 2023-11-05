@@ -44,7 +44,7 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
 
     async _getMeta () {
         return {
-            "source": "v" + this.#version,
+            "version": "v" + this.#version,
         };
     }
 

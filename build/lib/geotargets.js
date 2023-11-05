@@ -6,9 +6,9 @@ import { DOMParser } from "linkedom";
 import csv from "#core/csv";
 import * as uule from "#core/api/google/uule";
 
-const VERSION = 4;
-
 export default class GeoTargets extends ExternalResourceBuilder {
+    #version;
+    #url;
 
     // properties
     get id () {
@@ -17,16 +17,14 @@ export default class GeoTargets extends ExternalResourceBuilder {
 
     // protected
     async _getEtag () {
-        const res = await this.#getDownloadUrl();
-
+        const res = await this.#prepare();
         if ( !res.ok ) return res;
 
-        return result( 200, VERSION + ":" + new Date( res.data.modified ).toISOString() );
+        return result( 200, this.#version );
     }
 
     async _build ( location ) {
-        var res = await this.#getDownloadUrl();
-
+        var res = await this.#prepare();
         if ( !res.ok ) return res;
 
         const dbh = await sql.new( url.pathToFileURL( location + "/geotargets.sqlite" ) );
@@ -49,7 +47,7 @@ CREATE INDEX geotarget_type_country_idx ON geotarget ( type = 'country', country
 CREATE INDEX geotarget_type_nams_country_idx ON geotarget ( type, name, country );
 ` );
 
-        res = await fetch( res.data.url );
+        res = await fetch( this.#url );
         if ( !res.ok ) throw res;
 
         let data = await res.text();
@@ -73,24 +71,32 @@ CREATE INDEX geotarget_type_nams_country_idx ON geotarget ( type, name, country 
         return result( 200 );
     }
 
+    async _getMeta () {
+        return {
+            "version": "v" + this.#version,
+        };
+    }
+
     // private
-    async #getDownloadUrl () {
-        const res = await fetch( "https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1" );
-        if ( !res.ok ) return res;
+    async #prepare () {
+        if ( !this.#version ) {
+            const res = await fetch( "https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1" );
+            if ( !res.ok ) return res;
 
-        const text = await res.text();
+            const text = await res.text();
 
-        const document = new DOMParser().parseFromString( text, "text/html" );
+            const document = new DOMParser().parseFromString( text, "text/html" );
 
-        const link = document.querySelector( `a:contains("Latest zipped CSV")` );
+            const link = document.querySelector( `a:contains("Latest zipped CSV")` );
 
-        if ( !link ) return result( [500, `Geotargets parsing error`] );
+            if ( !link ) return result( [500, `Geotargets parsing error`] );
 
-        const href = link.getAttribute( "href" );
+            const href = link.getAttribute( "href" );
 
-        return result( 200, {
-            "modified": href.slice( -18, -8 ),
-            "url": `https://developers.google.com${href.replace( ".zip", "" )}`,
-        } );
+            this.#version = href.slice( -18, -8 );
+            this.#url = `https://developers.google.com${href.replace( ".zip", "" )}`;
+        }
+
+        return result( 200 );
     }
 }
