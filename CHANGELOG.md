@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.2 (2023-11-05)
+
+Fixes:
+
+-   fix: external resource etag
+
 ### 3.24.1 (2023-10-20)
 
 Fixes:
