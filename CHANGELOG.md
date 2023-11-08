@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.3 (2023-11-08)
+
+Fixes:
+
+-   fix: docker npm env
+
 ### 3.24.2 (2023-11-05)
 
 Fixes:
