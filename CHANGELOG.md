@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.4 (2023-12-02)
+
+Fixes:
+
+-   fix: sqlite deps
+
 ### 3.24.3 (2023-11-08)
 
 Fixes:
