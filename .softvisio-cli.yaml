@@ -1,3 +1,6 @@
+subPackages:
+  - build
+
 docker:
   build:
     defaultTag: latest
