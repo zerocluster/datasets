@@ -5,7 +5,7 @@ import fs from "node:fs";
 import { readConfig } from "#core/config";
 
 const SOURCE_PATH = url.fileURLToPath( new URL( "../resources", import.meta.url ) );
-const SOURCES = ["continent", "country", "currency", "language", "timezone"];
+const SOURCES = [ "continent", "country", "currency", "language", "timezone" ];
 
 export default class Datasets extends ExternalResourceBuilder {
 
@@ -21,7 +21,7 @@ export default class Datasets extends ExternalResourceBuilder {
         for ( const source of SOURCES ) {
             const sourcePath = SOURCE_PATH + "/" + source + ".json";
 
-            if ( !fs.existsSync( sourcePath ) ) return result( [404, `Source "${source}" not found`] );
+            if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${source}" not found` ] );
 
             const json = readConfig( sourcePath );
 
@@ -104,7 +104,7 @@ CREATE INDEX timezone_abbr_idx ON timezone ( abbr );
         for ( const source of SOURCES ) {
             const sourcePath = SOURCE_PATH + "/" + source + ".json";
 
-            if ( !fs.existsSync( sourcePath ) ) return result( [404, `Source "${source}" not found`] );
+            if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${source}" not found` ] );
 
             const json = readConfig( sourcePath );
 
