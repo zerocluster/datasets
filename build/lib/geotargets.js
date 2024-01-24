@@ -94,7 +94,7 @@ CREATE INDEX geotarget_type_nams_country_idx ON geotarget ( type, name, country 
             const href = link.getAttribute( "href" );
 
             this.#version = href.slice( -18, -8 );
-            this.#url = `https://developers.google.com${href.replace( ".zip", "" )}`;
+            this.#url = `https://developers.google.com${ href.replace( ".zip", "" ) }`;
         }
 
         return result( 200 );
