@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.13 (2024-03-01)
+
+Fixes:
+
+-   fix: geotargets
+
 ### 3.24.12 (2024-01-27)
 
 Fixes:
