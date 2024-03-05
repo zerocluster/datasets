@@ -4,7 +4,6 @@ import Cli from "#core/cli";
 import ExternalResourceBuilder from "#core/external-resource-builder";
 import CountriesGeoJson from "#lib/countries.geo.json";
 import Datasets from "#lib/datasets";
-import Geotargets from "#lib/geotargets";
 
 const CLI = {
     "title": "Update resources",
@@ -27,7 +26,6 @@ const res = await ExternalResourceBuilder.build(
         //
         CountriesGeoJson,
         Datasets,
-        Geotargets,
     ],
     { "force": process.cli.options.force }
 );
