@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.15 (2024-03-05)
+
+Fixes:
+
+-   fix: google geotargets
+
 ### 3.24.14 (2024-03-05)
 
 Fixes:
