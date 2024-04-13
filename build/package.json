@@ -25,6 +25,6 @@
     "dependencies": {
         "@softvisio/core": "latest",
         "adm-zip": "^0.5.9",
-        "linkedom": "^0.15.0"
+        "linkedom": "^0.16.0"
     }
 }
