@@ -1,8 +1,0 @@
-logo: false
-
-aliases:
-  /api: https://raw.githubusercontent.com/softvisio-node/core/main/docs/api.md
-
-app:
-  rpc:
-    url: ws://datasets/api
