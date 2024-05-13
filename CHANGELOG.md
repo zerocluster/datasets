@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.21 (2024-05-13)
+
+Fixes:
+
+-   fix: db schema
+
 ### 3.24.20 (2024-05-13)
 
 Fixes:
