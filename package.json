@@ -33,7 +33,7 @@
         "@softvisio/core": "^7.0.0",
         "@softvisio/geoip-asn": "^1.0.1",
         "@softvisio/geoip-city": "^1.0.1",
-        "@turf/turf": "^6.5.0",
+        "@turf/turf": "^7.0.0",
         "earcut": "^2.2.3",
         "geo-tz": "^8.0.0",
         "rbush": "^3.0.0"
