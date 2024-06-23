@@ -18,7 +18,7 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
     }
 
     // prorected
-    async _getEtag () {
+    async _getEtag ( { etag, buildDate, meta } ) {
         const res = await this.#download();
         if ( !res.ok ) return res;
 
