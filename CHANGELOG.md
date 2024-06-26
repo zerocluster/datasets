@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.28 (2024-06-26)
+
+Fixes:
+
+-   fix: github actions schedule
+
 ### 3.24.27 (2024-06-23)
 
 Fixes:
