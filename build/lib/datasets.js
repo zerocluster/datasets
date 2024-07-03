@@ -4,7 +4,6 @@ import sql from "#core/sql";
 import fs from "node:fs";
 import { readConfig } from "#core/config";
 
-const SOURCE_PATH = url.fileURLToPath( import.meta.resolve( "#resources" ) );
 const SOURCES = {
     "continents": "continent",
     "countries": "country",
@@ -25,7 +24,7 @@ export default class Datasets extends ExternalResourceBuilder {
         const hash = this._getHash();
 
         for ( const source of Object.keys( SOURCES ) ) {
-            const sourcePath = SOURCE_PATH + "/" + source + ".json";
+            const sourcePath = import.meta.resolve( "#resources/" + source + ".json" );
 
             if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${ source }" not found` ] );
 
@@ -108,7 +107,7 @@ CREATE INDEX timezone_abbr_idx ON timezone ( abbr );
     ` );
 
         for ( const [ source, tableName ] of Object.entries( SOURCES ) ) {
-            const sourcePath = SOURCE_PATH + "/" + source + ".json";
+            const sourcePath = import.meta.resolve( "#resources/" + source + ".json" );
 
             if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${ source }" not found` ] );
 
