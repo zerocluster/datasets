@@ -4,8 +4,14 @@ import sql from "#core/sql";
 import fs from "node:fs";
 import { readConfig } from "#core/config";
 
-const SOURCE_PATH = url.fileURLToPath( new URL( "../resources", import.meta.url ) );
-const SOURCES = [ "continent", "country", "currency", "language", "timezone" ];
+const SOURCE_PATH = url.fileURLToPath( import.meta.resolve( "#resources" ) );
+const SOURCES = {
+    "continents": "continent",
+    "countries": "country",
+    "currencies": "currency",
+    "languages": "language",
+    "timezones": "timezone",
+};
 
 export default class Datasets extends ExternalResourceBuilder {
 
@@ -18,7 +24,7 @@ export default class Datasets extends ExternalResourceBuilder {
     async _getEtag ( { etag, buildDate, meta } ) {
         const hash = this._getHash();
 
-        for ( const source of SOURCES ) {
+        for ( const source of Object.keys( SOURCES ) ) {
             const sourcePath = SOURCE_PATH + "/" + source + ".json";
 
             if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${ source }" not found` ] );
@@ -101,14 +107,14 @@ CREATE INDEX timezone_abbr_idx ON timezone ( abbr );
 
     ` );
 
-        for ( const source of SOURCES ) {
+        for ( const [ source, tableName ] of Object.entries( SOURCES ) ) {
             const sourcePath = SOURCE_PATH + "/" + source + ".json";
 
             if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${ source }" not found` ] );
 
             const json = readConfig( sourcePath );
 
-            const res = dbh.do( sql`INSERT INTO`.ID( source ).VALUES( json ) );
+            const res = dbh.do( sql`INSERT INTO`.ID( tableName ).VALUES( json ) );
 
             if ( !res.ok ) return res;
         }
