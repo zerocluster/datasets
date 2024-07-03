@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.24.29 (2024-07-03)
+
+Fixes:
+
+-   fix: deps
+-   fix: sources names
+
 ### 3.24.28 (2024-06-26)
 
 Fixes:
