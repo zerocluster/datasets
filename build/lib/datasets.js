@@ -24,7 +24,7 @@ export default class Datasets extends ExternalResourceBuilder {
         const hash = this._getHash();
 
         for ( const source of Object.keys( SOURCES ) ) {
-            const sourcePath = import.meta.resolve( "#resources/" + source + ".json" );
+            const sourcePath = url.fileURLToPath( import.meta.resolve( "#resources/" + source + ".json" ) );
 
             if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${ source }" not found` ] );
 
@@ -107,7 +107,7 @@ CREATE INDEX timezone_abbr_idx ON timezone ( abbr );
     ` );
 
         for ( const [ source, tableName ] of Object.entries( SOURCES ) ) {
-            const sourcePath = import.meta.resolve( "#resources/" + source + ".json" );
+            const sourcePath = url.fileURLToPath( import.meta.resolve( "#resources/" + source + ".json" ) );
 
             if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${ source }" not found` ] );
 
