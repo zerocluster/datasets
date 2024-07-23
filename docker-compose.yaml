@@ -8,6 +8,7 @@ version: "3.9"
 services:
   datasets:
     image: ghcr.io/zerocluster/datasets
+    # depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
 
@@ -19,7 +20,7 @@ services:
     command: run
 
     secrets:
-      - { source: env.yaml, target: /var/local/package/env.yaml }
+      - { source: datasets, target: /var/local/package/env.yaml }
 
     networks: [main]
 
@@ -30,7 +31,7 @@ services:
     build: .
 
 secrets:
-  env.yaml: { file: env.yaml }
+  datasets: { file: env.yaml }
 
 networks:
   main: { external: true }
