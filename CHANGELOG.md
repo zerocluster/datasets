@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.32 (2024-07-24)
+
+Fixes:
+
+-   fix: stack network
+
 ### 3.24.31 (2024-07-23)
 
 Fixes:
