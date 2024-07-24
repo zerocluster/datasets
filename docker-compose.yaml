@@ -1,9 +1,9 @@
 #!/usr/bin/env -S docker stack deploy --with-registry-auth datasets -c
 
-version: "3.9"
-
 # NOTE deploy
 # docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
+
+version: "3.9"
 
 services:
   datasets:
@@ -22,7 +22,7 @@ services:
     secrets:
       - { source: datasets, target: /var/local/package/env.yaml }
 
-    networks: [main]
+    networks: [network]
 
     volumes:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
@@ -34,7 +34,9 @@ secrets:
   datasets: { file: env.yaml }
 
 networks:
-  main: { external: true }
+  network:
+    name: ${DOCKER_STACK_NETWORK_NAME:-ingress}
+    external: true
 
 volumes:
   datasets: { name: datasets }
