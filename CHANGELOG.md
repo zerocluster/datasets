@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.33 (2024-07-24)
+
+Fixes:
+
+-   fix: compose file version removed
+
 ### 3.24.32 (2024-07-24)
 
 Fixes:
