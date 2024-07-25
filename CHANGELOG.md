@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.34 (2024-07-25)
+
+Fixes:
+
+-   fix: docker compose schema
+
 ### 3.24.33 (2024-07-24)
 
 Fixes:
