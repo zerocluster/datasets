@@ -18,7 +18,7 @@ services:
     command: run
 
     secrets:
-      - { source: datasets, target: /var/local/package/env.yaml }
+      - { source: datasets_env.yaml, target: /var/local/package/env.yaml }
 
     networks: [network]
 
@@ -29,7 +29,7 @@ services:
     build: .
 
 secrets:
-  datasets: { file: env.yaml }
+  datasets_env.yaml: { file: env.yaml }
 
 networks:
   network:
@@ -37,4 +37,4 @@ networks:
     external: true
 
 volumes:
-  datasets: { name: datasets }
+  datasets: ~
