@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.35 (2024-07-26)
+
+Fixes:
+
+-   fix: package lock added
+
 ### 3.24.34 (2024-07-25)
 
 Fixes:
