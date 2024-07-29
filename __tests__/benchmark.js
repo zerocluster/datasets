@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import bench from "#Core/benchmark";
+import benchmark from "#Core/benchmark";
 import Api from "#core/api";
 
 // const port = 80;
@@ -37,4 +37,7 @@ const t = {
 // console.log( await t.continent() );
 // console.log( await t.geoip_country() );
 
-bench( "datasets", t, 10000, 50 );
+await benchmark( t, {
+    "iterations": 10000,
+    "threads": 50,
+} );
