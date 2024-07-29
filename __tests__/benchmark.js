@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import bench from "#Core/benchmark";
 import Api from "#core/api";
 
 // const port = 80;
