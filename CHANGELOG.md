@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.24.38 (2024-07-30)
+
+Fixes:
+
+-   fix: deps
+-   fix: docker stack network
+-   fix: linkedom
+-   fix: test refactor
+-   fix: tests
+
 ### 3.24.37 (2024-07-28)
 
 Fixes:

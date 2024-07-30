@@ -1,6 +1,6 @@
 {
     "name": "@zerocluster/datasets",
-    "version": "3.24.37",
+    "version": "3.24.38",
     "private": true,
     "description": "Datasets service",
     "keywords": [
