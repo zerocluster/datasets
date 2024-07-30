@@ -15,15 +15,19 @@ const tests = {
     async geoip_asn () {
         return api.call( "geoip/asn", ip );
     },
+
     async geoip_asn_http () {
         return apiHttp.call( "geoip/asn", ip );
     },
+
     async country () {
         return api.call( "country/get", "RU" );
     },
+
     async continent () {
         return api.call( "continent/get", "AN" );
     },
+
     async geoip_country () {
         const ip = Math.ceil( Math.random() * 4_294_967_296 );
 
