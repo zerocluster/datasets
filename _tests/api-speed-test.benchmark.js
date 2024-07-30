@@ -11,7 +11,7 @@ const apiHttp = Api.new( `http://devel:${ port }/` );
 
 const ip = "22.12.41.1";
 
-const t = {
+const tests = {
     async geoip_asn () {
         return api.call( "geoip/asn", ip );
     },
@@ -37,7 +37,8 @@ const t = {
 // console.log( await t.continent() );
 // console.log( await t.geoip_country() );
 
-await benchmark( t, {
-    "iterations": 10000,
+await benchmark( "API speed test", tests, {
+    "iterations": 10_000,
+    "seconds": 10,
     "threads": 50,
 } );
