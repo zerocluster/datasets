@@ -1,5 +1,13 @@
 # Changelog
 
+### 3.24.41 (2024-08-08)
+
+Fixes:
+
+-   fix: dependencies update
+-   fix: deps
+-   fix: ported to Temporal
+
 ### 3.24.40 (2024-08-01)
 
 Fixes:
