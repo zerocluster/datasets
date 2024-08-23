@@ -1,5 +1,9 @@
 # Changelog
 
+### 3.24.47 (2024-08-23)
+
+No notable changes since the previous release.
+
 ### 3.24.46 (2024-08-20)
 
 No notable changes since the previous release.
