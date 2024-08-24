@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.48 (2024-08-24)
+
+Fixes:
+
+-   fix: countries link updated
+
 ### 3.24.47 (2024-08-23)
 
 No notable changes since the previous release.
