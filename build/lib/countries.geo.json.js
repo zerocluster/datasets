@@ -6,7 +6,7 @@ import fetch from "#core/fetch";
 import { TmpDir } from "#core/tmp";
 import childProcess from "node:child_process";
 
-const sourceUrl = "https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip";
+const sourceUrl = "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip";
 
 export default class CountriesGeoJson extends ExternalResourceBuilder {
     #tmpDir;
