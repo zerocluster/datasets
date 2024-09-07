@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.51 (2024-09-07)
+
+Fixes:
+
+-   fix: editor config
+
 ### 3.24.50 (2024-09-02)
 
 Fixes:
