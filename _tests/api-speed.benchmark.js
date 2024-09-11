@@ -4,7 +4,7 @@ import benchmark from "#core/benchmark";
 import Api from "#core/api";
 
 // const port = 80;
-const port = 10000;
+const port = 10_000;
 
 const api = new Api( `ws://devel:${ port }/` );
 const apiHttp = new Api( `http://devel:${ port }/` );
