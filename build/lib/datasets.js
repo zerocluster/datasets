@@ -37,7 +37,7 @@ export default class Datasets extends ExternalResourceBuilder {
     }
 
     async _build ( location ) {
-        const dbh = await sql.new( url.pathToFileURL( location + "/datasets.sqlite" ) );
+        const dbh = sql.new( url.pathToFileURL( location + "/datasets.sqlite" ) );
 
         dbh.exec( sql`
 
