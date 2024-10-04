@@ -1,7 +1,7 @@
 import ExternalResourceBuilder from "#core/external-resource-builder";
 import fs from "node:fs";
 import { readConfig } from "#core/config";
-import AdmZip from "adm-zip";
+import Zip from "#core/zip";
 import fetch from "#core/fetch";
 import { TmpDir } from "#core/tmp";
 import childProcess from "node:child_process";
@@ -57,7 +57,7 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
 
         this.#tmpDir = new TmpDir();
 
-        const zip = new AdmZip( tmpFile.path );
+        const zip = new Zip( tmpFile.path );
 
         for ( const entry of zip.getEntries() ) {
             if ( !entry.name ) continue;
