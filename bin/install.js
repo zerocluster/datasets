@@ -22,9 +22,8 @@ externalResources.add( "zerocluster/datasets/resources/countries.geo.json" );
 externalResources.add( "zerocluster/datasets/resources/datasets" );
 externalResources.add( "softvisio-node/core/resources/google-geotargets" );
 
-const res = await externalResources.update( {
+const res = await externalResources.install( {
     "force": process.cli.options.force,
-    "silent": false,
 } );
 
 if ( !res.ok ) process.exit( 1 );
