@@ -1,8 +1,8 @@
-import ExternalResourceBuilder from "#core/external-resource-builder";
-import url from "node:url";
-import sql from "#core/sql";
 import fs from "node:fs";
+import url from "node:url";
 import { readConfig } from "#core/config";
+import ExternalResourceBuilder from "#core/external-resource-builder";
+import sql from "#core/sql";
 
 const SOURCES = {
     "continents": "continent",

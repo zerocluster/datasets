@@ -1,10 +1,10 @@
-import ExternalResourceBuilder from "#core/external-resource-builder";
+import childProcess from "node:child_process";
 import fs from "node:fs";
 import { readConfig } from "#core/config";
-import Zip from "#core/zip";
+import ExternalResourceBuilder from "#core/external-resource-builder";
 import fetch from "#core/fetch";
 import { TmpDir } from "#core/tmp";
-import childProcess from "node:child_process";
+import Zip from "#core/zip";
 
 const sourceUrl = "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip";
 
