@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.24.59 (2024-10-09)
+
+Fixes:
+
+-   fix: dependabot
+-   fix: install cli options
+-   fix: install script
+-   fix: zip
+
 ### 3.24.58 (2024-10-02)
 
 No notable changes since the previous release.
