@@ -6,10 +6,10 @@ import CountriesGeoJson from "#lib/countries.geo.json";
 import Datasets from "#lib/datasets";
 
 const CLI = {
-    "title": "Update resources",
+    "title": "Build resources",
     "options": {
         "force": {
-            "description": "Force build",
+            "description": "force build",
             "default": false,
             "schema": {
                 "type": "boolean",
