@@ -1,4 +1,5 @@
 {
+    "name": "@zerocluster/datasets/build",
     "version": "3.24.60",
     "private": true,
     "homepage": "https://github.com/zerocluster/datasets",
