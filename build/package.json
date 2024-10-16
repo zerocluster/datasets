@@ -20,7 +20,9 @@
         "#resources/*": "./resources/*"
     },
     "scripts": {
-        "build": "node bin/build.js"
+        "build": "node bin/build.js",
+        "publish": "softvisio-cli package publish",
+        "test": "node --test '_tests/**/*.test.js'"
     },
     "dependencies": {
         "@softvisio/core": "^7.83.13"

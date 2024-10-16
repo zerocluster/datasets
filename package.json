@@ -26,7 +26,9 @@
     },
     "scripts": {
         "dev": "node bin/main.js run --mode=development",
-        "install": "node bin/install.js"
+        "install": "node bin/install.js",
+        "publish": "softvisio-cli package publish",
+        "test": "node --test '_tests/**/*.test.js'"
     },
     "dependencies": {
         "@softvisio/api": "^2.3.4",
