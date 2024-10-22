@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.24.63 (2024-10-22)
+
+No notable changes since the previous release.
+
+[Full list of the changes](https://github.com/zerocluster/datasets/compare/v3.24.62...v3.24.63)
+
 ### 3.24.62 (2024-10-20)
 
 No notable changes since the previous release.
