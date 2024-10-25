@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.24.66 (2024-10-25)
+
+Other changes:
+
+-   chore: update package dependencies
+-   chore: update package metadata
+
+[Compare with the previous release: v3.24.65 ... v3.24.66](https://github.com/zerocluster/datasets/compare/v3.24.65...v3.24.66)
+
 ### 3.24.65 (2024-10-24)
 
 Other changes:
