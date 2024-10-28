@@ -19,8 +19,8 @@ methods:
       - name: coordinates
         description: |-
           Coordinates object:
-          -   `latitude` <number\> Latitude.
-          -   `longitude` <number\> Longitude.
+          -   `latitude` {number} Latitude.
+          -   `longitude` {number} Longitude.
         required: true
         schema:
           type: object

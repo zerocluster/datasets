@@ -7,8 +7,8 @@ methods:
       - name: id
         description: |-
           Search criteria:
-          -   <number\> Numeric identifier.
-          -   <string\> Canonical name or country iso2 code.
+          -   {number} Numeric identifier.
+          -   {string} Canonical name or country iso2 code.
         required: true
         schema:
           type: [number, string]
