@@ -1,12 +1,12 @@
 <!-- !!! DO NOT EDIT, THIS FILE IS GENERATED AUTOMATICALLY !!!  -->
 
-> :information_source: Please, see the full project documentation here:<br>[https://zerocluster.github.io/datasets/](https://zerocluster.github.io/datasets/)
+> :information_source: Please, see the full project documentation here:<br><https://zerocluster.github.io/datasets/>
 
 # Introduction
 
 Shared datasets for use as service.
 
-Link to the datasets: [https://github.com/zerocluster/datasets/releases/tag/resources](https://github.com/zerocluster/datasets/releases/tag/resources).
+Link to the datasets: <https://github.com/zerocluster/datasets/releases/tag/resources>.
 
 ## Install
 
@@ -21,6 +21,6 @@ docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 
 ## Datasets
 
--   Google Geo Targets: [https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1](https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1).
+-   Google Geo Targets: <https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1>.
 
--   Countries GEO JSOM: [https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/).
+-   Countries GEO JSOM: <https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/>.
