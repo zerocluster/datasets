@@ -1519,7 +1519,7 @@ Fixed:
 
 Fixed:
 
--   #core/fs removed
+-   \#core/fs removed
 
 ### 2.6.10 (2021-07-25)
 
