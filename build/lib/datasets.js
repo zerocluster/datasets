@@ -20,7 +20,7 @@ export default class Datasets extends ExternalResourceBuilder {
     }
 
     // protected
-    async _getEtag ( { etag, buildDate, meta } ) {
+    async _getEtag () {
         const hash = this._getHash();
 
         for ( const source of Object.keys( SOURCES ) ) {

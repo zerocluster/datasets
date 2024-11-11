@@ -18,7 +18,7 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
     }
 
     // prorected
-    async _getEtag ( { etag, buildDate, meta } ) {
+    async _getEtag () {
         const res = await this.#download();
         if ( !res.ok ) return res;
 
@@ -43,9 +43,9 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
     }
 
     async _getMeta () {
-        return {
+        return result( 200, {
             "version": "v" + this.#version,
-        };
+        } );
     }
 
     // private
