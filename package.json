@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "@softvisio/api": "^2.3.4",
-        "@softvisio/core": "^7.101.7",
+        "@softvisio/core": "^7.115.16",
         "@softvisio/geoip-asn": "^1.0.1",
         "@softvisio/geoip-city": "^1.0.1",
         "@turf/turf": "^7.0.0",
