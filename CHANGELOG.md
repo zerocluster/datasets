@@ -1,5 +1,13 @@
 # Changelog
 
+### 3.25.0 (2024-11-27)
+
+Features:
+
+- feat: rename resources
+
+[Compare with the previous release: v3.24.70 ... v3.25.0](https://github.com/zerocluster/datasets/compare/v3.24.70...v3.25.0)
+
 ### 3.24.70 (2024-11-27)
 
 Other changes:
