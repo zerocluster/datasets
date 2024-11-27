@@ -29,7 +29,7 @@
         "start": "node bin/main.js run --mode=development"
     },
     "dependencies": {
-        "@softvisio/api": "^2.3.4",
+        "@softvisio/api": "^2.10.18",
         "@softvisio/core": "^7.101.7",
         "@softvisio/geoip-asn": "^1.0.1",
         "@softvisio/geoip-city": "^1.0.1",
