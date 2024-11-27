@@ -2,7 +2,7 @@
 
 import Cli from "#core/cli";
 import ExternalResourceBuilder from "#core/external-resource-builder";
-import CountriesGeoJson from "#lib/countries.geo.json";
+import CountriesGeoJson from "#lib/countries-geo-json";
 import Datasets from "#lib/datasets";
 
 const CLI = {

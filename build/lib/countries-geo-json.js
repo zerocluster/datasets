@@ -14,7 +14,7 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
 
     // properties
     get id () {
-        return "zerocluster/datasets/resources/countries.geo.json";
+        return "zerocluster/datasets/resources/countries-geo-json";
     }
 
     // prorected
