@@ -21,6 +21,6 @@ docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 
 ## Datasets
 
--   Google Geo Targets: <https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1>.
+- Google Geo Targets: <https://developers.google.com/adwords/api/docs/appendix/geotargeting?csw=1>.
 
--   Countries GEO JSOM: <https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/>.
+- Countries GEO JSOM: <https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/>.

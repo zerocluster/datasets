@@ -1,10 +1,10 @@
--   [Introduction](/)
+- [Introduction](/)
 
 **API**
 
--   [Introduction](/api.md)
--   [RPC v1](/rpc/v1.md)
+- [Introduction](/api.md)
+- [RPC v1](/rpc/v1.md)
 
 **Links**
 
--   [Changelog](/changelog)
+- [Changelog](/changelog)
