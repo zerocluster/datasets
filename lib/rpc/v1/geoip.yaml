@@ -1,29 +1,29 @@
 title: Maxmind GeoIP lookup
 
 methods:
-  asn:
-    title: Search in ASN database
-    params:
-      - name: addr
-        description: IP address.
-        required: true
-        schema:
-          type: string
+    asn:
+        title: Search in ASN database
+        params:
+            - name: addr
+              description: IP address.
+              required: true
+              schema:
+                  type: string
 
-  country:
-    title: Search in Country database
-    params:
-      - name: addr
-        description: IP address.
-        required: true
-        schema:
-          type: string
+    country:
+        title: Search in Country database
+        params:
+            - name: addr
+              description: IP address.
+              required: true
+              schema:
+                  type: string
 
-  city:
-    title: Search in City database
-    params:
-      - name: addr
-        description: IP address.
-        required: true
-        schema:
-          type: string
+    city:
+        title: Search in City database
+        params:
+            - name: addr
+              description: IP address.
+              required: true
+              schema:
+                  type: string

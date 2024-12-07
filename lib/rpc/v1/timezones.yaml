@@ -1,31 +1,31 @@
 title: Timezone lookup
 
 methods:
-  get:
-    title: Get timezone by abbreviation or name
-    params:
-      - name: id
-        description: Timezone id, abbreviatoin or name.
-        required: true
-        schema:
-          type: string
+    get:
+        title: Get timezone by abbreviation or name
+        params:
+            - name: id
+              description: Timezone id, abbreviatoin or name.
+              required: true
+              schema:
+                  type: string
 
-  get-all:
-    title: Get all timezones
+    get-all:
+        title: Get all timezones
 
-  get-by-coordinates:
-    title: Search for the timezone by the geo coordinates
-    params:
-      - name: coordinates
-        description: |-
-          Coordinates object:
-          -   `latitude` {number} Latitude.
-          -   `longitude` {number} Longitude.
-        required: true
-        schema:
-          type: object
-          properties:
-            latitude: { type: number }
-            longitude: { type: number }
-          required: [latitude, longitude]
-          additionalProperties: false
+    get-by-coordinates:
+        title: Search for the timezone by the geo coordinates
+        params:
+            - name: coordinates
+              description: |-
+                  Coordinates object:
+                  -   `latitude` {number} Latitude.
+                  -   `longitude` {number} Longitude.
+              required: true
+              schema:
+                  type: object
+                  properties:
+                      latitude: { type: number }
+                      longitude: { type: number }
+                  required: [latitude, longitude]
+                  additionalProperties: false

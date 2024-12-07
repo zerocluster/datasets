@@ -1,14 +1,14 @@
 title: Language lookup
 
 methods:
-  get:
-    title: Get language by ISO code or name
-    params:
-      - name: id
-        description: Language ISO alpha-2, ISO alpha-3 code or name.
-        required: true
-        schema:
-          type: string
+    get:
+        title: Get language by ISO code or name
+        params:
+            - name: id
+              description: Language ISO alpha-2, ISO alpha-3 code or name.
+              required: true
+              schema:
+                  type: string
 
-  get-all:
-    title: Get all languages
+    get-all:
+        title: Get all languages

@@ -1,22 +1,22 @@
 name: build-resources
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *" # every day at 00:00
+    workflow_dispatch:
+    schedule:
+        - cron: "0 0 * * *" # every day at 00:00
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/zerocluster/node
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    steps:
-      - uses: actions/checkout@v4
-      - run: |
-          apt-get update
-          apt-get install -y git gdal-bin
-          cd build
-          npm install --ignore-scripts
-          npm run build
-        shell: bash
+    build:
+        runs-on: ubuntu-latest
+        container:
+            image: ghcr.io/zerocluster/node
+            env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        steps:
+            - uses: actions/checkout@v4
+            - run: |
+                  apt-get update
+                  apt-get install -y git gdal-bin
+                  cd build
+                  npm install --ignore-scripts
+                  npm run build
+              shell: bash

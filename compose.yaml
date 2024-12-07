@@ -1,33 +1,33 @@
 services:
-  datasets:
-    image: ghcr.io/zerocluster/datasets
-    # depends_on: [postgresql]
-    init: true
-    stop_grace_period: 5m
+    datasets:
+        image: ghcr.io/zerocluster/datasets
+        # depends_on: [postgresql]
+        init: true
+        stop_grace_period: 5m
 
-    deploy:
-      replicas: 1
-      placement:
-        max_replicas_per_node: 1
+        deploy:
+            replicas: 1
+            placement:
+                max_replicas_per_node: 1
 
-    command: run
+        command: run
 
-    secrets:
-      - { source: datasets_env.yaml, target: /var/local/package/env.yaml }
+        secrets:
+            - { source: datasets_env.yaml, target: /var/local/package/env.yaml }
 
-    networks: [network]
+        networks: [network]
 
-    volumes:
-      - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
-      - { type: volume, source: datasets, target: /var/local/package/data }
+        volumes:
+            - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
+            - { type: volume, source: datasets, target: /var/local/package/data }
 
-    build: .
+        build: .
 
 secrets:
-  datasets_env.yaml: { file: env.yaml }
+    datasets_env.yaml: { file: env.yaml }
 
 networks:
-  network: ~
+    network: ~
 
 volumes:
-  datasets: ~
+    datasets: ~
