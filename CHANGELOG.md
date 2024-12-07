@@ -1,5 +1,18 @@
 # Changelog
 
+### 3.25.1 (2024-12-07)
+
+Other changes:
+
+- chore: lint
+- chore: rename tests directory
+- chore: set yaml indent to 4 spaces
+- chore: update docs
+- chore: update external resources path
+- chore: update package dependencies
+
+[Compare with the previous release: v3.25.0 ... v3.25.1](https://github.com/zerocluster/datasets/compare/v3.25.0...v3.25.1)
+
 ### 3.25.0 (2024-11-27)
 
 Features:
