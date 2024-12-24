@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.25.2 (2024-12-24)
+
+Other changes:
+
+- chore: refactor mime
+- chore: update package dependencies
+
+[Compare with the previous release: v3.25.1 ... v3.25.2](https://github.com/zerocluster/datasets/compare/v3.25.1...v3.25.2)
+
 ### 3.25.1 (2024-12-07)
 
 Other changes:
