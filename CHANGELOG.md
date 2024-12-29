@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.25.4 (2024-12-29)
+
+Other changes:
+
+- chore: refactor dbh cron connection
+- chore: update package dependencies
+
+[Compare with the previous release: v3.25.3 ... v3.25.4](https://github.com/zerocluster/datasets/compare/v3.25.3...v3.25.4)
+
 ### 3.25.3 (2024-12-27)
 
 Other changes:
