@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.25.7 (2025-01-08)
+
+Other changes:
+
+- chore: remove linux platform installer
+- chore: update package dependencies
+
+[Compare with the previous release: v3.25.6 ... v3.25.7](https://github.com/zerocluster/datasets/compare/v3.25.6...v3.25.7)
+
 ### 3.25.6 (2024-12-30)
 
 Other changes:
