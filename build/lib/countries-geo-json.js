@@ -35,7 +35,7 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
         } );
         if ( res.status ) return result( 500 );
 
-        const json = readConfig( this.#tmpDir + "/countries.geo.json" );
+        const json = await readConfig( this.#tmpDir + "/countries.geo.json" );
 
         fs.writeFileSync( location + "/countries.geo.json", JSON.stringify( json ) );
 

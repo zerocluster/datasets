@@ -28,7 +28,7 @@ export default class Datasets extends ExternalResourceBuilder {
 
             if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${ source }" not found` ] );
 
-            const json = readConfig( sourcePath );
+            const json = await readConfig( sourcePath );
 
             hash.update( JSON.stringify( json ) );
         }
@@ -111,7 +111,7 @@ CREATE INDEX timezone_abbr_idx ON timezone ( abbr );
 
             if ( !fs.existsSync( sourcePath ) ) return result( [ 404, `Source "${ source }" not found` ] );
 
-            const json = readConfig( sourcePath );
+            const json = await readConfig( sourcePath );
 
             const res = dbh.do( sql`INSERT INTO`.ID( tableName ).VALUES( json ) );
 
