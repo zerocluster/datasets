@@ -1,5 +1,17 @@
 # Changelog
 
+### 3.26.0 (2025-02-17)
+
+Features:
+
+- feat: refactor read / write config
+
+Other changes:
+
+- chore: update package dependencies
+
+Compare with the previous release: [`v3.25.13...v3.26.0`](https://github.com/zerocluster/datasets/compare/v3.25.13...v3.26.0)
+
 ### 3.25.13 (2025-01-21)
 
 Other changes:
