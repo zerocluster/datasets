@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.26.3 (2025-02-26)
+
+Other changes:
+
+- chore: update editorconfig
+- chore: update package dependencies
+
+Compare with the previous release: [`v3.26.2...v3.26.3`](https://github.com/zerocluster/datasets/compare/v3.26.2...v3.26.3)
+
 ### 3.26.2 (2025-02-20)
 
 Other changes:
