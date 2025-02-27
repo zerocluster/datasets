@@ -1,39 +1,39 @@
 title: Geo target lookup
 
 methods:
-    get-geotarget:
-        title: Get geotarget by id, canonical name or country iso2 code
-        params:
-            - name: id
-              description: |-
-                  Search criteria:
-                  -   {number} Numeric identifier.
-                  -   {string} Canonical name or country iso2 code.
-              required: true
-              schema:
-                  type: [number, string]
-            - name: options
-              schema:
-                  type: object
-                  properties:
-                      geocode: { type: boolean }
-                      center: { type: boolean }
-                      bbox: { type: boolean }
-                      geojson: { type: boolean }
-                      random_coordinates: { type: boolean }
-                      random_point: { type: boolean }
-                  additionalProperties: false
+  get-geotarget:
+    title: Get geotarget by id, canonical name or country iso2 code
+    params:
+      - name: id
+        description: |-
+          Search criteria:
+          -   {number} Numeric identifier.
+          -   {string} Canonical name or country iso2 code.
+        required: true
+        schema:
+          type: [number, string]
+      - name: options
+        schema:
+          type: object
+          properties:
+            geocode: { type: boolean }
+            center: { type: boolean }
+            bbox: { type: boolean }
+            geojson: { type: boolean }
+            random_coordinates: { type: boolean }
+            random_point: { type: boolean }
+          additionalProperties: false
 
-    suggest-geotargets:
-        title: Suggest geotargets
-        params:
-            - name: options
-              required: true
-              schema:
-                  read:
-                      fields:
-                          name: { type: string, operator: includes case insensitive, required: true }
-                          type: { type: string, operator: ["=", "in"], enum: [airport, autonomous community, borough, canton, city, city region, congressional district, country, county, department, district, governorate, municipality, national park, neighborhood, okrug, postal code, prefecture, province, region, state, territory, tv region, union territory, university], required: true }
-                          country: { type: string, operator: "=", description: "Country ISO2 code." }
-                      offset: false
-                      limit: { defaultLimit: 20, maxResults: 50 }
+  suggest-geotargets:
+    title: Suggest geotargets
+    params:
+      - name: options
+        required: true
+        schema:
+          read:
+            fields:
+              name: { type: string, operator: includes case insensitive, required: true }
+              type: { type: string, operator: ["=", "in"], enum: [airport, autonomous community, borough, canton, city, city region, congressional district, country, county, department, district, governorate, municipality, national park, neighborhood, okrug, postal code, prefecture, province, region, state, territory, tv region, union territory, university], required: true }
+              country: { type: string, operator: "=", description: "Country ISO2 code." }
+            offset: false
+            limit: { defaultLimit: 20, maxResults: 50 }

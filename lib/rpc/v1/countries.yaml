@@ -1,31 +1,31 @@
 title: Country lookup
 
 methods:
-    get:
-        title: Get country by ISO code or name
-        params:
-            - name: id
-              description: Country ISO alpha-2 code, ISO alpha-3 or name.
-              required: true
-              schema:
-                  type: string
+  get:
+    title: Get country by ISO code or name
+    params:
+      - name: id
+        description: Country ISO alpha-2 code, ISO alpha-3 or name.
+        required: true
+        schema:
+          type: string
 
-    get-all:
-        title: Get all countries
+  get-all:
+    title: Get all countries
 
-    get-by-coordinates:
-        title: Get country by coordinates
-        params:
-            - name: coordinates
-              description: |-
-                  Coordinates object:
-                  -   `latitude` <number> Latitude.
-                  -   `longitude` <number> Longitude.
-              required: true
-              schema:
-                  type: object
-                  properties:
-                      latitude: { type: number }
-                      longitude: { type: number }
-                  required: [latitude, longitude]
-                  additionalProperties: false
+  get-by-coordinates:
+    title: Get country by coordinates
+    params:
+      - name: coordinates
+        description: |-
+          Coordinates object:
+          -   `latitude` <number> Latitude.
+          -   `longitude` <number> Longitude.
+        required: true
+        schema:
+          type: object
+          properties:
+            latitude: { type: number }
+            longitude: { type: number }
+          required: [latitude, longitude]
+          additionalProperties: false

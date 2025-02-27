@@ -1,18 +1,18 @@
 releasable: true
 
 subPackages:
-    - /build
+  - /build
 
 docker:
-    defaultTag: latest
-    autoTags: [main, latest, next]
+  defaultTag: latest
+  autoTags: [main, latest, next]
 
 docs:
-    location: /docs
+  location: /docs
 
-    aliases:
-        /api: https://raw.githubusercontent.com/softvisio-node/core/main/docs/api.md
+  aliases:
+    /api: https://raw.githubusercontent.com/softvisio-node/core/main/docs/api.md
 
-    app:
-        rpc:
-            url: ws://datasets/api
+  app:
+    rpc:
+      url: ws://datasets/api

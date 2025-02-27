@@ -1,14 +1,14 @@
 title: Currency lookup
 
 methods:
-    get:
-        title: Get currency by ISO code, symbol or name
-        params:
-            - name: id
-              description: Currency ISO alpha-3 code, symbol or name.
-              required: true
-              schema:
-                  type: string
+  get:
+    title: Get currency by ISO code, symbol or name
+    params:
+      - name: id
+        description: Currency ISO alpha-3 code, symbol or name.
+        required: true
+        schema:
+          type: string
 
-    get-all:
-        title: Get all currencies
+  get-all:
+    title: Get all currencies
