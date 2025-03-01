@@ -2,7 +2,7 @@
     "name": "@zerocluster/datasets-build",
     "version": "3.26.5",
     "private": true,
-    "homepage": "https://github.com/zerocluster/datasets",
+    "homepage": "https://zerocluster.github.io/datasets/",
     "bugs": {
         "url": "https://github.com/zerocluster/datasets/issues",
         "email": "root <root@softvisio.net>"
