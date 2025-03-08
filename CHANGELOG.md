@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.26.8 (2025-03-08)
+
+Other changes:
+
+- chore: fix shebang
+- chore: update package dependencies
+- chore: update package metadata
+
+Compare with the previous release: [`v3.26.7...v3.26.8`](https://github.com/zerocluster/datasets/compare/v3.26.7...v3.26.8)
+
 ### 3.26.7 (2025-03-03)
 
 Other changes:
