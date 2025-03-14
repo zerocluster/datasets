@@ -1,5 +1,13 @@
 # Changelog
 
+### 3.26.10 (2025-03-14)
+
+Other changes:
+
+- chore: update package dependencies
+
+Compare with the previous release: [`v3.26.9...v3.26.10`](https://github.com/zerocluster/datasets/compare/v3.26.9...v3.26.10)
+
 ### 3.26.9 (2025-03-12)
 
 Other changes:
