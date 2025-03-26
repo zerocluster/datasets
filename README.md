@@ -12,7 +12,7 @@ Link to the datasets: <https://github.com/zerocluster/datasets/releases/tag/reso
 
 Use `docker-stack.yaml` and `.config.yaml` files, provided in this repository.
 
-```shell
+```sh
 # deploy
 docker stack deploy --with-registry-auth -c docker-stack.yaml datasets
 ```
