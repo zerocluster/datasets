@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.26.13 (2025-03-28)
+
+Other changes:
+
+- chore: update markdown code tags
+- chore: update package dependencies
+
+Compare with the previous release: [`v3.26.12...v3.26.13`](https://github.com/zerocluster/datasets/compare/v3.26.12...v3.26.13)
+
 ### 3.26.12 (2025-03-20)
 
 Other changes:
