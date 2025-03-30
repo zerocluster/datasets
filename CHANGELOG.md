@@ -1,5 +1,17 @@
 # Changelog
 
+### 3.27.0 (2025-03-30)
+
+Features:
+
+- feat: update timezones api
+
+Other changes:
+
+- chore: update package dependencies
+
+Compare with the previous release: [`v3.26.13...v3.27.0`](https://github.com/zerocluster/datasets/compare/v3.26.13...v3.27.0)
+
 ### 3.26.13 (2025-03-28)
 
 Other changes:
