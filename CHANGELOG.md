@@ -1,5 +1,14 @@
 # Changelog
 
+### 3.27.4 (2025-04-10)
+
+Other changes:
+
+- chore: rename dockerfile
+- chore: update package dependencies
+
+Compare with the previous release: [`v3.27.3...v3.27.4`](https://github.com/zerocluster/datasets/compare/v3.27.3...v3.27.4)
+
 ### 3.27.3 (2025-04-06)
 
 Other changes:
