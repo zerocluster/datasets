@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.27.8 (2025-04-27)
+
+Other changes:
+
+- chore: update API\_ prefix
+- chore: update package dependencies
+- chore: update threads api
+
+Compare with the previous release: [`v3.27.7...v3.27.8`](https://github.com/zerocluster/datasets/compare/v3.27.7...v3.27.8)
+
 ### 3.27.7 (2025-04-25)
 
 Other changes:
