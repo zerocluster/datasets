@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.27.19 (2025-05-15)
+
+**Other changes:**
+
+- \[PATCH] chore: update package dependencies (👬 zdm)
+
+Compare with the previous release: [`v3.27.18...v3.27.19`](https://github.com/zerocluster/datasets/compare/v3.27.18...v3.27.19)
+
 ### 3.27.18 (2025-05-11)
 
 **Other changes:**
