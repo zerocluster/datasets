@@ -15,4 +15,4 @@ docs:
 
   app:
     rpc:
-      url: ws://datasets/api
+      url: ws://datasets:81/api
