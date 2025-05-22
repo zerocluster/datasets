@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.27.21 (2025-05-22)
+
+**Other changes:**
+
+- \[PATCH] chore: init docs (👬 zdm)
+
+- \[PATCH] chore: update package dependencies (👬 zdm)
+
+- \[PATCH] chore: update rpc port in docs (👬 zdm)
+
+Compare with the previous release: [`v3.27.20...v3.27.21`](https://github.com/zerocluster/datasets/compare/v3.27.20...v3.27.21)
+
 ### v3.27.20 (2025-05-17)
 
 **Other changes:**
