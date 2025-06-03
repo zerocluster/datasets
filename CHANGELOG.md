@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.27.28 (2025-06-03)
+
+**Other changes:**
+
+- \[PATCH] chore: add app name (👬 zdm)
+
+- \[PATCH] chore: update package dependencies (👬 zdm)
+
+Compare with the previous release: [v3.27.27](https://github.com/zerocluster/datasets/compare/v3.27.27...v3.27.28)
+
 ### v3.27.27 (2025-06-01)
 
 **Other changes:**
