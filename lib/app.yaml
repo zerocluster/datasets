@@ -9,6 +9,8 @@ services:
 
 defaultService: rpc
 
-components: ~
+components:
+  env:
+    name: datasets
 
 config: ~
