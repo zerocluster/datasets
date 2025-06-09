@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.27.30 (2025-06-09)
+
+**Other changes:**
+
+- \[PATCH] chore: update cli config (👬 zdm)
+
+- \[PATCH] chore(deps): update package dependencies (👬 zdm)
+
+Compare with the previous release: [v3.27.29](https://github.com/zerocluster/datasets/compare/v3.27.29...v3.27.30)
+
 ### v3.27.29 (2025-06-03)
 
 **Other changes:**
