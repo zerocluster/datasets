@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.27.34 (2025-06-13)
+
+**Other changes:**
+
+- chore(deps): update package dependencies (● [dfc1e5d](https://github.com/zerocluster/datasets/commit/dfc1e5d), [16cded5](https://github.com/zerocluster/datasets/commit/16cded5), [c8bf5af](https://github.com/zerocluster/datasets/commit/c8bf5af), [fb76bab](https://github.com/zerocluster/datasets/commit/fb76bab); 👬 zdm)
+
+- chore(style): fix typo (● [971807c](https://github.com/zerocluster/datasets/commit/971807c); 👬 zdm)
+
+Compare with the previous release: [v3.27.33](https://github.com/zerocluster/datasets/compare/v3.27.33...v3.27.34)
+
 ### v3.27.33 (2025-06-10)
 
 **Other changes:**
