@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.27.36 (2025-06-21)
+
+**Other changes:**
+
+- chore(deps): update package dependencies (● [edf20e9](https://github.com/zerocluster/datasets/commit/edf20e9), [afe9a91](https://github.com/zerocluster/datasets/commit/afe9a91); 👬 zdm)
+
+Compare with the previous release: [v3.27.35](https://github.com/zerocluster/datasets/compare/v3.27.35...v3.27.36)
+
 ### v3.27.35 (2025-06-17)
 
 **Other changes:**
