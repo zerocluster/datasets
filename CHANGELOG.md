@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.27.37 (2025-06-25)
+
+**Other changes:**
+
+- chore(deps): update package dependencies (● [56f2e58](https://github.com/zerocluster/datasets/commit/56f2e58), [6c5807b](https://github.com/zerocluster/datasets/commit/6c5807b), [e7f65d7](https://github.com/zerocluster/datasets/commit/e7f65d7); 👬 zdm)
+
+- style: lint (● [406ab9c](https://github.com/zerocluster/datasets/commit/406ab9c); 👬 zdm)
+
+Compare with the previous release: [v3.27.36](https://github.com/zerocluster/datasets/compare/v3.27.36...v3.27.37)
+
 ### v3.27.36 (2025-06-21)
 
 **Other changes:**
