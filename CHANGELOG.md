@@ -1,5 +1,21 @@
 # Changelog
 
+### v3.27.48 (2025-07-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix editorconfig (● [22cf6f6](https://github.com/zerocluster/datasets/commit/22cf6f6); 👬 zdm)
+
+- \[PATCH] fix: update editorconfig (● [12daf07](https://github.com/zerocluster/datasets/commit/12daf07); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [6b2b461](https://github.com/zerocluster/datasets/commit/6b2b461), [66098d4](https://github.com/zerocluster/datasets/commit/66098d4), [0f86116](https://github.com/zerocluster/datasets/commit/0f86116); 👬 zdm)
+
+- style: update .npmrc (● [f746a05](https://github.com/zerocluster/datasets/commit/f746a05); 👬 zdm)
+
+Compare with the previous release: [v3.27.47](https://github.com/zerocluster/datasets/compare/v3.27.47...v3.27.48)
+
 ### v3.27.47 (2025-07-16)
 
 **Other changes:**
