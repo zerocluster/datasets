@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.27.52 (2025-08-16)
+
+**Other changes:**
+
+- build(deps): bunp actions/checkout\@v5 (● [ffc074e](https://github.com/zerocluster/datasets/commit/ffc074e); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [ce1dd9d](https://github.com/zerocluster/datasets/commit/ce1dd9d); 👬 zdm)
+
+Compare with the previous release: [v3.27.51](https://github.com/zerocluster/datasets/compare/v3.27.51...v3.27.52)
+
 ### v3.27.51 (2025-08-10)
 
 **Other changes:**
