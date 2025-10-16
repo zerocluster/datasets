@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.27.55 (2025-10-16)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [487b7a4](https://github.com/zerocluster/datasets/commit/487b7a4), [4451883](https://github.com/zerocluster/datasets/commit/4451883), [e2753be](https://github.com/zerocluster/datasets/commit/e2753be); 👬 zdm)
+
+- docs: update docs (● [c696319](https://github.com/zerocluster/datasets/commit/c696319); 👬 zdm)
+
+Compare with the previous release: [v3.27.54](https://github.com/zerocluster/datasets/compare/v3.27.54...v3.27.55)
+
 ### v3.27.54 (2025-08-28)
 
 **Other changes:**
