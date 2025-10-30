@@ -28,9 +28,9 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
     async _build ( location ) {
         var res;
 
-        res = childProcess.spawnSync( "ogr2ogr", [ "-select", "iso_a2", "-f", "geojson", "countries.geo.json", "ne_10m_admin_0_countries.shp" ], {
-            "cwd": this.#tmpDir.path,
+        res = childProcess.spawnSync( "ogr2ogr -select iso_a2 -f geojson countries.geo.json ne_10m_admin_0_countries.shp", {
             "shell": true,
+            "cwd": this.#tmpDir.path,
             "stdio": "inherit",
         } );
         if ( res.status ) return result( 500 );
