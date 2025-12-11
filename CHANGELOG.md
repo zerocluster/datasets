@@ -2276,7 +2276,7 @@ Fixed:
 
 Fixed:
 
-- @softvisio/api added
+- @c0rejs/api added
 
 ### 2.6.12 (2021-07-31)
 
@@ -2319,7 +2319,7 @@ Added:
 
 Fixed:
 
-- utils moved to @softvisio/utils
+- utils moved to @c0rejs/utils
 
 ### 2.6.5 (2021-07-15)
 
@@ -2436,7 +2436,7 @@ Changed:
 
 - deps updated;
 - docs updated;
-- @softvisio/core v4;
+- @c0rejs/core v4;
 - maxmind user credentials changed;
 - github user credentials changed;
 - moved to github;
@@ -2586,7 +2586,7 @@ Changed:
 
 Changed:
 
-- merged with @softvisio/core;
+- merged with @c0rejs/core;
 - unlinkSync replaced with rmSync;
 
 ### 1.8.7 (2021-03-08)

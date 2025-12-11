@@ -20,7 +20,7 @@
     "author": "root <root@softvisio.net>",
     "type": "module",
     "imports": {
-        "#core/*": "@softvisio/core/*",
+        "#core/*": "@c0rejs/core/*",
         "#lib/*": "./lib/*.js",
         "#resources/*": "./resources/*"
     },
@@ -29,10 +29,10 @@
         "start": "node bin/main.js run --mode=development"
     },
     "dependencies": {
-        "@softvisio/api": "^2.3.4",
-        "@softvisio/core": "^7.101.7",
-        "@softvisio/geoip-asn": "^1.0.1",
-        "@softvisio/geoip-city": "^1.0.1",
+        "@c0rejs/api": "^2.3.4",
+        "@c0rejs/core": "^7.101.7",
+        "@c0rejs/geoip-asn": "^1.0.1",
+        "@c0rejs/geoip-city": "^1.0.1",
         "@turf/turf": "^7.0.0",
         "earcut": "^3.0.0",
         "geo-tz": "^8.0.0",

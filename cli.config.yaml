@@ -12,7 +12,7 @@ docs:
   location: /docs
 
   aliases:
-    /api: https://raw.githubusercontent.com/softvisio-node/core/main/docs/api.md
+    /api: https://raw.githubusercontent.com/c0rejs/core/main/docs/api.md
 
   app:
     rpc:
