@@ -21,7 +21,12 @@ services:
       - { type: tmpfs, target: /dev/shm, tmpfs: { size: 1073741824 } }
       - { type: volume, source: datasets, target: /var/local/package/data }
 
-    build: .
+    build:
+      context: .
+      secrets:
+        - id=GITHUB_TOKEN,env=GITHUB_TOKEN
+        - id=NPM_TOKEN_GITHUB,env=NPM_TOKEN_GITHUB
+        - id=NPM_TOKEN_NPMJS,env=NPM_TOKEN_NPMJS
 
 secrets:
   datasets_env.yaml: { file: env.yaml }
