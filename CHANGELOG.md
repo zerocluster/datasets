@@ -1,5 +1,19 @@
 # Changelog
 
+### v3.28.1 (2026-01-03)
+
+**Bug fixes:**
+
+- \[PATCH] fix: add version to action spec (● [f435587](https://github.com/zerocluster/datasets/commit/f435587); 👬 zdm)
+
+- \[PATCH] fix: update actions version (● [1fb7ec9](https://github.com/zerocluster/datasets/commit/1fb7ec9); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [214550a](https://github.com/zerocluster/datasets/commit/214550a); 👬 zdm)
+
+Compare with the previous release: [v3.28.0](https://github.com/zerocluster/datasets/compare/v3.28.0...v3.28.1)
+
 ### v3.28.0 (2026-01-03)
 
 **New features:**

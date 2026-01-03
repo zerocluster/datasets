@@ -1,6 +1,6 @@
 {
     "name": "@zerocluster/datasets-build",
-    "version": "3.28.0",
+    "version": "3.28.1",
     "private": true,
     "homepage": "https://zerocluster.github.io/datasets/",
     "bugs": {
