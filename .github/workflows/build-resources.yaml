@@ -12,9 +12,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: softvisio/actions/setup-npm@main
+      - uses: softvisio/actions/setup-npm@v1
 
-      - uses: softvisio/actions/checkout@main
+      - uses: softvisio/actions/checkout@v1
 
       - run: |
           apt-get update
