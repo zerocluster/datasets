@@ -1,5 +1,29 @@
 # Changelog
 
+### v3.28.0 (2026-01-03)
+
+**New features:**
+
+- \[MINOR] feat: add docker build secrets (● [f5f4c5e](https://github.com/zerocluster/datasets/commit/f5f4c5e), [3cea9ed](https://github.com/zerocluster/datasets/commit/3cea9ed); 👬 zdm)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix spawn shell args (● [4810666](https://github.com/zerocluster/datasets/commit/4810666); 👬 zdm)
+
+- \[PATCH] fix: remove NPM_TOKEN_GITHUB (● [73633ae](https://github.com/zerocluster/datasets/commit/73633ae); 👬 zdm)
+
+**Other changes:**
+
+- build: migrate to c0rejs namespace (● [b601c9e](https://github.com/zerocluster/datasets/commit/b601c9e), [3caf2ee](https://github.com/zerocluster/datasets/commit/3caf2ee); 👬 zdm)
+
+- build: update workflow actions (● [44796f5](https://github.com/zerocluster/datasets/commit/44796f5); 👬 zdm)
+
+- build(deps): bump actions/checkout\@v6 (● [46bd62c](https://github.com/zerocluster/datasets/commit/46bd62c); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [c978cc0](https://github.com/zerocluster/datasets/commit/c978cc0), [89f4807](https://github.com/zerocluster/datasets/commit/89f4807), [9468f8c](https://github.com/zerocluster/datasets/commit/9468f8c), [2d85060](https://github.com/zerocluster/datasets/commit/2d85060), [925b232](https://github.com/zerocluster/datasets/commit/925b232), [ac0b58d](https://github.com/zerocluster/datasets/commit/ac0b58d), [f9484b4](https://github.com/zerocluster/datasets/commit/f9484b4), [e4edd36](https://github.com/zerocluster/datasets/commit/e4edd36), [8717c4d](https://github.com/zerocluster/datasets/commit/8717c4d), [525555b](https://github.com/zerocluster/datasets/commit/525555b), [55d1cfe](https://github.com/zerocluster/datasets/commit/55d1cfe), [c9c9c86](https://github.com/zerocluster/datasets/commit/c9c9c86), [b2b56e9](https://github.com/zerocluster/datasets/commit/b2b56e9), [0d7d94b](https://github.com/zerocluster/datasets/commit/0d7d94b), [e95fadc](https://github.com/zerocluster/datasets/commit/e95fadc), [e0e474f](https://github.com/zerocluster/datasets/commit/e0e474f), [e9eaf4f](https://github.com/zerocluster/datasets/commit/e9eaf4f), [873bf75](https://github.com/zerocluster/datasets/commit/873bf75), [d476be2](https://github.com/zerocluster/datasets/commit/d476be2), [7774f88](https://github.com/zerocluster/datasets/commit/7774f88), [c66ae4e](https://github.com/zerocluster/datasets/commit/c66ae4e), [12ed29b](https://github.com/zerocluster/datasets/commit/12ed29b); 👬 zdm)
+
+Compare with the previous release: [v3.27.55](https://github.com/zerocluster/datasets/compare/v3.27.55...v3.28.0)
+
 ### v3.27.55 (2025-10-16)
 
 **Other changes:**
