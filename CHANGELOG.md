@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.2 (2026-01-18)
+
+**Other changes:**
+
+- chore: remove npm @sencha:registry (● [699c466](https://github.com/zerocluster/datasets/commit/699c466); 👬 zdm)
+
+- chore: update softvisio/actions version (● [2dd6acc](https://github.com/zerocluster/datasets/commit/2dd6acc); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [fd5308e](https://github.com/zerocluster/datasets/commit/fd5308e), [7221981](https://github.com/zerocluster/datasets/commit/7221981), [ae7040f](https://github.com/zerocluster/datasets/commit/ae7040f), [f3525a3](https://github.com/zerocluster/datasets/commit/f3525a3), [daa7c25](https://github.com/zerocluster/datasets/commit/daa7c25), [76934da](https://github.com/zerocluster/datasets/commit/76934da); 👬 zdm)
+
+Compare with the previous release: [v3.28.1](https://github.com/zerocluster/datasets/compare/v3.28.1...v3.28.2)
+
 ### v3.28.1 (2026-01-03)
 
 **Bug fixes:**
