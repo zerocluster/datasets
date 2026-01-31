@@ -20,7 +20,7 @@ await Cli.parse( CLI );
 
 externalResources.add( "zerocluster/datasets/resources/countries-geo-json" );
 externalResources.add( "zerocluster/datasets/resources/datasets" );
-externalResources.add( "c0rejs/core/resources/google-geotargets" );
+externalResources.add( "corejslib/core/resources/google-geotargets" );
 
 const res = await externalResources.install( {
     "force": process.cli.options.force,
