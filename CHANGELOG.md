@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.28.6 (2026-01-31)
+
+**Other changes:**
+
+- chore: rename c0rejs namespace (● [c672b9d](https://github.com/zerocluster/datasets/commit/c672b9d), [7af4b39](https://github.com/zerocluster/datasets/commit/7af4b39); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [13a8031](https://github.com/zerocluster/datasets/commit/13a8031); 👬 zdm)
+
+Compare with the previous release: [v3.28.5](https://github.com/zerocluster/datasets/compare/v3.28.5...v3.28.6)
+
 ### v3.28.5 (2026-01-30)
 
 **Other changes:**
