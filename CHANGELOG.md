@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.28.7 (2026-02-06)
+
+**Other changes:**
+
+- chore: remove @zdm npm registry (● [af68f8a](https://github.com/zerocluster/datasets/commit/af68f8a); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [fef4d43](https://github.com/zerocluster/datasets/commit/fef4d43), [646c6a7](https://github.com/zerocluster/datasets/commit/646c6a7), [1791ab4](https://github.com/zerocluster/datasets/commit/1791ab4), [d7f7e52](https://github.com/zerocluster/datasets/commit/d7f7e52), [75b1ac2](https://github.com/zerocluster/datasets/commit/75b1ac2); 👬 zdm)
+
+Compare with the previous release: [v3.28.6](https://github.com/zerocluster/datasets/compare/v3.28.6...v3.28.7)
+
 ### v3.28.6 (2026-01-31)
 
 **Other changes:**
