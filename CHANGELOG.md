@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.19 (2026-03-27)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename content accessor methods (● [ceda09e](https://github.com/zerocluster/datasets/commit/ceda09e); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [851e61c](https://github.com/zerocluster/datasets/commit/851e61c), [3fff67b](https://github.com/zerocluster/datasets/commit/3fff67b); 👬 zdm)
+
+Compare with the previous release: [v3.28.18](https://github.com/zerocluster/datasets/compare/v3.28.18...v3.28.19)
+
 ### v3.28.18 (2026-03-25)
 
 **Other changes:**
