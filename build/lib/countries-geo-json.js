@@ -53,7 +53,7 @@ export default class CountriesGeoJson extends ExternalResourceBuilder {
         const res = await fetch( sourceUrl );
         if ( !res.ok ) return res;
 
-        const tmpFile = await res.tmpFile();
+        const tmpFile = await res.toTmpFile();
 
         this.#tmpDir = new TmpDir();
 
