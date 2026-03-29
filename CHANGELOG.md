@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.28.21 (2026-03-29)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [fbb2301](https://github.com/zerocluster/datasets/commit/fbb2301); 👬 zdm)
+
+Compare with the previous release: [v3.28.20](https://github.com/zerocluster/datasets/compare/v3.28.20...v3.28.21)
+
 ### v3.28.20 (2026-03-29)
 
 **Other changes:**
