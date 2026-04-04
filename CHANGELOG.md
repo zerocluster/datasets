@@ -1,5 +1,11 @@
 # Changelog
 
+### v3.28.25 (2026-04-04)
+
+No changes since the previous release.
+
+Compare with the previous release: [v3.28.24](https://github.com/zerocluster/datasets/compare/v3.28.24...v3.28.25)
+
 ### v3.28.24 (2026-04-04)
 
 **Other changes:**
