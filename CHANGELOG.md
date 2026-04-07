@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.28.30 (2026-04-07)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [ae90105](https://github.com/zerocluster/datasets/commit/ae90105); 👬 zdm)
+
+Compare with the previous release: [v3.28.29](https://github.com/zerocluster/datasets/compare/v3.28.29...v3.28.30)
+
 ### v3.28.29 (2026-04-07)
 
 **Other changes:**
