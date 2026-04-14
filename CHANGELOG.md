@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.32 (2026-04-14)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update dockerfile (● [449ab6c](https://github.com/zerocluster/datasets/commit/449ab6c); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [284ca64](https://github.com/zerocluster/datasets/commit/284ca64), [34e79bc](https://github.com/zerocluster/datasets/commit/34e79bc), [94972cd](https://github.com/zerocluster/datasets/commit/94972cd), [ca4f121](https://github.com/zerocluster/datasets/commit/ca4f121), [0610911](https://github.com/zerocluster/datasets/commit/0610911), [53d7986](https://github.com/zerocluster/datasets/commit/53d7986); 👬 zdm)
+
+Compare with the previous release: [v3.28.31](https://github.com/zerocluster/datasets/compare/v3.28.31...v3.28.32)
+
 ### v3.28.31 (2026-04-09)
 
 **Other changes:**
