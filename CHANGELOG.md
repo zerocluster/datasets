@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.33 (2026-04-16)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix dockerfile errors handler (● [e83589c](https://github.com/zerocluster/datasets/commit/e83589c); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [47a8423](https://github.com/zerocluster/datasets/commit/47a8423); 👬 zdm)
+
+Compare with the previous release: [v3.28.32](https://github.com/zerocluster/datasets/compare/v3.28.32...v3.28.33)
+
 ### v3.28.32 (2026-04-14)
 
 **Code refactoring:**
