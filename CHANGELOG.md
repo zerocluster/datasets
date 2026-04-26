@@ -1,5 +1,23 @@
 # Changelog
 
+### v3.28.35 (2026-04-26)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix sh error trap (● [5465d5f](https://github.com/zerocluster/datasets/commit/5465d5f); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update .editorconfig (● [e32cc9b](https://github.com/zerocluster/datasets/commit/e32cc9b); 👬 zdm)
+
+- \[PATCH] refactor: update sh error trap (● [ed6b98b](https://github.com/zerocluster/datasets/commit/ed6b98b); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [27973f3](https://github.com/zerocluster/datasets/commit/27973f3), [ff1489e](https://github.com/zerocluster/datasets/commit/ff1489e), [fcc628f](https://github.com/zerocluster/datasets/commit/fcc628f), [3a34f15](https://github.com/zerocluster/datasets/commit/3a34f15), [9a02fb9](https://github.com/zerocluster/datasets/commit/9a02fb9), [39c5dab](https://github.com/zerocluster/datasets/commit/39c5dab), [06ede06](https://github.com/zerocluster/datasets/commit/06ede06); 👬 zdm)
+
+Compare with the previous release: [v3.28.34...v3.28.35](https://github.com/zerocluster/datasets/compare/v3.28.34...v3.28.35)
+
 ### v3.28.34 (2026-04-20)
 
 **Other changes:**
