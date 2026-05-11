@@ -1,5 +1,19 @@
 # Changelog
 
+### v3.28.37 (2026-05-11)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename cli.config.yaml to scli.config.yaml (● [e68fc02](https://github.com/zerocluster/datasets/commit/e68fc02); 👬 zdm)
+
+- \[PATCH] refactor: rename result.catch() to result.fromError() (● [703b270](https://github.com/zerocluster/datasets/commit/703b270); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [503d110](https://github.com/zerocluster/datasets/commit/503d110), [856385f](https://github.com/zerocluster/datasets/commit/856385f), [bb51ae0](https://github.com/zerocluster/datasets/commit/bb51ae0), [89b85ad](https://github.com/zerocluster/datasets/commit/89b85ad), [ff8fb69](https://github.com/zerocluster/datasets/commit/ff8fb69), [363e14a](https://github.com/zerocluster/datasets/commit/363e14a), [53a8755](https://github.com/zerocluster/datasets/commit/53a8755), [91e3d62](https://github.com/zerocluster/datasets/commit/91e3d62), [25b07bb](https://github.com/zerocluster/datasets/commit/25b07bb), [fa72d10](https://github.com/zerocluster/datasets/commit/fa72d10), [76aa100](https://github.com/zerocluster/datasets/commit/76aa100), [4890e81](https://github.com/zerocluster/datasets/commit/4890e81), [6c03790](https://github.com/zerocluster/datasets/commit/6c03790), [7dcdb1b](https://github.com/zerocluster/datasets/commit/7dcdb1b); 👬 zdm)
+
+Compare with the previous release: [v3.28.36...v3.28.37](https://github.com/zerocluster/datasets/compare/v3.28.36...v3.28.37)
+
 ### v3.28.36 (2026-04-29)
 
 **Other changes:**
