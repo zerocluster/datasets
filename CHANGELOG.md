@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.39 (2026-05-16)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [1d93cab](https://github.com/zerocluster/datasets/commit/1d93cab), [dcff5fe](https://github.com/zerocluster/datasets/commit/dcff5fe); 👬 zdm)
+
+- docs: update (● [ed13a9e](https://github.com/zerocluster/datasets/commit/ed13a9e); 👬 zdm)
+
+- docs: update readme (● [b8d1d42](https://github.com/zerocluster/datasets/commit/b8d1d42); 👬 zdm)
+
+Compare with the previous release: [v3.28.38...v3.28.39](https://github.com/zerocluster/datasets/compare/v3.28.38...v3.28.39)
+
 ### v3.28.38 (2026-05-15)
 
 **Other changes:**
