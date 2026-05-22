@@ -2,12 +2,12 @@ dependencies:
   - "@corejslib/core"
 
 services:
-  rpc:
+  main:
     components:
       rpc: true
       threads: true
 
-defaultService: rpc
+defaultService: main
 
 components:
   env:
