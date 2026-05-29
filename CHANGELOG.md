@@ -1,5 +1,25 @@
 # Changelog
 
+### v3.28.41 (2026-05-29)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix build resources (● [30b2d33](https://github.com/zerocluster/datasets/commit/30b2d33); 👬 zdm)
+
+- \[PATCH] fix: fix gh actions (● [0768a81](https://github.com/zerocluster/datasets/commit/0768a81); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename app service to main (● [78d73e8](https://github.com/zerocluster/datasets/commit/78d73e8); 👬 zdm)
+
+**Other changes:**
+
+- build: remove registries from .npmrc (● [f9b19e5](https://github.com/zerocluster/datasets/commit/f9b19e5); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [449d65a](https://github.com/zerocluster/datasets/commit/449d65a), [9f1f57a](https://github.com/zerocluster/datasets/commit/9f1f57a), [522b2eb](https://github.com/zerocluster/datasets/commit/522b2eb), [f5f2281](https://github.com/zerocluster/datasets/commit/f5f2281), [b32f92a](https://github.com/zerocluster/datasets/commit/b32f92a), [99dc00e](https://github.com/zerocluster/datasets/commit/99dc00e); 👬 zdm)
+
+Compare with the previous release: [v3.28.40...v3.28.41](https://github.com/zerocluster/datasets/compare/v3.28.40...v3.28.41)
+
 ### v3.28.40 (2026-05-19)
 
 **Other changes:**
