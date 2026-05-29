@@ -9,9 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/zerocluster/node
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       HOME: /root
     steps:
       - uses: softvisio/actions/checkout@v1
@@ -22,4 +24,3 @@ jobs:
           cd build
           npm install --ignore-scripts
           npm run build
-        shell: bash
