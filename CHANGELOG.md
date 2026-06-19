@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.28.42 (2026-06-19)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [9451ee8](https://github.com/zerocluster/datasets/commit/9451ee8), [55a3249](https://github.com/zerocluster/datasets/commit/55a3249), [a8b8447](https://github.com/zerocluster/datasets/commit/a8b8447), [38c03f6](https://github.com/zerocluster/datasets/commit/38c03f6), [cf991e9](https://github.com/zerocluster/datasets/commit/cf991e9), [c046453](https://github.com/zerocluster/datasets/commit/c046453), [958fb58](https://github.com/zerocluster/datasets/commit/958fb58), [5a60345](https://github.com/zerocluster/datasets/commit/5a60345), [6ce73bd](https://github.com/zerocluster/datasets/commit/6ce73bd), [83fdc43](https://github.com/zerocluster/datasets/commit/83fdc43), [044dc5a](https://github.com/zerocluster/datasets/commit/044dc5a), [0f8a62a](https://github.com/zerocluster/datasets/commit/0f8a62a), [8c39169](https://github.com/zerocluster/datasets/commit/8c39169), [13fd101](https://github.com/zerocluster/datasets/commit/13fd101), [ecb2c38](https://github.com/zerocluster/datasets/commit/ecb2c38), [064801a](https://github.com/zerocluster/datasets/commit/064801a), [858e95a](https://github.com/zerocluster/datasets/commit/858e95a), [4843032](https://github.com/zerocluster/datasets/commit/4843032); 👬 zdm)
+
+Compare with the previous release: [v3.28.41...v3.28.42](https://github.com/zerocluster/datasets/compare/v3.28.41...v3.28.42)
+
 ### v3.28.41 (2026-05-29)
 
 **Bug fixes:**
