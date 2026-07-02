@@ -454,7 +454,7 @@ Compare with the previous release: [v3.28.0](https://github.com/zerocluster/data
 
 - \[PATCH] fix: fix spawn shell args (● [4810666](https://github.com/zerocluster/datasets/commit/4810666); 👬 zdm)
 
-- \[PATCH] fix: remove NPM_TOKEN_GITHUB (● [73633ae](https://github.com/zerocluster/datasets/commit/73633ae); 👬 zdm)
+- \[PATCH] fix: remove NPM\_TOKEN\_GITHUB (● [73633ae](https://github.com/zerocluster/datasets/commit/73633ae); 👬 zdm)
 
 **Other changes:**
 
@@ -1394,7 +1394,7 @@ Fixes:
 Fixes:
 
 - fix: deps
-- fix: docker depends_on
+- fix: docker depends\_on
 
 ### 3.24.38 (2024-07-30)
 
@@ -2408,7 +2408,7 @@ Fixes:
 
 Features:
 
-- feat: random_point
+- feat: random\_point
 
 Fixes:
 
@@ -2562,7 +2562,7 @@ Fixes:
 
 Fixes:
 
-- fix: docker autobuild_tags renamed to auto_tags
+- fix: docker autobuild\_tags renamed to auto\_tags
 - fix: package renamed
 
 ### 2.11.8 (2021-09-07)
@@ -2933,7 +2933,7 @@ Changed:
 Changed:
 
 - maxmind module added;
-- flagUnicode -> flag_unicode;
+- flagUnicode -> flag\_unicode;
 - lint script removed;
 - rpc cache added;
 - rpc cche added;
@@ -3028,7 +3028,7 @@ Changed:
 
 Changed:
 
-- support for MAXMIND_LICENSE_KEY;
+- support for MAXMIND\_LICENSE\_KEY;
 - logo;
 
 ### 1.9.3 (2021-03-10)
