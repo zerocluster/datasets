@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.49 (2026-07-03)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix md \_ escape (● [29a0349](https://github.com/zerocluster/datasets/commit/29a0349); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [d53b056](https://github.com/zerocluster/datasets/commit/d53b056), [5e30417](https://github.com/zerocluster/datasets/commit/5e30417), [3f37c52](https://github.com/zerocluster/datasets/commit/3f37c52), [f7f41fe](https://github.com/zerocluster/datasets/commit/f7f41fe), [52515e5](https://github.com/zerocluster/datasets/commit/52515e5), [d6a2f79](https://github.com/zerocluster/datasets/commit/d6a2f79), [2a63369](https://github.com/zerocluster/datasets/commit/2a63369), [721da3f](https://github.com/zerocluster/datasets/commit/721da3f), [43a8ad6](https://github.com/zerocluster/datasets/commit/43a8ad6), [f43ef76](https://github.com/zerocluster/datasets/commit/f43ef76), [321b1d5](https://github.com/zerocluster/datasets/commit/321b1d5), [f73c10c](https://github.com/zerocluster/datasets/commit/f73c10c); 👬 zdm)
+
+Compare with the previous release: [v3.28.48...v3.28.49](https://github.com/zerocluster/datasets/compare/v3.28.48...v3.28.49)
+
 ### v3.28.48 (2026-06-25)
 
 **Other changes:**
