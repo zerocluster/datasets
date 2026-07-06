@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.28.54 (2026-07-06)
+
+**Other changes:**
+
+- build(deps): bunp @corejslib/core@^8.0.0 (● [f892154](https://github.com/zerocluster/datasets/commit/f892154); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [6f30f0e](https://github.com/zerocluster/datasets/commit/6f30f0e); 👬 zdm)
+
+Compare with the previous release: [v3.28.53...v3.28.54](https://github.com/zerocluster/datasets/compare/v3.28.53...v3.28.54)
+
 ### v3.28.53 (2026-07-05)
 
 **Other changes:**
