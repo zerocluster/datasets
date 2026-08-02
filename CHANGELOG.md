@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.69 (2026-08-02)
+
+**Other changes:**
+
+- chore: rename softvisio to corejslib (● [9579ced](https://github.com/zerocluster/datasets/commit/9579ced); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [cff4d3d](https://github.com/zerocluster/datasets/commit/cff4d3d); 👬 zdm)
+
+- docs: update (● [b7092c3](https://github.com/zerocluster/datasets/commit/b7092c3); 👬 zdm)
+
+Compare with the previous release: [v3.28.68...v3.28.69](https://github.com/zerocluster/datasets/compare/v3.28.68...v3.28.69)
+
 ### v3.28.68 (2026-08-01)
 
 **Other changes:**
