@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.28.73 (2026-08-04)
+
+**Other changes:**
+
+- chore: rename ccli to zcli (● [e0f7acd](https://github.com/zerocluster/datasets/commit/e0f7acd), [79fb149](https://github.com/zerocluster/datasets/commit/79fb149), [2c7fffa](https://github.com/zerocluster/datasets/commit/2c7fffa); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [a6f14cf](https://github.com/zerocluster/datasets/commit/a6f14cf); 👬 zdm)
+
+Compare with the previous release: [v3.28.72...v3.28.73](https://github.com/zerocluster/datasets/compare/v3.28.72...v3.28.73)
+
 ### v3.28.72 (2026-08-04)
 
 **Other changes:**
