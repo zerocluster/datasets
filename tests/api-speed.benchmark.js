@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node
 
 import Api from "#core/api";
 import benchmark from "#core/benchmark";
