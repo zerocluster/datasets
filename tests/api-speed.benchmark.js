@@ -42,7 +42,6 @@ const tests = {
 // console.log( await t.geoip_country() );
 
 await benchmark( "API speed", tests, {
-    "iterations": 10_000,
-    "seconds": 10,
-    "threads": 50,
+
+    // "maxTotalTime": 5000,
 } );
