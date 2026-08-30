@@ -1,5 +1,21 @@
 # Changelog
 
+### v3.28.81 (2026-08-30)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix shebang (● [13e01a4](https://github.com/zerocluster/datasets/commit/13e01a4); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor benchmarks (● [64197bd](https://github.com/zerocluster/datasets/commit/64197bd); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [b697087](https://github.com/zerocluster/datasets/commit/b697087), [d1cb010](https://github.com/zerocluster/datasets/commit/d1cb010), [212ff68](https://github.com/zerocluster/datasets/commit/212ff68), [f4efa73](https://github.com/zerocluster/datasets/commit/f4efa73), [f4f620e](https://github.com/zerocluster/datasets/commit/f4f620e); 👬 zdm)
+
+Compare with the previous release: [v3.28.80...v3.28.81](https://github.com/zerocluster/datasets/compare/v3.28.80...v3.28.81)
+
 ### v3.28.80 (2026-08-27)
 
 **Other changes:**
