@@ -22,7 +22,7 @@ externalResources.add( "zerocluster/datasets/resources/countries-geo-json" );
 externalResources.add( "zerocluster/datasets/resources/datasets" );
 externalResources.add( "corejslib/core/resources/google-geotargets" );
 
-const res = await externalResources.install( {
+const res = await externalResources.update( {
     "force": process.cli.options.force,
 } );
 
