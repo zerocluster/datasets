@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.83 (2026-09-07)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename .install() to .update() (● [17492b1](https://github.com/zerocluster/datasets/commit/17492b1); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [472382c](https://github.com/zerocluster/datasets/commit/472382c), [9709fd1](https://github.com/zerocluster/datasets/commit/9709fd1); 👬 zdm)
+
+Compare with the previous release: [v3.28.82...v3.28.83](https://github.com/zerocluster/datasets/compare/v3.28.82...v3.28.83)
+
 ### v3.28.82 (2026-09-05)
 
 **Other changes:**
