@@ -1,5 +1,15 @@
 # Changelog
 
+### v3.28.89 (2026-09-15)
+
+**Other changes:**
+
+- chore: migrate to @corejslib/app (● [356094a](https://github.com/zerocluster/datasets/commit/356094a); 👬 zdm)
+
+- chore(deps): update locked dependencies (● [bbb7816](https://github.com/zerocluster/datasets/commit/bbb7816); 👬 zdm)
+
+Compare with the previous release: [v3.28.88...v3.28.89](https://github.com/zerocluster/datasets/compare/v3.28.88...v3.28.89)
+
 ### v3.28.88 (2026-09-15)
 
 **Other changes:**
