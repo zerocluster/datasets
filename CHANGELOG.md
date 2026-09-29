@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.28.98 (2026-09-29)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [7aaac51](https://github.com/zerocluster/datasets/commit/7aaac51), [11eda0c](https://github.com/zerocluster/datasets/commit/11eda0c), [c97361a](https://github.com/zerocluster/datasets/commit/c97361a); 👬 zdm)
+
+Compare with the previous release: [v3.28.97...v3.28.98](https://github.com/zerocluster/datasets/compare/v3.28.97...v3.28.98)
+
 ### v3.28.97 (2026-09-26)
 
 **Other changes:**
@@ -876,7 +884,7 @@ Compare with the previous release: [v3.28.0](https://github.com/zerocluster/data
 
 - \[PATCH] fix: fix spawn shell args (● [4810666](https://github.com/zerocluster/datasets/commit/4810666); 👬 zdm)
 
-- \[PATCH] fix: remove NPM\_TOKEN\_GITHUB (● [73633ae](https://github.com/zerocluster/datasets/commit/73633ae); 👬 zdm)
+- \[PATCH] fix: remove NPM_TOKEN_GITHUB (● [73633ae](https://github.com/zerocluster/datasets/commit/73633ae); 👬 zdm)
 
 **Other changes:**
 
@@ -1816,7 +1824,7 @@ Fixes:
 Fixes:
 
 - fix: deps
-- fix: docker depends\_on
+- fix: docker depends_on
 
 ### 3.24.38 (2024-07-30)
 
@@ -2830,7 +2838,7 @@ Fixes:
 
 Features:
 
-- feat: random\_point
+- feat: random_point
 
 Fixes:
 
@@ -2984,7 +2992,7 @@ Fixes:
 
 Fixes:
 
-- fix: docker autobuild\_tags renamed to auto\_tags
+- fix: docker autobuild_tags renamed to auto_tags
 - fix: package renamed
 
 ### 2.11.8 (2021-09-07)
@@ -3355,7 +3363,7 @@ Changed:
 Changed:
 
 - maxmind module added;
-- flagUnicode -> flag\_unicode;
+- flagUnicode -> flag_unicode;
 - lint script removed;
 - rpc cache added;
 - rpc cche added;
@@ -3450,7 +3458,7 @@ Changed:
 
 Changed:
 
-- support for MAXMIND\_LICENSE\_KEY;
+- support for MAXMIND_LICENSE_KEY;
 - logo;
 
 ### 1.9.3 (2021-03-10)
