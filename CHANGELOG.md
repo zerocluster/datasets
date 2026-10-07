@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.28.102 (2026-10-07)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [cfa8ae2](https://github.com/zerocluster/datasets/commit/cfa8ae2); 👬 zdm)
+
+Compare with the previous release: [v3.28.101...v3.28.102](https://github.com/zerocluster/datasets/compare/v3.28.101...v3.28.102)
+
 ### v3.28.101 (2026-10-07)
 
 **Other changes:**
