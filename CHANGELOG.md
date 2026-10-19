@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.28.115 (2026-10-19)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [a274b4b](https://github.com/zerocluster/datasets/commit/a274b4b), [4127ac3](https://github.com/zerocluster/datasets/commit/4127ac3); 👬 zdm)
+
+Compare with the previous release: [v3.28.114...v3.28.115](https://github.com/zerocluster/datasets/compare/v3.28.114...v3.28.115)
+
 ### v3.28.114 (2026-10-19)
 
 **Other changes:**
