@@ -1,7 +1,6 @@
 services:
   datasets:
     image: ghcr.io/zerocluster/datasets
-    # depends_on: [postgresql]
     init: true
     stop_grace_period: 5m
 
