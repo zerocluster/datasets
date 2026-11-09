@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.130 (2026-11-09)
+
+**Bug fixes:**
+
+- \[PATCH] fix: remove depends_on from compose file (● [5126c59](https://github.com/zerocluster/datasets/commit/5126c59); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [b58477b](https://github.com/zerocluster/datasets/commit/b58477b), [d07e992](https://github.com/zerocluster/datasets/commit/d07e992); 👬 zdm)
+
+Compare with the previous release: [v3.28.129...v3.28.130](https://github.com/zerocluster/datasets/compare/v3.28.129...v3.28.130)
+
 ### v3.28.129 (2026-11-06)
 
 **Other changes:**
