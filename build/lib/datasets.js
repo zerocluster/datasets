@@ -45,21 +45,16 @@ export default class Datasets extends ExternalResourceBuilder {
 CREATE TABLE continent (
     id text PRiMARY KEY NOT NULL COLLATE NOCASE, -- iso2
     iso2 text NOT NULL COLLATE NOCASE,
-    name text NOT NULL COLLATE NOCASE
+    name text NOT NULL UNIQUE COLLATE NOCASE
 );
-
-CREATE UNIQUE INDEX continent_name_key ON continent ( normalize_casefold( name ) );
 
 -- currency
 CREATE TABLE currency (
     id text PRIMARY KEY COLLATE NOCASE, -- iso3
-    iso3 text NOT NULL UNIQUE COLLATE NOCASE,
-    name text NOT NULL COLLATE NOCASE,
-    symbol text NOT NULL
+    iso3 text NOT NULL COLLATE NOCASE,
+    name text NOT NULL UNIQUE COLLATE NOCASE,
+    symbol text NOT NULL UNIQUE
 );
-
-CREATE INDEX currency_name_idx ON currency ( normalize_casefold( name ) );
-CREATE INDEX currency_symbol_idx ON currency ( normalize_casefold( symbol ) );
 
 -- country
 CREATE TABLE "country" (
@@ -91,20 +86,19 @@ CREATE TABLE language (
     id text PRIMARY KEY COLLATE NOCASE, -- iso3
     iso3 text NOT NULL COLLATE NOCASE,
     iso2 text UNIQUE COLLATE NOCASE,
-    name text NOT NULL UNIQUE COLLATE NOCASE,
+    name text NOT NULL,
     bibliographic text COLLATE NOCASE
 );
+
+CREATE UNIQUE INDEX language_name_idx ON language ( normalize_casefold( name ) );
 
 -- timezone
 CREATE TABLE timezone (
     id text PRIMARY KEY COLLATE NOCASE, -- name
-    name text NOT NULL COLLATE NOCASE,
-    abbr text NOT NULL COLLATE NOCASE
+    name text NOT NULL UNIQUE COLLATE NOCASE,
+    abbr text NOT NULL UNIQUE COLLATE NOCASE
 );
-
-CREATE INDEX timezone_abbr_idx ON timezone ( normalize_casefold( abbr ) );
-
-    ` );
+` );
 
         for ( const [ source, tableName ] of Object.entries( SOURCES ) ) {
             const sourcePath = url.fileURLToPath( import.meta.resolve( "#resources/" + source + ".json" ) );
