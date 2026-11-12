@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.28.134 (2026-11-12)
+
+**Bug fixes:**
+
+- \[PATCH] fix: allow duplicate currency symbols and timezone abbreviations (● [67a3032](https://github.com/zerocluster/datasets/commit/67a3032); 👬 zdm)
+
+Compare with the previous release: [v3.28.133...v3.28.134](https://github.com/zerocluster/datasets/compare/v3.28.133...v3.28.134)
+
 ### v3.28.133 (2026-11-12)
 
 **Bug fixes:**
