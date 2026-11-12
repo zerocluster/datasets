@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.131 (2026-11-12)
+
+**Bug fixes:**
+
+- \[PATCH] fix: use normalize_casefold for like (● [e770d89](https://github.com/zerocluster/datasets/commit/e770d89), [92a4927](https://github.com/zerocluster/datasets/commit/92a4927); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [962e74e](https://github.com/zerocluster/datasets/commit/962e74e), [b004292](https://github.com/zerocluster/datasets/commit/b004292), [ea64209](https://github.com/zerocluster/datasets/commit/ea64209); 👬 zdm)
+
+Compare with the previous release: [v3.28.130...v3.28.131](https://github.com/zerocluster/datasets/compare/v3.28.130...v3.28.131)
+
 ### v3.28.130 (2026-11-09)
 
 **Bug fixes:**
