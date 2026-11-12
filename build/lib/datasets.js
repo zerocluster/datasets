@@ -48,7 +48,7 @@ CREATE TABLE continent (
     name text NOT NULL COLLATE NOCASE
 );
 
-CREATE UNIQUE INDEX continent_name_key ON continent ( name );
+CREATE UNIQUE INDEX continent_name_key ON continent ( normalize_casefold( name ) );
 
 -- currency
 CREATE TABLE currency (
@@ -58,8 +58,8 @@ CREATE TABLE currency (
     symbol text NOT NULL
 );
 
-CREATE INDEX currency_name_idx ON currency ( name );
-CREATE INDEX currency_symbol_idx ON currency (symbol);
+CREATE INDEX currency_name_idx ON currency ( normalize_casefold( name ) );
+CREATE INDEX currency_symbol_idx ON currency ( normalize_casefold( symbol ) );
 
 -- country
 CREATE TABLE "country" (
@@ -102,7 +102,7 @@ CREATE TABLE timezone (
     abbr text NOT NULL COLLATE NOCASE
 );
 
-CREATE INDEX timezone_abbr_idx ON timezone ( abbr );
+CREATE INDEX timezone_abbr_idx ON timezone ( normalize_casefold( abbr ) );
 
     ` );
 
