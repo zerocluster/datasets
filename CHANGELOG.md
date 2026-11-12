@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.133 (2026-11-12)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix database schema (● [adf748d](https://github.com/zerocluster/datasets/commit/adf748d), [e4284cc](https://github.com/zerocluster/datasets/commit/e4284cc); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [0161879](https://github.com/zerocluster/datasets/commit/0161879); 👬 zdm)
+
+Compare with the previous release: [v3.28.132...v3.28.133](https://github.com/zerocluster/datasets/compare/v3.28.132...v3.28.133)
+
 ### v3.28.132 (2026-11-12)
 
 **Other changes:**
