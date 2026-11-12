@@ -53,8 +53,10 @@ CREATE TABLE currency (
     id text PRIMARY KEY COLLATE NOCASE, -- iso3
     iso3 text NOT NULL COLLATE NOCASE,
     name text NOT NULL UNIQUE COLLATE NOCASE,
-    symbol text NOT NULL UNIQUE
+    symbol text NOT NULL
 );
+
+CREATE INDEX currency_symbol_idx ON currency ( symbol );
 
 -- country
 CREATE TABLE "country" (
@@ -96,8 +98,10 @@ CREATE UNIQUE INDEX language_name_idx ON language ( normalize_casefold( name ) )
 CREATE TABLE timezone (
     id text PRIMARY KEY COLLATE NOCASE, -- name
     name text NOT NULL UNIQUE COLLATE NOCASE,
-    abbr text NOT NULL UNIQUE COLLATE NOCASE
+    abbr text NOT NULL COLLATE NOCASE
 );
+
+CREATE INDEX timezone_abbr_idx ON timezone ( abbr );
 ` );
 
         for ( const [ source, tableName ] of Object.entries( SOURCES ) ) {
