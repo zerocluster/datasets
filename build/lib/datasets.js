@@ -92,7 +92,7 @@ CREATE TABLE language (
     bibliographic text COLLATE NOCASE
 );
 
-CREATE UNIQUE INDEX language_name_idx ON language ( normalize_casefold( name ) );
+CREATE UNIQUE INDEX language_name_idx ON language ( normalize_nfc_casefold( name ) );
 
 -- timezone
 CREATE TABLE timezone (
