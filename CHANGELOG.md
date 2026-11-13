@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.28.135 (2026-11-13)
+
+**Bug fixes:**
+
+- \[PATCH] fix: normalize language names with NFC case folding (● [8697df2](https://github.com/zerocluster/datasets/commit/8697df2); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [8b654fa](https://github.com/zerocluster/datasets/commit/8b654fa); 👬 zdm)
+
+Compare with the previous release: [v3.28.134...v3.28.135](https://github.com/zerocluster/datasets/compare/v3.28.134...v3.28.135)
+
 ### v3.28.134 (2026-11-12)
 
 **Bug fixes:**
