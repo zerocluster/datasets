@@ -1,5 +1,19 @@
 # Changelog
 
+### v3.28.136 (2026-11-13)
+
+**Bug fixes:**
+
+- \[PATCH] fix: correct RPC websocket endpoint path (● [e7fb13b](https://github.com/zerocluster/datasets/commit/e7fb13b); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [a9fafa9](https://github.com/zerocluster/datasets/commit/a9fafa9); 👬 zdm)
+
+- docs: update docs (● [57720bc](https://github.com/zerocluster/datasets/commit/57720bc); 👬 zdm)
+
+Compare with the previous release: [v3.28.135...v3.28.136](https://github.com/zerocluster/datasets/compare/v3.28.135...v3.28.136)
+
 ### v3.28.135 (2026-11-13)
 
 **Bug fixes:**
