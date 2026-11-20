@@ -1,0 +1,8 @@
+dependencies:
+  - rpc
+  - threads
+
+optionalDependencies: ~
+
+config:
+  googleApiKey: ~

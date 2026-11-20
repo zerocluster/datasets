@@ -4,6 +4,7 @@ dependencies:
 services:
   main:
     components:
+      datasets: true
       rpc: true
       threads: true
 

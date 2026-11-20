@@ -9,8 +9,6 @@
 
 - $id: config
   type: object
-  properties:
-    googleApiKey: { type: string }
-
+  properties: {}
   additionalProperties: false
-  required: [googleApiKey]
+  required: []
