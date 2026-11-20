@@ -1,5 +1,21 @@
 # Changelog
 
+### v3.29.0 (2026-11-20)
+
+**New features:**
+
+- \[MINOR] feat: add datasets component (● [f0fe11d](https://github.com/zerocluster/datasets/commit/f0fe11d), [1804d82](https://github.com/zerocluster/datasets/commit/1804d82); 👬 zdm)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: rename datasets lifecycle method to start (● [0dba8b5](https://github.com/zerocluster/datasets/commit/0dba8b5); 👬 zdm)
+
+**Other changes:**
+
+- chore(deps): update locked dependencies (● [2d0035c](https://github.com/zerocluster/datasets/commit/2d0035c), [f9a2350](https://github.com/zerocluster/datasets/commit/f9a2350); 👬 zdm)
+
+Compare with the previous release: [v3.28.145...v3.29.0](https://github.com/zerocluster/datasets/compare/v3.28.145...v3.29.0)
+
 ### v3.28.145 (2026-11-19)
 
 **Other changes:**
