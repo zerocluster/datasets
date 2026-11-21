@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.29.1 (2026-11-21)
+
+**Code refactoring**:
+
+- \[PATCH] refactor: relocate worker startup and resources import (● [2ea7992](https://github.com/zerocluster/datasets/commit/2ea7992); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [df5fca3](https://github.com/zerocluster/datasets/commit/df5fca3); 👬 zdm)
+
+Compare with the previous release: [v3.29.0...v3.29.1](https://github.com/zerocluster/datasets/compare/v3.29.0...v3.29.1)
+
 ### v3.29.0 (2026-11-20)
 
 **New features:**
