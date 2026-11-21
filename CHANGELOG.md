@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.29.2 (2026-11-21)
+
+**Code refactoring**:
+
+- \[PATCH] refactor: remove unused app configuration fields (● [629811c](https://github.com/zerocluster/datasets/commit/629811c); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [a52877c](https://github.com/zerocluster/datasets/commit/a52877c); 👬 zdm)
+
+Compare with the previous release: [v3.29.1...v3.29.2](https://github.com/zerocluster/datasets/compare/v3.29.1...v3.29.2)
+
 ### v3.29.1 (2026-11-21)
 
 **Code refactoring**:
