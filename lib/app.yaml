@@ -13,5 +13,3 @@ defaultService: main
 components:
   env:
     name: datasets
-
-config: ~
