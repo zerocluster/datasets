@@ -1,5 +1,13 @@
 # Changelog
 
+### v3.29.3 (2026-11-21)
+
+**Code refactoring**:
+
+- \[PATCH] refactor: remove unused config placeholder (● [754d98a](https://github.com/zerocluster/datasets/commit/754d98a); 👬 zdm)
+
+Compare with the previous release: [v3.29.2...v3.29.3](https://github.com/zerocluster/datasets/compare/v3.29.2...v3.29.3)
+
 ### v3.29.2 (2026-11-21)
 
 **Code refactoring**:
