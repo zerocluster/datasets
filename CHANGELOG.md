@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.29.4 (2026-11-22)
+
+**Code refactoring**:
+
+- \[PATCH] refactor: update dataset worker thread API (● [e4c8c59](https://github.com/zerocluster/datasets/commit/e4c8c59); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [0506ac3](https://github.com/zerocluster/datasets/commit/0506ac3); 👬 zdm)
+
+Compare with the previous release: [v3.29.3...v3.29.4](https://github.com/zerocluster/datasets/compare/v3.29.3...v3.29.4)
+
 ### v3.29.3 (2026-11-21)
 
 **Code refactoring**:
