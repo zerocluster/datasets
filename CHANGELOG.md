@@ -1,5 +1,19 @@
 # Changelog
 
+### v3.29.6 (2026-11-24)
+
+**Bug fixes**:
+
+- \[PATCH] fix: fix cli config (● [95d24cf](https://github.com/zerocluster/datasets/commit/95d24cf); 👬 zdm)
+
+- \[PATCH] fix: rename app run command to start (● [aac1093](https://github.com/zerocluster/datasets/commit/aac1093); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [93d795d](https://github.com/zerocluster/datasets/commit/93d795d), [5ba3349](https://github.com/zerocluster/datasets/commit/5ba3349); 👬 zdm)
+
+Compare with the previous release: [v3.29.5...v3.29.6](https://github.com/zerocluster/datasets/compare/v3.29.5...v3.29.6)
+
 ### v3.29.5 (2026-11-22)
 
 **Other changes**:
