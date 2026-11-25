@@ -26,7 +26,7 @@
     },
     "scripts": {
         "install": "node bin/install.js",
-        "start": "node bin/main.js run --mode=development"
+        "start": "node bin/main.js start --mode=development"
     },
     "dependencies": {
         "@corejslib/api": "^2.3.4",
