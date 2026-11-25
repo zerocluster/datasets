@@ -1,5 +1,17 @@
 # Changelog
 
+### v3.29.7 (2026-11-25)
+
+**Bug fixes**:
+
+- \[PATCH] fix: use start command in development script (● [0eb2625](https://github.com/zerocluster/datasets/commit/0eb2625); 👬 zdm)
+
+**Other changes**:
+
+- chore(deps): update locked dependencies (● [90a2c62](https://github.com/zerocluster/datasets/commit/90a2c62); 👬 zdm)
+
+Compare with the previous release: [v3.29.6...v3.29.7](https://github.com/zerocluster/datasets/compare/v3.29.6...v3.29.7)
+
 ### v3.29.6 (2026-11-24)
 
 **Bug fixes**:
